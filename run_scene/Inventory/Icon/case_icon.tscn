@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://c5ot4hv4pxnbq"]
+
+[ext_resource type="Script" uid="uid://dx8fg3225fu82" path="res://run_scene/Inventory/Icon/case_icon.gd" id="1_x61yx"]
+[ext_resource type="Script" uid="uid://c4e1kvjxtbdhf" path="res://code/CaseIcon/ArmIcon/arm_icon.gd" id="2_girj7"]
+[ext_resource type="Texture2D" uid="uid://c5vqdg8ahnbq4" path="res://Sprite/BACK/Back_UP.png" id="3_eufo6"]
+[ext_resource type="Texture2D" uid="uid://cl2e72ff8hl6q" path="res://Sprite/Bullet/bullet_litter.png" id="3_te7lt"]
+[ext_resource type="Texture2D" uid="uid://xnw2bcfc6pp8" path="res://Sprite/Bullet/buttet_new.png" id="4_eufo6"]
+[ext_resource type="Texture2D" uid="uid://bmyopmleqpvb1" path="res://Sprite/Gun/Static/10000G.png" id="5_dcolj"]
+[ext_resource type="Script" uid="uid://biuy8trky66cj" path="res://run_scene/Inventory/Icon/Case/case.gd" id="6_eufo6"]
+[ext_resource type="Script" uid="uid://2untal3d016f" path="res://code/CaseIcon/InstanceManager/instanceManager.gd" id="7_odlxj"]
+[ext_resource type="PackedScene" uid="uid://15u7m6g5pppv" path="res://run_scene/AttactCase/bullet_little/bound_attack.tscn" id="8_hgpgj"]
+[ext_resource type="PackedScene" uid="uid://caqd63fcc4ldq" path="res://run_scene/AttactCase/ButtleMoreLittle/bound_attack.tscn" id="9_c4sk4"]
+[ext_resource type="PackedScene" uid="uid://bsm11460bsebe" path="res://run_scene/AttactCase/bullet_little/Bullet_little.tscn" id="10_dcolj"]
+[ext_resource type="PackedScene" uid="uid://cju2qael3846t" path="res://run_scene/Inventory/Things/10000G.tscn" id="11_c4sk4"]
+
+[node name="CaseIcon" type="Node2D" unique_id=827709238 node_paths=PackedStringArray("InstanceManager", "ArmIcon", "Case")]
+script = ExtResource("1_x61yx")
+InstanceManager = NodePath("InstanceManager")
+ArmIcon = NodePath("ArmIcon")
+Case = NodePath("Case")
+
+[node name="ArmIcon" type="Node2D" parent="." unique_id=1702787887]
+script = ExtResource("2_girj7")
+idToIcon = Dictionary[String, Texture2D]({
+"00002A": ExtResource("3_te7lt"),
+"00003A": ExtResource("4_eufo6"),
+"10000G": ExtResource("5_dcolj")
+})
+
+[node name="Case" type="Node2D" parent="." unique_id=1399456806]
+script = ExtResource("6_eufo6")
+idToIcon = Dictionary[String, Texture2D]({
+"null": ExtResource("3_eufo6")
+})
+
+[node name="InstanceManager" type="Node2D" parent="." unique_id=1394397021]
+script = ExtResource("7_odlxj")
+InstanceDic = Dictionary[String, PackedScene]({
+"00001A": ExtResource("8_hgpgj"),
+"00002A": ExtResource("10_dcolj"),
+"00003A": ExtResource("9_c4sk4"),
+"10000G": ExtResource("11_c4sk4")
+})

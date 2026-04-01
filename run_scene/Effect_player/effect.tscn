@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://d2350oqw40p6u"]
+
+[ext_resource type="Script" uid="uid://c4pfo33oseabi" path="res://run_scene/Effect_player/effect.gd" id="1_knlx7"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_xmqxl"]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 1000.0
+initial_velocity_max = 1000.0
+gravity = Vector3(0, 0, 0)
+scale_min = 3.0
+scale_max = 3.0
+turbulence_enabled = true
+
+[node name="Effect" type="Node2D" unique_id=624073857 node_paths=PackedStringArray("effect")]
+script = ExtResource("1_knlx7")
+effect = NodePath("be_hited")
+
+[node name="be_hited" type="GPUParticles2D" parent="." unique_id=1497146644]
+amount = 64
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_xmqxl")
+
+[node name="Timer" type="Timer" parent="." unique_id=1648702013]
+wait_time = 1.1
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

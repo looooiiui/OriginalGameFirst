@@ -1,0 +1,155 @@
+[gd_scene format=3 uid="uid://eqvm3wrc6wcp"]
+
+[ext_resource type="Script" uid="uid://d2gpr8vavqfjr" path="res://code/bound_attack.gd" id="1_uoyub"]
+[ext_resource type="Script" uid="uid://nkp6cvdbc7w4" path="res://code/never.gd" id="2_n26eb"]
+[ext_resource type="Script" uid="uid://bdxtleww3yg2k" path="res://code/bound/forNever.gd" id="3_qvj7i"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_n26eb"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_7cjf1"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_k5ugh"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_8f6vt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_26kyx"]
+size = Vector2(76, 30)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_uoyub"]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+emission_shape_offset = Vector3(-31, 0, 0)
+initial_velocity_max = 408.16
+gravity = Vector3(0, 0, 0)
+turbulence_enabled = true
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_n26eb"]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+initial_velocity_min = 1000.0
+initial_velocity_max = 1000.0
+gravity = Vector3(0, 0, 0)
+
+[node name="boundAttack" type="Area2D" unique_id=706066812 node_paths=PackedStringArray("spawn_Sp", "spawn_Sp2", "front", "back_gpu", "Bullet_model") groups=["Attack"]]
+script = ExtResource("1_uoyub")
+spawn_Sp = NodePath("")
+spawn_Sp2 = NodePath("")
+front = NodePath("front")
+back_gpu = NodePath("back")
+Bullet_model = NodePath("model")
+
+[node name="NEVER" type="Node2D" parent="." unique_id=929958236 node_paths=PackedStringArray("NODE")]
+script = ExtResource("2_n26eb")
+NODE = NodePath("..")
+
+[node name="never" type="Sprite2D" parent="NEVER" unique_id=407975225 node_paths=PackedStringArray("NODE")]
+modulate = Color(1, 1, 1, 0)
+top_level = true
+scale = Vector2(126, 52)
+texture = SubResource("CanvasTexture_n26eb")
+script = ExtResource("3_qvj7i")
+NODE = NodePath("../..")
+
+[node name="model" type="Node2D" parent="." unique_id=1624695981]
+
+[node name="body" type="Sprite2D" parent="model" unique_id=2115684805]
+modulate = Color(0, 0, 0.62071735, 1)
+self_modulate = Color(0.8874543, 0.8845623, 0.81057835, 1)
+material = SubResource("CanvasItemMaterial_7cjf1")
+position = Vector2(1, 0)
+scale = Vector2(61, 22)
+texture = SubResource("CanvasTexture_k5ugh")
+
+[node name="single" type="Sprite2D" parent="model" unique_id=1007914679]
+modulate = Color(0.9495521, 3.7541986e-06, 0.5658134, 1)
+position = Vector2(21, -13)
+scale = Vector2(20.00003, 4)
+texture = SubResource("CanvasTexture_8f6vt")
+
+[node name="single2" type="Sprite2D" parent="model" unique_id=1452473524]
+modulate = Color(0.9495521, 3.7541986e-06, 0.5658134, 1)
+position = Vector2(21, 13)
+scale = Vector2(20.00003, 4)
+texture = SubResource("CanvasTexture_8f6vt")
+
+[node name="single3" type="Sprite2D" parent="model" unique_id=1800704781]
+modulate = Color(0.9495521, 3.7541986e-06, 0.5658134, 1)
+position = Vector2(0, 13)
+scale = Vector2(20.00003, 4)
+texture = SubResource("CanvasTexture_8f6vt")
+
+[node name="single4" type="Sprite2D" parent="model" unique_id=1648105568]
+modulate = Color(0.9495521, 3.7541986e-06, 0.5658134, 1)
+position = Vector2(-21, 13)
+scale = Vector2(20.00003, 4)
+texture = SubResource("CanvasTexture_8f6vt")
+
+[node name="single5" type="Sprite2D" parent="model" unique_id=530527329]
+modulate = Color(0.9495521, 3.7541986e-06, 0.5658134, 1)
+position = Vector2(0, -13)
+scale = Vector2(20.00003, 4)
+texture = SubResource("CanvasTexture_8f6vt")
+
+[node name="single6" type="Sprite2D" parent="model" unique_id=1399533964]
+modulate = Color(0.9495521, 3.7541986e-06, 0.5658134, 1)
+position = Vector2(-21, -13)
+scale = Vector2(20.00003, 4)
+texture = SubResource("CanvasTexture_8f6vt")
+
+[node name="head1" type="Sprite2D" parent="model" unique_id=1440514945]
+modulate = Color(0.71269226, 1.2513996e-06, 4.813075e-07, 1)
+position = Vector2(35, 0)
+scale = Vector2(20.00003, 4)
+texture = SubResource("CanvasTexture_8f6vt")
+
+[node name="head2" type="Sprite2D" parent="model" unique_id=736784629]
+modulate = Color(0.71269226, 1.2513996e-06, 4.813075e-07, 1)
+position = Vector2(31, -4)
+scale = Vector2(20.00003, 4)
+texture = SubResource("CanvasTexture_8f6vt")
+
+[node name="head3" type="Sprite2D" parent="model" unique_id=1380924302]
+modulate = Color(0.71269226, 1.2513996e-06, 4.813075e-07, 1)
+position = Vector2(31, 4)
+scale = Vector2(20.00003, 4)
+texture = SubResource("CanvasTexture_8f6vt")
+
+[node name="head4" type="Sprite2D" parent="model" unique_id=1334853865]
+modulate = Color(0.71269226, 1.2513996e-06, 4.813075e-07, 1)
+position = Vector2(27, 8)
+scale = Vector2(20.00003, 4)
+texture = SubResource("CanvasTexture_8f6vt")
+
+[node name="head5" type="Sprite2D" parent="model" unique_id=310945289]
+modulate = Color(0.71269226, 1.2513996e-06, 4.813075e-07, 1)
+position = Vector2(27, -8)
+scale = Vector2(20.00003, 4)
+texture = SubResource("CanvasTexture_8f6vt")
+
+[node name="phy_body" type="CollisionShape2D" parent="." unique_id=1783078467]
+position = Vector2(7, 0)
+shape = SubResource("RectangleShape2D_26kyx")
+
+[node name="back" type="GPUParticles2D" parent="." unique_id=788228858]
+modulate = Color(0.14168763, 0.07245169, 0.33972645, 1)
+amount = 128
+lifetime = 0.2
+trail_enabled = true
+process_material = SubResource("ParticleProcessMaterial_uoyub")
+
+[node name="front" type="GPUParticles2D" parent="." unique_id=1252981186]
+modulate = Color(0.5442257, 1.3175793e-06, 3.3691526e-07, 1)
+position = Vector2(-32, -1)
+emitting = false
+amount = 521
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_n26eb")
+
+[node name="Timer" type="Timer" parent="." unique_id=766991572]
+one_shot = true
+
+[node name="Back" type="Timer" parent="." unique_id=1497595534]
+wait_time = 0.2
+
+[connection signal="area_entered" from="." to="." method="_hited"]

@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://c7rnfer1c7e3h"]
+
+[ext_resource type="Script" uid="uid://xmm6c1remolh" path="res://code/Mouse/Hit/mouse_hit.gd" id="1_hpwri"]
+[ext_resource type="Texture2D" uid="uid://dj3bjs2ufbavr" path="res://Effect/Mouse/mouseHit/sprite/mouseHitMore.png" id="2_cavvr"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_cavvr"]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 278.57
+initial_velocity_max = 417.84998
+gravity = Vector3(0, 0, 0)
+turbulence_enabled = true
+
+[node name="MouseHit" type="Node2D" unique_id=1792601516 node_paths=PackedStringArray("Touch", "Display")]
+modulate = Color(0, 1, 1, 1)
+script = ExtResource("1_hpwri")
+Touch = NodePath("Touch")
+Display = NodePath("Display")
+
+[node name="Touch" type="GPUParticles2D" parent="." unique_id=565861520]
+amount = 1
+texture = ExtResource("2_cavvr")
+lifetime = 0.3
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_cavvr")
+
+[node name="Display" type="Timer" parent="." unique_id=644525227]
+wait_time = 0.3
+one_shot = true

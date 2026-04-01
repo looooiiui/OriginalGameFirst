@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://dcp124hdiqni5"]
+
+[ext_resource type="Script" uid="uid://dwu7ndheyriup" path="res://code/Mouse/CrossHair/cross_hair.gd" id="1_l1dbr"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_df6kh"]
+
+[node name="CrossHair" type="Node2D" unique_id=1643887314 node_paths=PackedStringArray("CrossHair", "toMouse")]
+script = ExtResource("1_l1dbr")
+CrossHair = NodePath("CrossHair")
+toMouse = NodePath("PlayerToMouseLine")
+
+[node name="CrossHair" type="Node2D" parent="." unique_id=1728155777]
+
+[node name="left" type="Sprite2D" parent="CrossHair" unique_id=1234334058]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-18, 0)
+scale = Vector2(25, 2.543)
+texture = SubResource("CanvasTexture_df6kh")
+
+[node name="up" type="Sprite2D" parent="CrossHair" unique_id=342063690]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(4.2632564e-14, -18)
+rotation = 1.5707964
+scale = Vector2(25, 2.778)
+texture = SubResource("CanvasTexture_df6kh")
+
+[node name="down" type="Sprite2D" parent="CrossHair" unique_id=1747403553]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-4.2632564e-14, 18)
+rotation = 1.5707964
+scale = Vector2(25, 2.778)
+texture = SubResource("CanvasTexture_df6kh")
+
+[node name="right" type="Sprite2D" parent="CrossHair" unique_id=613333528]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(18, 0)
+scale = Vector2(25, 2.778)
+texture = SubResource("CanvasTexture_df6kh")
+
+[node name="crossHair" type="Sprite2D" parent="CrossHair" unique_id=754601180]
+
+[node name="PlayerToMouseLine" type="Line2D" parent="." unique_id=1814869752]
+points = PackedVector2Array(0, 0, 0, 0)
+width = 2.0

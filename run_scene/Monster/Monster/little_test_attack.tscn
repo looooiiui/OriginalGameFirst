@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://orf36j6d3jdr"]
+
+[ext_resource type="PackedScene" uid="uid://5qjlc4504hji" path="res://run_scene/little_test_attack.tscn" id="1_v73oc"]
+
+[node name="littleTestAttack" unique_id=2081301322 instance=ExtResource("1_v73oc")]

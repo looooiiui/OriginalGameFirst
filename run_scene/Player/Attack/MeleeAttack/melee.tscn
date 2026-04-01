@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bfjuuuxln1246"]
+
+[ext_resource type="Script" uid="uid://dqi0812ju4062" path="res://code/Player_code/hit_code/Melee/melee.gd" id="1_mcb6p"]
+[ext_resource type="Script" uid="uid://dyrywpuny0ghc" path="res://code/Player_code/hit_code/Melee/meleeSelf.gd" id="2_mcb6p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tat4o"]
+size = Vector2(196, 206)
+
+[node name="Melee" type="Node2D" unique_id=545924230 node_paths=PackedStringArray("MeleeTime")]
+script = ExtResource("1_mcb6p")
+MeleeTime = NodePath("MeleeTime")
+
+[node name="Melee" type="Area2D" parent="." unique_id=1633319372 node_paths=PackedStringArray("NodeUp") groups=["Attack"]]
+script = ExtResource("2_mcb6p")
+NodeUp = NodePath("..")
+
+[node name="melee" type="CollisionShape2D" parent="Melee" unique_id=363509472 groups=["Attack"]]
+position = Vector2(1, -2)
+shape = SubResource("RectangleShape2D_tat4o")
+
+[node name="MeleeTime" type="Timer" parent="." unique_id=697067011]
+wait_time = 0.1
+one_shot = true
+
+[connection signal="area_entered" from="Melee" to="." method="_start_Attack"]

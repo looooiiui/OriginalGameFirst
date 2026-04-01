@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://bprl8dx31ravk"]
+
+[ext_resource type="Script" uid="uid://cc47sqpfbtrmv" path="res://code/Level/level1/level1Code/node_2d.gd" id="1_7cjf1"]
+[ext_resource type="PackedScene" uid="uid://orf36j6d3jdr" path="res://run_scene/Monster/Monster/little_test_attack.tscn" id="2_26kyx"]
+[ext_resource type="PackedScene" uid="uid://d4ds5gy3wchlo" path="res://run_scene/Monster/Monster/bee_Little.tscn" id="3_df5nh"]
+[ext_resource type="PackedScene" uid="uid://dcsixevurqusm" path="res://run_scene/Monster/Monster_little/little_test_attack.tscn" id="4_1047g"]
+[ext_resource type="PackedScene" uid="uid://pq4o5xiiefr6" path="res://run_scene/Ground/ground/GroundSecond.tscn" id="4_pj26h"]
+[ext_resource type="PackedScene" uid="uid://dc7bl1wk231e2" path="res://run_scene/Monster/MonsterOriginal/Monster_bee/little_test_attack.tscn" id="5_a6yv4"]
+[ext_resource type="PackedScene" uid="uid://dcp124hdiqni5" path="res://run_scene/Mouse/CrossHair/cross_hair.tscn" id="6_mee3q"]
+[ext_resource type="PackedScene" uid="uid://cfvsstix4qysv" path="res://run_scene/Player/Model/player_model_Third.tscn" id="7_df5nh"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_7cjf1"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_df5nh"]
+
+[node name="Game" type="Node2D" unique_id=336292926]
+script = ExtResource("1_7cjf1")
+MonsterKind = Array[PackedScene]([ExtResource("2_26kyx"), ExtResource("3_df5nh"), ExtResource("4_1047g"), ExtResource("5_a6yv4")])
+
+[node name="BackGround" type="Node2D" parent="." unique_id=258372766]
+position = Vector2(0, -1)
+
+[node name="Ground" type="Node2D" parent="BackGround" unique_id=953153553]
+modulate = Color(0.18429786, 0.62503296, 0.41687527, 1)
+position = Vector2(0, 3)
+
+[node name="MORE" parent="BackGround/Ground" unique_id=1583437004 instance=ExtResource("4_pj26h")]
+
+[node name="MORE2" parent="BackGround/Ground" unique_id=1730675697 instance=ExtResource("4_pj26h")]
+position = Vector2(2048, 0)
+
+[node name="MORE3" parent="BackGround/Ground" unique_id=1588990922 instance=ExtResource("4_pj26h")]
+position = Vector2(0, -2048)
+
+[node name="MORE4" parent="BackGround/Ground" unique_id=302856406 instance=ExtResource("4_pj26h")]
+position = Vector2(2048, -2048)
+
+[node name="worldboundry" type="StaticBody2D" parent="." unique_id=1472725290]
+
+[node name="down" type="CollisionShape2D" parent="worldboundry" unique_id=1514702009]
+position = Vector2(944, 978)
+shape = SubResource("WorldBoundaryShape2D_7cjf1")
+
+[node name="right" type="CollisionShape2D" parent="worldboundry" unique_id=921240015]
+position = Vector2(3056, -1294)
+rotation = -1.5707964
+shape = SubResource("WorldBoundaryShape2D_7cjf1")
+
+[node name="left" type="CollisionShape2D" parent="worldboundry" unique_id=1689097649]
+position = Vector2(-1040, -1262)
+rotation = 1.5707964
+shape = SubResource("WorldBoundaryShape2D_7cjf1")
+
+[node name="up" type="CollisionShape2D" parent="worldboundry" unique_id=1999231835]
+position = Vector2(1008, -3118)
+rotation = 3.1415927
+shape = SubResource("WorldBoundaryShape2D_7cjf1")
+
+[node name="Boundary" type="Node2D" parent="worldboundry" unique_id=936057123]
+
+[node name="Boundary" type="Sprite2D" parent="worldboundry/Boundary" unique_id=490460482]
+modulate = Color(0.92941177, 0.7882353, 0, 1)
+position = Vector2(-1059.0001, -1069.5)
+scale = Vector2(40, 4173.0005)
+texture = SubResource("CanvasTexture_df5nh")
+
+[node name="Boundary2" type="Sprite2D" parent="worldboundry/Boundary" unique_id=1862274417]
+modulate = Color(0.92941177, 0.7882353, 0, 1)
+position = Vector2(1026.0032, 997)
+rotation = 1.5707964
+scale = Vector2(40, 4140.0063)
+texture = SubResource("CanvasTexture_df5nh")
+
+[node name="Boundary3" type="Sprite2D" parent="worldboundry/Boundary" unique_id=1164501654]
+modulate = Color(0.92941177, 0.7882353, 0, 1)
+position = Vector2(3076, -1077.7976)
+rotation = 3.1415927
+scale = Vector2(40, 4156.411)
+texture = SubResource("CanvasTexture_df5nh")
+
+[node name="Boundary4" type="Sprite2D" parent="worldboundry/Boundary" unique_id=1628945674]
+modulate = Color(0.92941177, 0.7882353, 0, 1)
+position = Vector2(1000.08716, -3136)
+rotation = 1.5707964
+scale = Vector2(40, 4143.871)
+texture = SubResource("CanvasTexture_df5nh")
+
+[node name="PlayerModel" parent="." unique_id=943498406 instance=ExtResource("7_df5nh")]
+
+[node name="CrossHair" parent="." unique_id=1643887314 instance=ExtResource("6_mee3q")]
+
+[node name="MonsterManager" type="Node2D" parent="." unique_id=1550148298]
+
+[node name="MonsterNum" type="Node2D" parent="MonsterManager" unique_id=358441480]
+unique_name_in_owner = true

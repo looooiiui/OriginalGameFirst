@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://d15yrq0kwx1fx"]
+
+[ext_resource type="Script" uid="uid://cd3ea7f7p8l2x" path="res://code/Mouse/Hit/MouseHit.gd" id="1_qg6ap"]
+[ext_resource type="PackedScene" uid="uid://c7rnfer1c7e3h" path="res://run_scene/Mouse/MouseHit/MouseHit.tscn" id="2_tqbp4"]
+
+[node name="MouseHitEffect" type="Node2D" unique_id=1986707462]
+script = ExtResource("1_qg6ap")
+MouseHit = ExtResource("2_tqbp4")

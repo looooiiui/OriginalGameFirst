@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://d4ds5gy3wchlo"]
+
+[ext_resource type="PackedScene" uid="uid://dc7bl1wk231e2" path="res://run_scene/Monster/MonsterOriginal/Monster_bee/little_test_attack.tscn" id="1_p8ync"]
+[ext_resource type="Texture2D" uid="uid://dqla8smhvctag" path="res://Sprite/animationSprite/Monster/Monster_Second.png" id="2_3t2oe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3ta7m"]
+size = Vector2(219.99997, 91.428566)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_br3wn"]
+atlas = ExtResource("2_3t2oe")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5nl2"]
+atlas = ExtResource("2_3t2oe")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3x6wy"]
+atlas = ExtResource("2_3t2oe")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gdnln"]
+atlas = ExtResource("2_3t2oe")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4htxv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_br3wn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5nl2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3x6wy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gdnln")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[node name="BeeLittle" unique_id=2081301322 instance=ExtResource("1_p8ync")]
+
+[node name="theBody" parent="." index="1" unique_id=689537998]
+position = Vector2(-13.999997, 34)
+shape = SubResource("RectangleShape2D_3ta7m")
+
+[node name="Monster" parent="." index="3" unique_id=635967107]
+sprite_frames = SubResource("SpriteFrames_4htxv")
+autoplay = ""
+frame_progress = 0.56703717
+
+[node name="CollisionPolygon2D" parent="AnimatableBody2D" parent_id_path=PackedInt32Array(2045779071) index="0" unique_id=1289922064]
+position = Vector2(-14.000013, 35)
+scale = Vector2(6.625, 3.25)

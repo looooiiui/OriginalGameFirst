@@ -1,0 +1,4845 @@
+[gd_scene format=3 uid="uid://pq4o5xiiefr6"]
+
+[ext_resource type="Texture2D" uid="uid://c5vqdg8ahnbq4" path="res://Sprite/BACK/Back_UP.png" id="1_vn6uf"]
+
+[node name="MORE" type="Node2D" unique_id=1583437004]
+
+[node name="MoreGreat" type="Node2D" parent="." unique_id=1661155444]
+position = Vector2(-392, -247)
+
+[node name="Great" type="Node2D" parent="MoreGreat" unique_id=697042636]
+
+[node name="More" type="Node2D" parent="MoreGreat/Great" unique_id=197580659]
+
+[node name="Ground" type="Node2D" parent="MoreGreat/Great/More" unique_id=1049816508]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great/More/Ground" unique_id=351451867]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great/More/Ground" unique_id=2015258659]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great/More/Ground" unique_id=200516867]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great/More/Ground" unique_id=1842066800]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat/Great/More" unique_id=1803887277]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great/More/Ground2" unique_id=1985350617]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great/More/Ground2" unique_id=1680221044]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great/More/Ground2" unique_id=693519760]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great/More/Ground2" unique_id=664904358]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat/Great/More" unique_id=2007672182]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great/More/Ground3" unique_id=1626064036]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great/More/Ground3" unique_id=1964717692]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great/More/Ground3" unique_id=1232032526]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great/More/Ground3" unique_id=481225098]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat/Great/More" unique_id=851358428]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great/More/Ground4" unique_id=2009748975]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great/More/Ground4" unique_id=112205994]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great/More/Ground4" unique_id=1455865321]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great/More/Ground4" unique_id=1712968244]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More2" type="Node2D" parent="MoreGreat/Great" unique_id=787473899]
+position = Vector2(0, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat/Great/More2" unique_id=1919409493]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great/More2/Ground" unique_id=516113555]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great/More2/Ground" unique_id=1352143576]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great/More2/Ground" unique_id=1854969191]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great/More2/Ground" unique_id=1200500183]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat/Great/More2" unique_id=977377821]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great/More2/Ground2" unique_id=133700203]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great/More2/Ground2" unique_id=644183464]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great/More2/Ground2" unique_id=1614293592]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great/More2/Ground2" unique_id=503822240]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat/Great/More2" unique_id=1800144699]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great/More2/Ground3" unique_id=1727496101]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great/More2/Ground3" unique_id=1508770432]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great/More2/Ground3" unique_id=1258163252]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great/More2/Ground3" unique_id=1659630221]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat/Great/More2" unique_id=1773459992]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great/More2/Ground4" unique_id=1345141811]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great/More2/Ground4" unique_id=880195171]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great/More2/Ground4" unique_id=1614876362]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great/More2/Ground4" unique_id=92503285]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More3" type="Node2D" parent="MoreGreat/Great" unique_id=81166405]
+position = Vector2(-256, 0)
+
+[node name="Ground" type="Node2D" parent="MoreGreat/Great/More3" unique_id=1724522601]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great/More3/Ground" unique_id=1569442683]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great/More3/Ground" unique_id=327743583]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great/More3/Ground" unique_id=2116596938]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great/More3/Ground" unique_id=1879013016]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat/Great/More3" unique_id=1592304503]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great/More3/Ground2" unique_id=1673783324]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great/More3/Ground2" unique_id=1738077279]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great/More3/Ground2" unique_id=1004627393]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great/More3/Ground2" unique_id=1754963996]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat/Great/More3" unique_id=37233599]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great/More3/Ground3" unique_id=1748335971]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great/More3/Ground3" unique_id=1257223851]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great/More3/Ground3" unique_id=823619242]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great/More3/Ground3" unique_id=208477031]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat/Great/More3" unique_id=768481589]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great/More3/Ground4" unique_id=1474116779]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great/More3/Ground4" unique_id=608588581]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great/More3/Ground4" unique_id=642838050]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great/More3/Ground4" unique_id=1432482394]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More4" type="Node2D" parent="MoreGreat/Great" unique_id=2082317857]
+position = Vector2(-256, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat/Great/More4" unique_id=567045146]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great/More4/Ground" unique_id=1577526711]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great/More4/Ground" unique_id=332863374]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great/More4/Ground" unique_id=163990093]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great/More4/Ground" unique_id=2113442374]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat/Great/More4" unique_id=368473482]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great/More4/Ground2" unique_id=381313733]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great/More4/Ground2" unique_id=1646790980]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great/More4/Ground2" unique_id=51163072]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great/More4/Ground2" unique_id=1542712824]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat/Great/More4" unique_id=536088875]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great/More4/Ground3" unique_id=1659156278]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great/More4/Ground3" unique_id=662359061]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great/More4/Ground3" unique_id=1315529181]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great/More4/Ground3" unique_id=1531435175]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat/Great/More4" unique_id=64565882]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great/More4/Ground4" unique_id=443193940]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great/More4/Ground4" unique_id=2090653531]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great/More4/Ground4" unique_id=2057804592]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great/More4/Ground4" unique_id=802349513]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Great2" type="Node2D" parent="MoreGreat" unique_id=1157655289]
+position = Vector2(0, -512)
+
+[node name="More" type="Node2D" parent="MoreGreat/Great2" unique_id=419047667]
+
+[node name="Ground" type="Node2D" parent="MoreGreat/Great2/More" unique_id=1131612475]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great2/More/Ground" unique_id=1715224470]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great2/More/Ground" unique_id=504216893]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great2/More/Ground" unique_id=1066310543]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great2/More/Ground" unique_id=1322002438]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat/Great2/More" unique_id=1134084493]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great2/More/Ground2" unique_id=648484715]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great2/More/Ground2" unique_id=749821692]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great2/More/Ground2" unique_id=4175531]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great2/More/Ground2" unique_id=1285427732]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat/Great2/More" unique_id=393914126]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great2/More/Ground3" unique_id=347531524]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great2/More/Ground3" unique_id=340311119]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great2/More/Ground3" unique_id=558412030]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great2/More/Ground3" unique_id=1164875387]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat/Great2/More" unique_id=2042134873]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great2/More/Ground4" unique_id=872324403]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great2/More/Ground4" unique_id=845818144]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great2/More/Ground4" unique_id=187031737]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great2/More/Ground4" unique_id=1252733249]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More2" type="Node2D" parent="MoreGreat/Great2" unique_id=1913929684]
+position = Vector2(0, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat/Great2/More2" unique_id=391561343]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great2/More2/Ground" unique_id=925233085]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great2/More2/Ground" unique_id=1253747376]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great2/More2/Ground" unique_id=1010420560]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great2/More2/Ground" unique_id=1991937780]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat/Great2/More2" unique_id=221005691]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great2/More2/Ground2" unique_id=1801791369]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great2/More2/Ground2" unique_id=1272379185]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great2/More2/Ground2" unique_id=252383784]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great2/More2/Ground2" unique_id=620606377]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat/Great2/More2" unique_id=1177012390]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great2/More2/Ground3" unique_id=1710001427]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great2/More2/Ground3" unique_id=1494165235]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great2/More2/Ground3" unique_id=2017149782]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great2/More2/Ground3" unique_id=1419284049]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat/Great2/More2" unique_id=1399613412]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great2/More2/Ground4" unique_id=588199387]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great2/More2/Ground4" unique_id=2021641257]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great2/More2/Ground4" unique_id=213837029]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great2/More2/Ground4" unique_id=2094953272]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More3" type="Node2D" parent="MoreGreat/Great2" unique_id=1237822000]
+position = Vector2(-256, 0)
+
+[node name="Ground" type="Node2D" parent="MoreGreat/Great2/More3" unique_id=2084238872]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great2/More3/Ground" unique_id=80166922]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great2/More3/Ground" unique_id=1968527095]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great2/More3/Ground" unique_id=1266260790]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great2/More3/Ground" unique_id=1437327300]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat/Great2/More3" unique_id=1474893410]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great2/More3/Ground2" unique_id=1726016111]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great2/More3/Ground2" unique_id=482106162]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great2/More3/Ground2" unique_id=2100390715]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great2/More3/Ground2" unique_id=914554384]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat/Great2/More3" unique_id=725959501]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great2/More3/Ground3" unique_id=1946914238]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great2/More3/Ground3" unique_id=993139033]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great2/More3/Ground3" unique_id=1762054447]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great2/More3/Ground3" unique_id=1805310854]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat/Great2/More3" unique_id=2026719873]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great2/More3/Ground4" unique_id=1233825265]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great2/More3/Ground4" unique_id=1723403812]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great2/More3/Ground4" unique_id=798080979]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great2/More3/Ground4" unique_id=1416307128]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More4" type="Node2D" parent="MoreGreat/Great2" unique_id=1900597294]
+position = Vector2(-256, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat/Great2/More4" unique_id=1663180397]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great2/More4/Ground" unique_id=1621253360]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great2/More4/Ground" unique_id=238522414]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great2/More4/Ground" unique_id=1529624916]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great2/More4/Ground" unique_id=1664318127]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat/Great2/More4" unique_id=635362595]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great2/More4/Ground2" unique_id=1581396143]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great2/More4/Ground2" unique_id=1759524098]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great2/More4/Ground2" unique_id=471371818]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great2/More4/Ground2" unique_id=1677584918]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat/Great2/More4" unique_id=1198478578]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great2/More4/Ground3" unique_id=338217748]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great2/More4/Ground3" unique_id=819975168]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great2/More4/Ground3" unique_id=2007011910]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great2/More4/Ground3" unique_id=1945686818]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat/Great2/More4" unique_id=1083455778]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great2/More4/Ground4" unique_id=963554474]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great2/More4/Ground4" unique_id=983129728]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great2/More4/Ground4" unique_id=1612891570]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great2/More4/Ground4" unique_id=170806429]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Great3" type="Node2D" parent="MoreGreat" unique_id=2000788503]
+position = Vector2(512, 0)
+
+[node name="More" type="Node2D" parent="MoreGreat/Great3" unique_id=2009970301]
+
+[node name="Ground" type="Node2D" parent="MoreGreat/Great3/More" unique_id=690280416]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great3/More/Ground" unique_id=817812299]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great3/More/Ground" unique_id=1238062103]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great3/More/Ground" unique_id=1244113916]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great3/More/Ground" unique_id=1318841464]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat/Great3/More" unique_id=545363459]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great3/More/Ground2" unique_id=718126507]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great3/More/Ground2" unique_id=688638497]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great3/More/Ground2" unique_id=656876318]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great3/More/Ground2" unique_id=1390331712]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat/Great3/More" unique_id=1253660289]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great3/More/Ground3" unique_id=1832501076]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great3/More/Ground3" unique_id=1840240638]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great3/More/Ground3" unique_id=673863031]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great3/More/Ground3" unique_id=1865321724]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat/Great3/More" unique_id=1952912127]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great3/More/Ground4" unique_id=24640717]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great3/More/Ground4" unique_id=1969574749]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great3/More/Ground4" unique_id=1204356603]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great3/More/Ground4" unique_id=1658067050]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More2" type="Node2D" parent="MoreGreat/Great3" unique_id=276961550]
+position = Vector2(0, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat/Great3/More2" unique_id=1042316613]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great3/More2/Ground" unique_id=1706960356]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great3/More2/Ground" unique_id=795771869]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great3/More2/Ground" unique_id=1949034372]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great3/More2/Ground" unique_id=591178284]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat/Great3/More2" unique_id=1589952477]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great3/More2/Ground2" unique_id=213866740]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great3/More2/Ground2" unique_id=506518623]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great3/More2/Ground2" unique_id=873094289]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great3/More2/Ground2" unique_id=752743234]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat/Great3/More2" unique_id=315479180]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great3/More2/Ground3" unique_id=1617125559]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great3/More2/Ground3" unique_id=1594405611]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great3/More2/Ground3" unique_id=1861076661]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great3/More2/Ground3" unique_id=445063067]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat/Great3/More2" unique_id=1119736943]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great3/More2/Ground4" unique_id=745562435]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great3/More2/Ground4" unique_id=1574677726]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great3/More2/Ground4" unique_id=1475898699]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great3/More2/Ground4" unique_id=786376314]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More3" type="Node2D" parent="MoreGreat/Great3" unique_id=681366927]
+position = Vector2(-256, 0)
+
+[node name="Ground" type="Node2D" parent="MoreGreat/Great3/More3" unique_id=122820833]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great3/More3/Ground" unique_id=160182916]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great3/More3/Ground" unique_id=650216333]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great3/More3/Ground" unique_id=816149542]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great3/More3/Ground" unique_id=858072707]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat/Great3/More3" unique_id=908482848]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great3/More3/Ground2" unique_id=1538291642]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great3/More3/Ground2" unique_id=1059091593]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great3/More3/Ground2" unique_id=1828920940]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great3/More3/Ground2" unique_id=1121159491]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat/Great3/More3" unique_id=147682590]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great3/More3/Ground3" unique_id=1150986235]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great3/More3/Ground3" unique_id=1793005084]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great3/More3/Ground3" unique_id=531933069]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great3/More3/Ground3" unique_id=2060882465]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat/Great3/More3" unique_id=1240952621]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great3/More3/Ground4" unique_id=949673178]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great3/More3/Ground4" unique_id=1875077211]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great3/More3/Ground4" unique_id=1419559281]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great3/More3/Ground4" unique_id=1422954002]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More4" type="Node2D" parent="MoreGreat/Great3" unique_id=590220386]
+position = Vector2(-256, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat/Great3/More4" unique_id=256197904]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great3/More4/Ground" unique_id=2011957078]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great3/More4/Ground" unique_id=1685370865]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great3/More4/Ground" unique_id=613052395]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great3/More4/Ground" unique_id=363887904]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat/Great3/More4" unique_id=1141527381]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great3/More4/Ground2" unique_id=268281567]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great3/More4/Ground2" unique_id=1130851423]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great3/More4/Ground2" unique_id=120474074]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great3/More4/Ground2" unique_id=1228986506]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat/Great3/More4" unique_id=1502360861]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great3/More4/Ground3" unique_id=285653044]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great3/More4/Ground3" unique_id=2050534338]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great3/More4/Ground3" unique_id=932345261]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great3/More4/Ground3" unique_id=2023589371]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat/Great3/More4" unique_id=140977348]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great3/More4/Ground4" unique_id=1846762019]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great3/More4/Ground4" unique_id=1154971614]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great3/More4/Ground4" unique_id=702181031]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great3/More4/Ground4" unique_id=417463496]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Great4" type="Node2D" parent="MoreGreat" unique_id=1812931358]
+position = Vector2(512, -512)
+
+[node name="More" type="Node2D" parent="MoreGreat/Great4" unique_id=549590220]
+
+[node name="Ground" type="Node2D" parent="MoreGreat/Great4/More" unique_id=365100347]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great4/More/Ground" unique_id=1775341260]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great4/More/Ground" unique_id=1621355589]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great4/More/Ground" unique_id=1285946231]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great4/More/Ground" unique_id=1742760307]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat/Great4/More" unique_id=1010772253]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great4/More/Ground2" unique_id=1185409962]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great4/More/Ground2" unique_id=1116225668]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great4/More/Ground2" unique_id=616854058]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great4/More/Ground2" unique_id=1169978776]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat/Great4/More" unique_id=1871692651]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great4/More/Ground3" unique_id=358192726]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great4/More/Ground3" unique_id=2098739568]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great4/More/Ground3" unique_id=217495894]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great4/More/Ground3" unique_id=2071613105]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat/Great4/More" unique_id=30011418]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great4/More/Ground4" unique_id=498623376]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great4/More/Ground4" unique_id=1736967384]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great4/More/Ground4" unique_id=418314053]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great4/More/Ground4" unique_id=541445870]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More2" type="Node2D" parent="MoreGreat/Great4" unique_id=1362511172]
+position = Vector2(0, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat/Great4/More2" unique_id=700622133]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great4/More2/Ground" unique_id=2027276306]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great4/More2/Ground" unique_id=1896679910]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great4/More2/Ground" unique_id=179621215]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great4/More2/Ground" unique_id=1099898881]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat/Great4/More2" unique_id=1933924289]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great4/More2/Ground2" unique_id=433686921]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great4/More2/Ground2" unique_id=266350041]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great4/More2/Ground2" unique_id=1388889027]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great4/More2/Ground2" unique_id=448980573]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat/Great4/More2" unique_id=1987313491]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great4/More2/Ground3" unique_id=266318055]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great4/More2/Ground3" unique_id=129738660]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great4/More2/Ground3" unique_id=73110849]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great4/More2/Ground3" unique_id=171453919]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat/Great4/More2" unique_id=1197380472]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great4/More2/Ground4" unique_id=447632571]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great4/More2/Ground4" unique_id=1153366805]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great4/More2/Ground4" unique_id=1819453729]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great4/More2/Ground4" unique_id=1685257977]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More3" type="Node2D" parent="MoreGreat/Great4" unique_id=1678215376]
+position = Vector2(-256, 0)
+
+[node name="Ground" type="Node2D" parent="MoreGreat/Great4/More3" unique_id=1529749752]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great4/More3/Ground" unique_id=1727780046]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great4/More3/Ground" unique_id=200918121]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great4/More3/Ground" unique_id=1121312802]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great4/More3/Ground" unique_id=576483190]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat/Great4/More3" unique_id=768133337]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great4/More3/Ground2" unique_id=323328882]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great4/More3/Ground2" unique_id=1662509965]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great4/More3/Ground2" unique_id=466648525]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great4/More3/Ground2" unique_id=1206990695]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat/Great4/More3" unique_id=668638545]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great4/More3/Ground3" unique_id=683945933]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great4/More3/Ground3" unique_id=1982248268]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great4/More3/Ground3" unique_id=149665428]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great4/More3/Ground3" unique_id=321744183]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat/Great4/More3" unique_id=1768200730]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great4/More3/Ground4" unique_id=798163412]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great4/More3/Ground4" unique_id=655231590]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great4/More3/Ground4" unique_id=556037988]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great4/More3/Ground4" unique_id=1489356176]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More4" type="Node2D" parent="MoreGreat/Great4" unique_id=1769177489]
+position = Vector2(-256, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat/Great4/More4" unique_id=631323696]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great4/More4/Ground" unique_id=1808048351]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great4/More4/Ground" unique_id=610864219]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great4/More4/Ground" unique_id=1016031846]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great4/More4/Ground" unique_id=1597950590]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat/Great4/More4" unique_id=2028783506]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great4/More4/Ground2" unique_id=1543220070]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great4/More4/Ground2" unique_id=1567372437]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great4/More4/Ground2" unique_id=1753462240]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great4/More4/Ground2" unique_id=1838764312]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat/Great4/More4" unique_id=1734009932]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great4/More4/Ground3" unique_id=2050687698]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great4/More4/Ground3" unique_id=944499146]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great4/More4/Ground3" unique_id=516737894]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great4/More4/Ground3" unique_id=1378982028]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat/Great4/More4" unique_id=962784252]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat/Great4/More4/Ground4" unique_id=578662685]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat/Great4/More4/Ground4" unique_id=861883610]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat/Great4/More4/Ground4" unique_id=1003052488]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat/Great4/More4/Ground4" unique_id=13281052]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="MoreGreat2" type="Node2D" parent="." unique_id=1412306621]
+position = Vector2(632, -247)
+
+[node name="Great" type="Node2D" parent="MoreGreat2" unique_id=1936254916]
+
+[node name="More" type="Node2D" parent="MoreGreat2/Great" unique_id=1632674838]
+
+[node name="Ground" type="Node2D" parent="MoreGreat2/Great/More" unique_id=378665518]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great/More/Ground" unique_id=1844664609]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great/More/Ground" unique_id=2043299061]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great/More/Ground" unique_id=1107400038]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great/More/Ground" unique_id=686457187]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat2/Great/More" unique_id=1437932447]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great/More/Ground2" unique_id=2044622117]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great/More/Ground2" unique_id=1663075635]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great/More/Ground2" unique_id=764436648]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great/More/Ground2" unique_id=1977927914]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat2/Great/More" unique_id=1732834516]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great/More/Ground3" unique_id=1445388359]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great/More/Ground3" unique_id=1249657272]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great/More/Ground3" unique_id=868935671]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great/More/Ground3" unique_id=220958213]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat2/Great/More" unique_id=1828022778]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great/More/Ground4" unique_id=1465945096]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great/More/Ground4" unique_id=1576992404]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great/More/Ground4" unique_id=705780388]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great/More/Ground4" unique_id=2127877935]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More2" type="Node2D" parent="MoreGreat2/Great" unique_id=811365772]
+position = Vector2(0, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat2/Great/More2" unique_id=1454070634]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great/More2/Ground" unique_id=1631967004]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great/More2/Ground" unique_id=479748539]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great/More2/Ground" unique_id=1204585460]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great/More2/Ground" unique_id=249243404]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat2/Great/More2" unique_id=922574879]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great/More2/Ground2" unique_id=535452]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great/More2/Ground2" unique_id=276176500]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great/More2/Ground2" unique_id=211240970]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great/More2/Ground2" unique_id=778429]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat2/Great/More2" unique_id=1239255634]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great/More2/Ground3" unique_id=1738344429]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great/More2/Ground3" unique_id=1062464975]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great/More2/Ground3" unique_id=1846833306]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great/More2/Ground3" unique_id=1060376946]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat2/Great/More2" unique_id=1115977579]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great/More2/Ground4" unique_id=650172621]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great/More2/Ground4" unique_id=1719330490]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great/More2/Ground4" unique_id=1551189948]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great/More2/Ground4" unique_id=1482869288]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More3" type="Node2D" parent="MoreGreat2/Great" unique_id=1943769476]
+position = Vector2(-256, 0)
+
+[node name="Ground" type="Node2D" parent="MoreGreat2/Great/More3" unique_id=741629971]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great/More3/Ground" unique_id=572142746]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great/More3/Ground" unique_id=1786785557]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great/More3/Ground" unique_id=2117313899]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great/More3/Ground" unique_id=1799910073]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat2/Great/More3" unique_id=1268109256]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great/More3/Ground2" unique_id=1227503763]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great/More3/Ground2" unique_id=479926253]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great/More3/Ground2" unique_id=528902162]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great/More3/Ground2" unique_id=1540078958]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat2/Great/More3" unique_id=842609925]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great/More3/Ground3" unique_id=133109600]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great/More3/Ground3" unique_id=1155387457]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great/More3/Ground3" unique_id=658769131]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great/More3/Ground3" unique_id=1063047441]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat2/Great/More3" unique_id=1632166546]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great/More3/Ground4" unique_id=121358605]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great/More3/Ground4" unique_id=1648160429]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great/More3/Ground4" unique_id=834821645]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great/More3/Ground4" unique_id=1806400393]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More4" type="Node2D" parent="MoreGreat2/Great" unique_id=59393842]
+position = Vector2(-256, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat2/Great/More4" unique_id=402731715]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great/More4/Ground" unique_id=2101407126]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great/More4/Ground" unique_id=1206070195]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great/More4/Ground" unique_id=972229389]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great/More4/Ground" unique_id=302692362]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat2/Great/More4" unique_id=804803865]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great/More4/Ground2" unique_id=1896441807]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great/More4/Ground2" unique_id=2103302783]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great/More4/Ground2" unique_id=1347923660]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great/More4/Ground2" unique_id=1328091807]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat2/Great/More4" unique_id=1639198966]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great/More4/Ground3" unique_id=1875751071]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great/More4/Ground3" unique_id=1295004736]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great/More4/Ground3" unique_id=1401361625]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great/More4/Ground3" unique_id=2038523410]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat2/Great/More4" unique_id=1373772125]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great/More4/Ground4" unique_id=1510347114]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great/More4/Ground4" unique_id=502462497]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great/More4/Ground4" unique_id=127321685]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great/More4/Ground4" unique_id=1253675139]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Great2" type="Node2D" parent="MoreGreat2" unique_id=822099490]
+position = Vector2(0, -512)
+
+[node name="More" type="Node2D" parent="MoreGreat2/Great2" unique_id=1382670158]
+
+[node name="Ground" type="Node2D" parent="MoreGreat2/Great2/More" unique_id=1451809276]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great2/More/Ground" unique_id=1141275131]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great2/More/Ground" unique_id=2014690467]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great2/More/Ground" unique_id=916564317]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great2/More/Ground" unique_id=843276607]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat2/Great2/More" unique_id=1505924533]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great2/More/Ground2" unique_id=1357758461]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great2/More/Ground2" unique_id=1412201723]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great2/More/Ground2" unique_id=1162007999]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great2/More/Ground2" unique_id=349282552]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat2/Great2/More" unique_id=852996709]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great2/More/Ground3" unique_id=1832651499]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great2/More/Ground3" unique_id=1812377489]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great2/More/Ground3" unique_id=546140997]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great2/More/Ground3" unique_id=1081246816]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat2/Great2/More" unique_id=948637905]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great2/More/Ground4" unique_id=65887766]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great2/More/Ground4" unique_id=1108011545]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great2/More/Ground4" unique_id=1400538990]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great2/More/Ground4" unique_id=1433124500]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More2" type="Node2D" parent="MoreGreat2/Great2" unique_id=771711383]
+position = Vector2(0, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat2/Great2/More2" unique_id=849539473]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great2/More2/Ground" unique_id=410946185]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great2/More2/Ground" unique_id=868219341]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great2/More2/Ground" unique_id=901185243]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great2/More2/Ground" unique_id=955395648]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat2/Great2/More2" unique_id=1381123401]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great2/More2/Ground2" unique_id=1336221919]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great2/More2/Ground2" unique_id=1643457008]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great2/More2/Ground2" unique_id=794182325]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great2/More2/Ground2" unique_id=1829559328]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat2/Great2/More2" unique_id=755982829]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great2/More2/Ground3" unique_id=1791596317]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great2/More2/Ground3" unique_id=1103255313]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great2/More2/Ground3" unique_id=953048810]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great2/More2/Ground3" unique_id=1986315120]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat2/Great2/More2" unique_id=612807449]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great2/More2/Ground4" unique_id=669265979]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great2/More2/Ground4" unique_id=34449697]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great2/More2/Ground4" unique_id=1466009910]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great2/More2/Ground4" unique_id=1387695181]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More3" type="Node2D" parent="MoreGreat2/Great2" unique_id=309854086]
+position = Vector2(-256, 0)
+
+[node name="Ground" type="Node2D" parent="MoreGreat2/Great2/More3" unique_id=733484649]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great2/More3/Ground" unique_id=1374512843]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great2/More3/Ground" unique_id=1076513304]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great2/More3/Ground" unique_id=1444754730]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great2/More3/Ground" unique_id=1694277211]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat2/Great2/More3" unique_id=2114470175]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great2/More3/Ground2" unique_id=1363958620]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great2/More3/Ground2" unique_id=1642513007]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great2/More3/Ground2" unique_id=1296910512]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great2/More3/Ground2" unique_id=7903049]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat2/Great2/More3" unique_id=1659322602]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great2/More3/Ground3" unique_id=642614629]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great2/More3/Ground3" unique_id=1155058400]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great2/More3/Ground3" unique_id=1580351631]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great2/More3/Ground3" unique_id=1018162929]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat2/Great2/More3" unique_id=1317175816]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great2/More3/Ground4" unique_id=1335120870]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great2/More3/Ground4" unique_id=2017889114]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great2/More3/Ground4" unique_id=1303128526]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great2/More3/Ground4" unique_id=916327041]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More4" type="Node2D" parent="MoreGreat2/Great2" unique_id=1800762247]
+position = Vector2(-256, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat2/Great2/More4" unique_id=275569345]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great2/More4/Ground" unique_id=713672525]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great2/More4/Ground" unique_id=833824336]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great2/More4/Ground" unique_id=70600526]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great2/More4/Ground" unique_id=725216727]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat2/Great2/More4" unique_id=125977154]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great2/More4/Ground2" unique_id=1571851022]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great2/More4/Ground2" unique_id=445852254]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great2/More4/Ground2" unique_id=570012429]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great2/More4/Ground2" unique_id=724942463]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat2/Great2/More4" unique_id=702056768]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great2/More4/Ground3" unique_id=719277344]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great2/More4/Ground3" unique_id=1513683205]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great2/More4/Ground3" unique_id=99728527]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great2/More4/Ground3" unique_id=1548630858]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat2/Great2/More4" unique_id=1742781363]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great2/More4/Ground4" unique_id=101895761]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great2/More4/Ground4" unique_id=1612792717]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great2/More4/Ground4" unique_id=1997777204]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great2/More4/Ground4" unique_id=1612434314]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Great3" type="Node2D" parent="MoreGreat2" unique_id=82849558]
+position = Vector2(512, 0)
+
+[node name="More" type="Node2D" parent="MoreGreat2/Great3" unique_id=2102853552]
+
+[node name="Ground" type="Node2D" parent="MoreGreat2/Great3/More" unique_id=899831296]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great3/More/Ground" unique_id=960492531]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great3/More/Ground" unique_id=2069819674]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great3/More/Ground" unique_id=2131959195]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great3/More/Ground" unique_id=396255625]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat2/Great3/More" unique_id=1748271464]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great3/More/Ground2" unique_id=500469908]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great3/More/Ground2" unique_id=1713507260]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great3/More/Ground2" unique_id=83136954]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great3/More/Ground2" unique_id=1700357652]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat2/Great3/More" unique_id=602132755]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great3/More/Ground3" unique_id=764849671]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great3/More/Ground3" unique_id=1678240435]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great3/More/Ground3" unique_id=464220213]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great3/More/Ground3" unique_id=1980159783]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat2/Great3/More" unique_id=949908235]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great3/More/Ground4" unique_id=902264876]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great3/More/Ground4" unique_id=1461336182]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great3/More/Ground4" unique_id=1278527578]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great3/More/Ground4" unique_id=1177132483]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More2" type="Node2D" parent="MoreGreat2/Great3" unique_id=877795609]
+position = Vector2(0, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat2/Great3/More2" unique_id=476948247]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great3/More2/Ground" unique_id=1602541439]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great3/More2/Ground" unique_id=475380514]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great3/More2/Ground" unique_id=1424417163]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great3/More2/Ground" unique_id=1789883444]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat2/Great3/More2" unique_id=829261736]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great3/More2/Ground2" unique_id=904176518]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great3/More2/Ground2" unique_id=1947570690]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great3/More2/Ground2" unique_id=1269378767]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great3/More2/Ground2" unique_id=151472361]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat2/Great3/More2" unique_id=1678872448]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great3/More2/Ground3" unique_id=2044635729]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great3/More2/Ground3" unique_id=2109870580]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great3/More2/Ground3" unique_id=201608079]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great3/More2/Ground3" unique_id=139702256]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat2/Great3/More2" unique_id=751316872]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great3/More2/Ground4" unique_id=1683212795]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great3/More2/Ground4" unique_id=905885619]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great3/More2/Ground4" unique_id=1712480990]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great3/More2/Ground4" unique_id=1866561690]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More3" type="Node2D" parent="MoreGreat2/Great3" unique_id=1102016928]
+position = Vector2(-256, 0)
+
+[node name="Ground" type="Node2D" parent="MoreGreat2/Great3/More3" unique_id=325581468]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great3/More3/Ground" unique_id=1564824176]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great3/More3/Ground" unique_id=2098953723]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great3/More3/Ground" unique_id=2049311995]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great3/More3/Ground" unique_id=1131348903]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat2/Great3/More3" unique_id=52195204]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great3/More3/Ground2" unique_id=1677942361]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great3/More3/Ground2" unique_id=742941455]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great3/More3/Ground2" unique_id=1826114708]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great3/More3/Ground2" unique_id=1135601623]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat2/Great3/More3" unique_id=1942811941]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great3/More3/Ground3" unique_id=863519497]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great3/More3/Ground3" unique_id=514166653]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great3/More3/Ground3" unique_id=3505130]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great3/More3/Ground3" unique_id=1796646077]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat2/Great3/More3" unique_id=503327887]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great3/More3/Ground4" unique_id=2111077478]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great3/More3/Ground4" unique_id=309209571]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great3/More3/Ground4" unique_id=922821038]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great3/More3/Ground4" unique_id=908043960]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More4" type="Node2D" parent="MoreGreat2/Great3" unique_id=162880839]
+position = Vector2(-256, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat2/Great3/More4" unique_id=1640214665]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great3/More4/Ground" unique_id=1649552928]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great3/More4/Ground" unique_id=1449198009]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great3/More4/Ground" unique_id=1704495469]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great3/More4/Ground" unique_id=152814556]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat2/Great3/More4" unique_id=1949776704]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great3/More4/Ground2" unique_id=903063388]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great3/More4/Ground2" unique_id=1174252972]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great3/More4/Ground2" unique_id=115711422]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great3/More4/Ground2" unique_id=1153792310]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat2/Great3/More4" unique_id=1970474627]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great3/More4/Ground3" unique_id=51387264]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great3/More4/Ground3" unique_id=1739167032]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great3/More4/Ground3" unique_id=240918166]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great3/More4/Ground3" unique_id=709231862]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat2/Great3/More4" unique_id=1122038501]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great3/More4/Ground4" unique_id=190441485]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great3/More4/Ground4" unique_id=482001024]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great3/More4/Ground4" unique_id=1195327700]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great3/More4/Ground4" unique_id=912048202]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Great4" type="Node2D" parent="MoreGreat2" unique_id=1109882692]
+position = Vector2(512, -512)
+
+[node name="More" type="Node2D" parent="MoreGreat2/Great4" unique_id=1283689265]
+
+[node name="Ground" type="Node2D" parent="MoreGreat2/Great4/More" unique_id=110335749]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great4/More/Ground" unique_id=297731088]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great4/More/Ground" unique_id=378685430]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great4/More/Ground" unique_id=2138583966]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great4/More/Ground" unique_id=401274307]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat2/Great4/More" unique_id=1911091285]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great4/More/Ground2" unique_id=1249565076]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great4/More/Ground2" unique_id=669389907]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great4/More/Ground2" unique_id=1084807669]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great4/More/Ground2" unique_id=613960538]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat2/Great4/More" unique_id=20053114]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great4/More/Ground3" unique_id=1258530339]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great4/More/Ground3" unique_id=1111847492]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great4/More/Ground3" unique_id=1900550912]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great4/More/Ground3" unique_id=1560567579]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat2/Great4/More" unique_id=1032798277]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great4/More/Ground4" unique_id=1351305042]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great4/More/Ground4" unique_id=864561862]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great4/More/Ground4" unique_id=660676117]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great4/More/Ground4" unique_id=285856015]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More2" type="Node2D" parent="MoreGreat2/Great4" unique_id=1961084318]
+position = Vector2(0, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat2/Great4/More2" unique_id=1414946335]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great4/More2/Ground" unique_id=1845014459]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great4/More2/Ground" unique_id=830472482]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great4/More2/Ground" unique_id=1096572704]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great4/More2/Ground" unique_id=1767581657]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat2/Great4/More2" unique_id=487317761]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great4/More2/Ground2" unique_id=1804542568]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great4/More2/Ground2" unique_id=489605817]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great4/More2/Ground2" unique_id=168690763]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great4/More2/Ground2" unique_id=1357859583]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat2/Great4/More2" unique_id=1678906639]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great4/More2/Ground3" unique_id=681448584]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great4/More2/Ground3" unique_id=802443401]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great4/More2/Ground3" unique_id=974386073]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great4/More2/Ground3" unique_id=1930798235]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat2/Great4/More2" unique_id=1713308840]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great4/More2/Ground4" unique_id=1091635124]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great4/More2/Ground4" unique_id=1443695922]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great4/More2/Ground4" unique_id=342375463]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great4/More2/Ground4" unique_id=1440915852]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More3" type="Node2D" parent="MoreGreat2/Great4" unique_id=1077086977]
+position = Vector2(-256, 0)
+
+[node name="Ground" type="Node2D" parent="MoreGreat2/Great4/More3" unique_id=520512342]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great4/More3/Ground" unique_id=2141929167]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great4/More3/Ground" unique_id=1230815707]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great4/More3/Ground" unique_id=1223164569]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great4/More3/Ground" unique_id=1640530046]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat2/Great4/More3" unique_id=1042052585]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great4/More3/Ground2" unique_id=1507111280]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great4/More3/Ground2" unique_id=1861178688]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great4/More3/Ground2" unique_id=597636602]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great4/More3/Ground2" unique_id=1122835713]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat2/Great4/More3" unique_id=1715754819]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great4/More3/Ground3" unique_id=819707914]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great4/More3/Ground3" unique_id=1968276181]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great4/More3/Ground3" unique_id=179332749]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great4/More3/Ground3" unique_id=352543184]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat2/Great4/More3" unique_id=1225996949]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great4/More3/Ground4" unique_id=446234223]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great4/More3/Ground4" unique_id=873436090]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great4/More3/Ground4" unique_id=346318248]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great4/More3/Ground4" unique_id=1326313615]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More4" type="Node2D" parent="MoreGreat2/Great4" unique_id=1119638692]
+position = Vector2(-256, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat2/Great4/More4" unique_id=1299967027]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great4/More4/Ground" unique_id=686385806]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great4/More4/Ground" unique_id=1820740618]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great4/More4/Ground" unique_id=151650451]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great4/More4/Ground" unique_id=181354947]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat2/Great4/More4" unique_id=1999650621]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great4/More4/Ground2" unique_id=474621817]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great4/More4/Ground2" unique_id=63232387]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great4/More4/Ground2" unique_id=780154661]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great4/More4/Ground2" unique_id=2062288949]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat2/Great4/More4" unique_id=1889807205]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great4/More4/Ground3" unique_id=822430844]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great4/More4/Ground3" unique_id=1731581440]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great4/More4/Ground3" unique_id=1671285497]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great4/More4/Ground3" unique_id=386035854]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat2/Great4/More4" unique_id=673318321]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat2/Great4/More4/Ground4" unique_id=670259718]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat2/Great4/More4/Ground4" unique_id=1530552668]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat2/Great4/More4/Ground4" unique_id=1862584623]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat2/Great4/More4/Ground4" unique_id=1516212446]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="MoreGreat3" type="Node2D" parent="." unique_id=549516636]
+position = Vector2(-392, 777)
+
+[node name="Great" type="Node2D" parent="MoreGreat3" unique_id=960391261]
+
+[node name="More" type="Node2D" parent="MoreGreat3/Great" unique_id=588281165]
+
+[node name="Ground" type="Node2D" parent="MoreGreat3/Great/More" unique_id=1874558762]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great/More/Ground" unique_id=680867105]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great/More/Ground" unique_id=1480234845]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great/More/Ground" unique_id=99098237]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great/More/Ground" unique_id=1138989978]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat3/Great/More" unique_id=1372346121]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great/More/Ground2" unique_id=577777749]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great/More/Ground2" unique_id=1683030342]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great/More/Ground2" unique_id=1428208015]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great/More/Ground2" unique_id=831032987]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat3/Great/More" unique_id=484419871]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great/More/Ground3" unique_id=2076471940]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great/More/Ground3" unique_id=679214160]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great/More/Ground3" unique_id=1212622979]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great/More/Ground3" unique_id=303394239]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat3/Great/More" unique_id=192441108]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great/More/Ground4" unique_id=1042233297]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great/More/Ground4" unique_id=1063995547]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great/More/Ground4" unique_id=547050963]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great/More/Ground4" unique_id=2091464448]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More2" type="Node2D" parent="MoreGreat3/Great" unique_id=843818638]
+position = Vector2(0, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat3/Great/More2" unique_id=1158847539]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great/More2/Ground" unique_id=1032082800]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great/More2/Ground" unique_id=1613343152]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great/More2/Ground" unique_id=2138704847]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great/More2/Ground" unique_id=2033222524]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat3/Great/More2" unique_id=2134786275]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great/More2/Ground2" unique_id=1172474603]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great/More2/Ground2" unique_id=1897815011]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great/More2/Ground2" unique_id=377115806]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great/More2/Ground2" unique_id=1749613087]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat3/Great/More2" unique_id=111461074]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great/More2/Ground3" unique_id=1607350215]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great/More2/Ground3" unique_id=122577667]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great/More2/Ground3" unique_id=112125676]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great/More2/Ground3" unique_id=485986699]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat3/Great/More2" unique_id=357972189]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great/More2/Ground4" unique_id=547802518]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great/More2/Ground4" unique_id=439314110]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great/More2/Ground4" unique_id=6512054]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great/More2/Ground4" unique_id=1074674882]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More3" type="Node2D" parent="MoreGreat3/Great" unique_id=1871584005]
+position = Vector2(-256, 0)
+
+[node name="Ground" type="Node2D" parent="MoreGreat3/Great/More3" unique_id=1464325696]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great/More3/Ground" unique_id=20966269]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great/More3/Ground" unique_id=1650853037]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great/More3/Ground" unique_id=1458761562]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great/More3/Ground" unique_id=1549865475]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat3/Great/More3" unique_id=92385693]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great/More3/Ground2" unique_id=155896224]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great/More3/Ground2" unique_id=1921345882]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great/More3/Ground2" unique_id=1080519226]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great/More3/Ground2" unique_id=148132709]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat3/Great/More3" unique_id=1185083119]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great/More3/Ground3" unique_id=897430349]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great/More3/Ground3" unique_id=930030262]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great/More3/Ground3" unique_id=1005534892]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great/More3/Ground3" unique_id=443147679]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat3/Great/More3" unique_id=575822387]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great/More3/Ground4" unique_id=1021888701]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great/More3/Ground4" unique_id=1201154184]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great/More3/Ground4" unique_id=1020332025]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great/More3/Ground4" unique_id=1350994118]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More4" type="Node2D" parent="MoreGreat3/Great" unique_id=318100134]
+position = Vector2(-256, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat3/Great/More4" unique_id=1835633280]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great/More4/Ground" unique_id=11301]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great/More4/Ground" unique_id=1910019519]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great/More4/Ground" unique_id=1205238852]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great/More4/Ground" unique_id=1590960214]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat3/Great/More4" unique_id=257291778]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great/More4/Ground2" unique_id=1927184950]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great/More4/Ground2" unique_id=1525029503]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great/More4/Ground2" unique_id=539743041]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great/More4/Ground2" unique_id=1830956834]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat3/Great/More4" unique_id=316672980]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great/More4/Ground3" unique_id=1993738752]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great/More4/Ground3" unique_id=1814575908]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great/More4/Ground3" unique_id=616898545]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great/More4/Ground3" unique_id=29219842]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat3/Great/More4" unique_id=958494223]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great/More4/Ground4" unique_id=928980546]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great/More4/Ground4" unique_id=1722419813]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great/More4/Ground4" unique_id=716774247]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great/More4/Ground4" unique_id=807555066]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Great2" type="Node2D" parent="MoreGreat3" unique_id=835508119]
+position = Vector2(0, -512)
+
+[node name="More" type="Node2D" parent="MoreGreat3/Great2" unique_id=544235483]
+
+[node name="Ground" type="Node2D" parent="MoreGreat3/Great2/More" unique_id=222494949]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great2/More/Ground" unique_id=987839038]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great2/More/Ground" unique_id=1177604074]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great2/More/Ground" unique_id=1505909518]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great2/More/Ground" unique_id=1334662736]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat3/Great2/More" unique_id=1285252776]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great2/More/Ground2" unique_id=1722327438]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great2/More/Ground2" unique_id=1194518521]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great2/More/Ground2" unique_id=899261333]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great2/More/Ground2" unique_id=699321898]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat3/Great2/More" unique_id=1545330919]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great2/More/Ground3" unique_id=562302549]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great2/More/Ground3" unique_id=1914189842]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great2/More/Ground3" unique_id=1599835230]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great2/More/Ground3" unique_id=1267103335]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat3/Great2/More" unique_id=716610609]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great2/More/Ground4" unique_id=915031646]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great2/More/Ground4" unique_id=1110095250]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great2/More/Ground4" unique_id=1565224120]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great2/More/Ground4" unique_id=1808520894]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More2" type="Node2D" parent="MoreGreat3/Great2" unique_id=182816091]
+position = Vector2(0, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat3/Great2/More2" unique_id=815299799]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great2/More2/Ground" unique_id=1593213652]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great2/More2/Ground" unique_id=1947951507]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great2/More2/Ground" unique_id=904071044]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great2/More2/Ground" unique_id=1553975249]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat3/Great2/More2" unique_id=106426175]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great2/More2/Ground2" unique_id=2022807217]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great2/More2/Ground2" unique_id=592807014]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great2/More2/Ground2" unique_id=250916640]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great2/More2/Ground2" unique_id=452752947]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat3/Great2/More2" unique_id=601035718]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great2/More2/Ground3" unique_id=1146742179]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great2/More2/Ground3" unique_id=1142854748]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great2/More2/Ground3" unique_id=1425529251]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great2/More2/Ground3" unique_id=1632462693]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat3/Great2/More2" unique_id=331296267]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great2/More2/Ground4" unique_id=146107427]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great2/More2/Ground4" unique_id=1150173390]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great2/More2/Ground4" unique_id=1817246320]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great2/More2/Ground4" unique_id=1624824442]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More3" type="Node2D" parent="MoreGreat3/Great2" unique_id=1303011002]
+position = Vector2(-256, 0)
+
+[node name="Ground" type="Node2D" parent="MoreGreat3/Great2/More3" unique_id=319228246]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great2/More3/Ground" unique_id=233014713]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great2/More3/Ground" unique_id=888075570]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great2/More3/Ground" unique_id=1593655962]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great2/More3/Ground" unique_id=609194099]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat3/Great2/More3" unique_id=1722878585]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great2/More3/Ground2" unique_id=208475268]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great2/More3/Ground2" unique_id=1080171365]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great2/More3/Ground2" unique_id=1482205292]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great2/More3/Ground2" unique_id=1281690838]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat3/Great2/More3" unique_id=1759428427]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great2/More3/Ground3" unique_id=2028544422]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great2/More3/Ground3" unique_id=92428955]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great2/More3/Ground3" unique_id=1234578535]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great2/More3/Ground3" unique_id=967138737]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat3/Great2/More3" unique_id=891556671]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great2/More3/Ground4" unique_id=1842522503]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great2/More3/Ground4" unique_id=1620674228]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great2/More3/Ground4" unique_id=1953308295]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great2/More3/Ground4" unique_id=1384781244]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More4" type="Node2D" parent="MoreGreat3/Great2" unique_id=1954682328]
+position = Vector2(-256, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat3/Great2/More4" unique_id=883508824]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great2/More4/Ground" unique_id=1469355902]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great2/More4/Ground" unique_id=1366819304]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great2/More4/Ground" unique_id=811608420]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great2/More4/Ground" unique_id=1544121276]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat3/Great2/More4" unique_id=1338875489]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great2/More4/Ground2" unique_id=1739380265]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great2/More4/Ground2" unique_id=917277055]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great2/More4/Ground2" unique_id=1067028641]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great2/More4/Ground2" unique_id=431133344]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat3/Great2/More4" unique_id=281460593]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great2/More4/Ground3" unique_id=7571502]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great2/More4/Ground3" unique_id=939373609]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great2/More4/Ground3" unique_id=126218328]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great2/More4/Ground3" unique_id=1724685260]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat3/Great2/More4" unique_id=2126134775]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great2/More4/Ground4" unique_id=46840758]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great2/More4/Ground4" unique_id=1626321455]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great2/More4/Ground4" unique_id=229523214]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great2/More4/Ground4" unique_id=1736856582]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Great3" type="Node2D" parent="MoreGreat3" unique_id=1956913182]
+position = Vector2(512, 0)
+
+[node name="More" type="Node2D" parent="MoreGreat3/Great3" unique_id=1755661538]
+
+[node name="Ground" type="Node2D" parent="MoreGreat3/Great3/More" unique_id=820158217]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great3/More/Ground" unique_id=103923574]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great3/More/Ground" unique_id=2086181753]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great3/More/Ground" unique_id=860166048]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great3/More/Ground" unique_id=1483433063]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat3/Great3/More" unique_id=212231964]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great3/More/Ground2" unique_id=438336194]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great3/More/Ground2" unique_id=1912316882]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great3/More/Ground2" unique_id=65445983]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great3/More/Ground2" unique_id=321421149]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat3/Great3/More" unique_id=847740157]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great3/More/Ground3" unique_id=1111802468]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great3/More/Ground3" unique_id=1583113706]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great3/More/Ground3" unique_id=1166336257]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great3/More/Ground3" unique_id=267821255]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat3/Great3/More" unique_id=393552362]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great3/More/Ground4" unique_id=713053392]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great3/More/Ground4" unique_id=277473452]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great3/More/Ground4" unique_id=1102817939]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great3/More/Ground4" unique_id=1597125844]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More2" type="Node2D" parent="MoreGreat3/Great3" unique_id=1468390518]
+position = Vector2(0, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat3/Great3/More2" unique_id=1910899065]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great3/More2/Ground" unique_id=747085127]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great3/More2/Ground" unique_id=1188101807]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great3/More2/Ground" unique_id=1819912857]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great3/More2/Ground" unique_id=138831154]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat3/Great3/More2" unique_id=134318618]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great3/More2/Ground2" unique_id=2036451448]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great3/More2/Ground2" unique_id=1330747773]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great3/More2/Ground2" unique_id=1588774975]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great3/More2/Ground2" unique_id=337838701]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat3/Great3/More2" unique_id=2102057563]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great3/More2/Ground3" unique_id=1837389975]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great3/More2/Ground3" unique_id=1445220270]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great3/More2/Ground3" unique_id=844088670]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great3/More2/Ground3" unique_id=674489679]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat3/Great3/More2" unique_id=318108266]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great3/More2/Ground4" unique_id=2055998535]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great3/More2/Ground4" unique_id=1393675612]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great3/More2/Ground4" unique_id=492636301]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great3/More2/Ground4" unique_id=975830631]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More3" type="Node2D" parent="MoreGreat3/Great3" unique_id=1509800806]
+position = Vector2(-256, 0)
+
+[node name="Ground" type="Node2D" parent="MoreGreat3/Great3/More3" unique_id=1017522316]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great3/More3/Ground" unique_id=1099320086]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great3/More3/Ground" unique_id=1145840257]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great3/More3/Ground" unique_id=1275729967]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great3/More3/Ground" unique_id=1945712935]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat3/Great3/More3" unique_id=956702318]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great3/More3/Ground2" unique_id=779279194]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great3/More3/Ground2" unique_id=2078860301]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great3/More3/Ground2" unique_id=1045814750]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great3/More3/Ground2" unique_id=770327033]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat3/Great3/More3" unique_id=714111129]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great3/More3/Ground3" unique_id=2111664388]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great3/More3/Ground3" unique_id=1325921786]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great3/More3/Ground3" unique_id=1671673726]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great3/More3/Ground3" unique_id=1418520992]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat3/Great3/More3" unique_id=664873564]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great3/More3/Ground4" unique_id=2022221598]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great3/More3/Ground4" unique_id=379336965]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great3/More3/Ground4" unique_id=1054012963]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great3/More3/Ground4" unique_id=2141258356]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More4" type="Node2D" parent="MoreGreat3/Great3" unique_id=2049153034]
+position = Vector2(-256, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat3/Great3/More4" unique_id=280785100]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great3/More4/Ground" unique_id=435376167]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great3/More4/Ground" unique_id=767625790]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great3/More4/Ground" unique_id=370180025]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great3/More4/Ground" unique_id=1724292223]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat3/Great3/More4" unique_id=890826548]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great3/More4/Ground2" unique_id=1434532495]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great3/More4/Ground2" unique_id=1883013812]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great3/More4/Ground2" unique_id=235203656]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great3/More4/Ground2" unique_id=959208592]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat3/Great3/More4" unique_id=311267373]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great3/More4/Ground3" unique_id=1836069935]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great3/More4/Ground3" unique_id=1053768687]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great3/More4/Ground3" unique_id=1335066484]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great3/More4/Ground3" unique_id=21774790]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat3/Great3/More4" unique_id=1055216007]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great3/More4/Ground4" unique_id=1652964653]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great3/More4/Ground4" unique_id=1080884240]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great3/More4/Ground4" unique_id=513909001]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great3/More4/Ground4" unique_id=281061434]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Great4" type="Node2D" parent="MoreGreat3" unique_id=1569370874]
+position = Vector2(512, -512)
+
+[node name="More" type="Node2D" parent="MoreGreat3/Great4" unique_id=48581891]
+
+[node name="Ground" type="Node2D" parent="MoreGreat3/Great4/More" unique_id=646832285]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great4/More/Ground" unique_id=1522013581]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great4/More/Ground" unique_id=1402957974]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great4/More/Ground" unique_id=111001440]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great4/More/Ground" unique_id=1091060087]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat3/Great4/More" unique_id=1504260986]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great4/More/Ground2" unique_id=836421201]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great4/More/Ground2" unique_id=1193994491]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great4/More/Ground2" unique_id=269471015]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great4/More/Ground2" unique_id=91500163]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat3/Great4/More" unique_id=997678145]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great4/More/Ground3" unique_id=177209468]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great4/More/Ground3" unique_id=817930482]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great4/More/Ground3" unique_id=1394283223]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great4/More/Ground3" unique_id=223885988]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat3/Great4/More" unique_id=2072475614]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great4/More/Ground4" unique_id=1733646198]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great4/More/Ground4" unique_id=1025202793]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great4/More/Ground4" unique_id=503732406]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great4/More/Ground4" unique_id=1037053584]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More2" type="Node2D" parent="MoreGreat3/Great4" unique_id=160283490]
+position = Vector2(0, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat3/Great4/More2" unique_id=1305471721]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great4/More2/Ground" unique_id=352281933]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great4/More2/Ground" unique_id=1198986334]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great4/More2/Ground" unique_id=1649630393]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great4/More2/Ground" unique_id=183573738]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat3/Great4/More2" unique_id=1424971236]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great4/More2/Ground2" unique_id=493395752]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great4/More2/Ground2" unique_id=416063838]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great4/More2/Ground2" unique_id=521924512]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great4/More2/Ground2" unique_id=1715770374]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat3/Great4/More2" unique_id=2142049966]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great4/More2/Ground3" unique_id=393152016]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great4/More2/Ground3" unique_id=751036304]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great4/More2/Ground3" unique_id=723120052]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great4/More2/Ground3" unique_id=2080822733]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat3/Great4/More2" unique_id=629916022]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great4/More2/Ground4" unique_id=1684318250]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great4/More2/Ground4" unique_id=412630585]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great4/More2/Ground4" unique_id=767082570]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great4/More2/Ground4" unique_id=1789559080]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More3" type="Node2D" parent="MoreGreat3/Great4" unique_id=1153242869]
+position = Vector2(-256, 0)
+
+[node name="Ground" type="Node2D" parent="MoreGreat3/Great4/More3" unique_id=346663976]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great4/More3/Ground" unique_id=1343974742]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great4/More3/Ground" unique_id=1450812161]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great4/More3/Ground" unique_id=1276741102]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great4/More3/Ground" unique_id=415294910]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat3/Great4/More3" unique_id=1594613898]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great4/More3/Ground2" unique_id=1252977404]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great4/More3/Ground2" unique_id=684385949]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great4/More3/Ground2" unique_id=1382744911]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great4/More3/Ground2" unique_id=2124326469]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat3/Great4/More3" unique_id=779391957]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great4/More3/Ground3" unique_id=88239864]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great4/More3/Ground3" unique_id=251097555]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great4/More3/Ground3" unique_id=1572820554]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great4/More3/Ground3" unique_id=850310336]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat3/Great4/More3" unique_id=819188020]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great4/More3/Ground4" unique_id=1067692199]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great4/More3/Ground4" unique_id=1202721240]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great4/More3/Ground4" unique_id=1537445146]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great4/More3/Ground4" unique_id=1771994164]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More4" type="Node2D" parent="MoreGreat3/Great4" unique_id=1100882818]
+position = Vector2(-256, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat3/Great4/More4" unique_id=1547272783]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great4/More4/Ground" unique_id=1469084520]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great4/More4/Ground" unique_id=622828564]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great4/More4/Ground" unique_id=813016945]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great4/More4/Ground" unique_id=1506548846]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat3/Great4/More4" unique_id=1408072540]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great4/More4/Ground2" unique_id=129764114]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great4/More4/Ground2" unique_id=1375967563]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great4/More4/Ground2" unique_id=558177056]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great4/More4/Ground2" unique_id=831878105]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat3/Great4/More4" unique_id=1043243034]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great4/More4/Ground3" unique_id=1281531175]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great4/More4/Ground3" unique_id=92561918]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great4/More4/Ground3" unique_id=303498342]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great4/More4/Ground3" unique_id=1042933659]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat3/Great4/More4" unique_id=682084290]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat3/Great4/More4/Ground4" unique_id=1820632527]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat3/Great4/More4/Ground4" unique_id=2051415960]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat3/Great4/More4/Ground4" unique_id=1442343690]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat3/Great4/More4/Ground4" unique_id=1994162654]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="MoreGreat4" type="Node2D" parent="." unique_id=466110710]
+position = Vector2(632, 777)
+
+[node name="Great" type="Node2D" parent="MoreGreat4" unique_id=1421249094]
+
+[node name="More" type="Node2D" parent="MoreGreat4/Great" unique_id=1560087202]
+
+[node name="Ground" type="Node2D" parent="MoreGreat4/Great/More" unique_id=61679989]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great/More/Ground" unique_id=1778294641]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great/More/Ground" unique_id=80907364]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great/More/Ground" unique_id=1636352556]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great/More/Ground" unique_id=28252699]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat4/Great/More" unique_id=1713474137]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great/More/Ground2" unique_id=1761291687]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great/More/Ground2" unique_id=1777755472]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great/More/Ground2" unique_id=1746270722]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great/More/Ground2" unique_id=20003110]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat4/Great/More" unique_id=1112470606]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great/More/Ground3" unique_id=2080194678]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great/More/Ground3" unique_id=1370685210]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great/More/Ground3" unique_id=151162512]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great/More/Ground3" unique_id=1558078734]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat4/Great/More" unique_id=1077953587]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great/More/Ground4" unique_id=1368816136]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great/More/Ground4" unique_id=1540857255]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great/More/Ground4" unique_id=251001346]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great/More/Ground4" unique_id=1370192407]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More2" type="Node2D" parent="MoreGreat4/Great" unique_id=2026889689]
+position = Vector2(0, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat4/Great/More2" unique_id=961496810]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great/More2/Ground" unique_id=1781566658]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great/More2/Ground" unique_id=1783116827]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great/More2/Ground" unique_id=1275687711]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great/More2/Ground" unique_id=676138675]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat4/Great/More2" unique_id=1826721666]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great/More2/Ground2" unique_id=1191218669]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great/More2/Ground2" unique_id=1991593392]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great/More2/Ground2" unique_id=1359189448]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great/More2/Ground2" unique_id=160139497]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat4/Great/More2" unique_id=1396489130]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great/More2/Ground3" unique_id=1700353204]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great/More2/Ground3" unique_id=395325456]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great/More2/Ground3" unique_id=1718473882]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great/More2/Ground3" unique_id=1743584037]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat4/Great/More2" unique_id=681273819]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great/More2/Ground4" unique_id=258953676]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great/More2/Ground4" unique_id=892987855]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great/More2/Ground4" unique_id=1405175948]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great/More2/Ground4" unique_id=1604539618]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More3" type="Node2D" parent="MoreGreat4/Great" unique_id=694488475]
+position = Vector2(-256, 0)
+
+[node name="Ground" type="Node2D" parent="MoreGreat4/Great/More3" unique_id=1954120143]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great/More3/Ground" unique_id=1120492986]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great/More3/Ground" unique_id=1297509129]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great/More3/Ground" unique_id=869074628]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great/More3/Ground" unique_id=164231913]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat4/Great/More3" unique_id=816804867]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great/More3/Ground2" unique_id=680753593]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great/More3/Ground2" unique_id=254480550]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great/More3/Ground2" unique_id=571310169]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great/More3/Ground2" unique_id=50340925]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat4/Great/More3" unique_id=1320216779]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great/More3/Ground3" unique_id=147463491]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great/More3/Ground3" unique_id=1051025452]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great/More3/Ground3" unique_id=627739359]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great/More3/Ground3" unique_id=1286968037]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat4/Great/More3" unique_id=972515985]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great/More3/Ground4" unique_id=1369139740]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great/More3/Ground4" unique_id=1684473072]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great/More3/Ground4" unique_id=1607008949]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great/More3/Ground4" unique_id=1012853938]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More4" type="Node2D" parent="MoreGreat4/Great" unique_id=190179938]
+position = Vector2(-256, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat4/Great/More4" unique_id=1204859529]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great/More4/Ground" unique_id=1182637525]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great/More4/Ground" unique_id=909019440]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great/More4/Ground" unique_id=399792372]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great/More4/Ground" unique_id=1809931286]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat4/Great/More4" unique_id=353649199]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great/More4/Ground2" unique_id=1715388603]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great/More4/Ground2" unique_id=184065366]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great/More4/Ground2" unique_id=276690508]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great/More4/Ground2" unique_id=456680999]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat4/Great/More4" unique_id=772475072]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great/More4/Ground3" unique_id=63274333]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great/More4/Ground3" unique_id=227176069]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great/More4/Ground3" unique_id=1491656006]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great/More4/Ground3" unique_id=1423799089]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat4/Great/More4" unique_id=1118088150]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great/More4/Ground4" unique_id=739774474]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great/More4/Ground4" unique_id=1760980504]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great/More4/Ground4" unique_id=2139574788]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great/More4/Ground4" unique_id=2097945367]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Great2" type="Node2D" parent="MoreGreat4" unique_id=1848530973]
+position = Vector2(0, -512)
+
+[node name="More" type="Node2D" parent="MoreGreat4/Great2" unique_id=337564126]
+
+[node name="Ground" type="Node2D" parent="MoreGreat4/Great2/More" unique_id=1599812886]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great2/More/Ground" unique_id=1058651140]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great2/More/Ground" unique_id=420574051]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great2/More/Ground" unique_id=44107848]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great2/More/Ground" unique_id=859154645]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat4/Great2/More" unique_id=826751527]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great2/More/Ground2" unique_id=1145779707]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great2/More/Ground2" unique_id=230995205]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great2/More/Ground2" unique_id=362755256]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great2/More/Ground2" unique_id=1149118357]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat4/Great2/More" unique_id=580792350]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great2/More/Ground3" unique_id=1081229512]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great2/More/Ground3" unique_id=1420160965]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great2/More/Ground3" unique_id=727142964]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great2/More/Ground3" unique_id=968255743]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat4/Great2/More" unique_id=2019428177]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great2/More/Ground4" unique_id=566653214]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great2/More/Ground4" unique_id=224324328]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great2/More/Ground4" unique_id=702895008]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great2/More/Ground4" unique_id=218995230]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More2" type="Node2D" parent="MoreGreat4/Great2" unique_id=868291020]
+position = Vector2(0, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat4/Great2/More2" unique_id=183426805]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great2/More2/Ground" unique_id=1483867875]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great2/More2/Ground" unique_id=1646651127]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great2/More2/Ground" unique_id=1515217507]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great2/More2/Ground" unique_id=682488735]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat4/Great2/More2" unique_id=970137272]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great2/More2/Ground2" unique_id=2027759501]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great2/More2/Ground2" unique_id=2053982294]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great2/More2/Ground2" unique_id=1580721630]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great2/More2/Ground2" unique_id=2056391757]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat4/Great2/More2" unique_id=1606182046]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great2/More2/Ground3" unique_id=1661164190]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great2/More2/Ground3" unique_id=466746748]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great2/More2/Ground3" unique_id=1170151949]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great2/More2/Ground3" unique_id=409463729]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat4/Great2/More2" unique_id=892719685]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great2/More2/Ground4" unique_id=1269123577]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great2/More2/Ground4" unique_id=569326724]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great2/More2/Ground4" unique_id=1033921468]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great2/More2/Ground4" unique_id=791999519]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More3" type="Node2D" parent="MoreGreat4/Great2" unique_id=427672427]
+position = Vector2(-256, 0)
+
+[node name="Ground" type="Node2D" parent="MoreGreat4/Great2/More3" unique_id=1266477438]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great2/More3/Ground" unique_id=1065071143]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great2/More3/Ground" unique_id=711454630]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great2/More3/Ground" unique_id=691292443]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great2/More3/Ground" unique_id=254626959]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat4/Great2/More3" unique_id=749977868]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great2/More3/Ground2" unique_id=179367057]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great2/More3/Ground2" unique_id=784517007]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great2/More3/Ground2" unique_id=297324107]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great2/More3/Ground2" unique_id=178652585]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat4/Great2/More3" unique_id=1895190578]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great2/More3/Ground3" unique_id=70484331]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great2/More3/Ground3" unique_id=1163794580]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great2/More3/Ground3" unique_id=19613725]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great2/More3/Ground3" unique_id=487451988]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat4/Great2/More3" unique_id=109354904]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great2/More3/Ground4" unique_id=324517809]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great2/More3/Ground4" unique_id=475495886]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great2/More3/Ground4" unique_id=1424024697]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great2/More3/Ground4" unique_id=105518965]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More4" type="Node2D" parent="MoreGreat4/Great2" unique_id=334775649]
+position = Vector2(-256, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat4/Great2/More4" unique_id=1833452544]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great2/More4/Ground" unique_id=126030753]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great2/More4/Ground" unique_id=1393745471]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great2/More4/Ground" unique_id=404571064]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great2/More4/Ground" unique_id=1252660186]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat4/Great2/More4" unique_id=394503859]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great2/More4/Ground2" unique_id=655545540]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great2/More4/Ground2" unique_id=378666905]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great2/More4/Ground2" unique_id=1080265759]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great2/More4/Ground2" unique_id=1717756110]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat4/Great2/More4" unique_id=1656192910]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great2/More4/Ground3" unique_id=1182452436]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great2/More4/Ground3" unique_id=931502217]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great2/More4/Ground3" unique_id=2110562976]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great2/More4/Ground3" unique_id=728833504]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat4/Great2/More4" unique_id=1466941215]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great2/More4/Ground4" unique_id=1231432659]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great2/More4/Ground4" unique_id=2123552158]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great2/More4/Ground4" unique_id=1188743550]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great2/More4/Ground4" unique_id=2086531976]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Great3" type="Node2D" parent="MoreGreat4" unique_id=75146679]
+position = Vector2(512, 0)
+
+[node name="More" type="Node2D" parent="MoreGreat4/Great3" unique_id=1011036699]
+
+[node name="Ground" type="Node2D" parent="MoreGreat4/Great3/More" unique_id=828897586]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great3/More/Ground" unique_id=1200255702]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great3/More/Ground" unique_id=197846875]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great3/More/Ground" unique_id=881150767]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great3/More/Ground" unique_id=1182722842]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat4/Great3/More" unique_id=41559670]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great3/More/Ground2" unique_id=538849614]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great3/More/Ground2" unique_id=930023452]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great3/More/Ground2" unique_id=736167054]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great3/More/Ground2" unique_id=1994103780]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat4/Great3/More" unique_id=825996376]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great3/More/Ground3" unique_id=1530223577]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great3/More/Ground3" unique_id=1905623736]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great3/More/Ground3" unique_id=184930919]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great3/More/Ground3" unique_id=781833514]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat4/Great3/More" unique_id=1074250737]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great3/More/Ground4" unique_id=839470146]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great3/More/Ground4" unique_id=1152907538]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great3/More/Ground4" unique_id=1641850709]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great3/More/Ground4" unique_id=69025072]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More2" type="Node2D" parent="MoreGreat4/Great3" unique_id=1127032526]
+position = Vector2(0, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat4/Great3/More2" unique_id=794646359]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great3/More2/Ground" unique_id=445251925]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great3/More2/Ground" unique_id=1405368763]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great3/More2/Ground" unique_id=1301302077]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great3/More2/Ground" unique_id=1207621503]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat4/Great3/More2" unique_id=2015968234]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great3/More2/Ground2" unique_id=412115539]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great3/More2/Ground2" unique_id=1440481153]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great3/More2/Ground2" unique_id=1860308526]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great3/More2/Ground2" unique_id=399886267]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat4/Great3/More2" unique_id=868261410]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great3/More2/Ground3" unique_id=2084184065]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great3/More2/Ground3" unique_id=74141866]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great3/More2/Ground3" unique_id=922953030]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great3/More2/Ground3" unique_id=1631820421]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat4/Great3/More2" unique_id=428367789]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great3/More2/Ground4" unique_id=43338307]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great3/More2/Ground4" unique_id=1228240619]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great3/More2/Ground4" unique_id=1868289918]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great3/More2/Ground4" unique_id=439115468]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More3" type="Node2D" parent="MoreGreat4/Great3" unique_id=1416386215]
+position = Vector2(-256, 0)
+
+[node name="Ground" type="Node2D" parent="MoreGreat4/Great3/More3" unique_id=1017793277]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great3/More3/Ground" unique_id=941727208]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great3/More3/Ground" unique_id=1983674563]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great3/More3/Ground" unique_id=918254355]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great3/More3/Ground" unique_id=1513237664]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat4/Great3/More3" unique_id=789665925]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great3/More3/Ground2" unique_id=1693844642]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great3/More3/Ground2" unique_id=1965141101]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great3/More3/Ground2" unique_id=981707324]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great3/More3/Ground2" unique_id=572034282]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat4/Great3/More3" unique_id=2029240111]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great3/More3/Ground3" unique_id=454610922]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great3/More3/Ground3" unique_id=2110511999]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great3/More3/Ground3" unique_id=59993981]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great3/More3/Ground3" unique_id=826502527]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat4/Great3/More3" unique_id=1635770618]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great3/More3/Ground4" unique_id=1772928549]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great3/More3/Ground4" unique_id=1842537485]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great3/More3/Ground4" unique_id=328689204]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great3/More3/Ground4" unique_id=1614011724]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More4" type="Node2D" parent="MoreGreat4/Great3" unique_id=241139091]
+position = Vector2(-256, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat4/Great3/More4" unique_id=1041581290]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great3/More4/Ground" unique_id=439557588]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great3/More4/Ground" unique_id=184316035]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great3/More4/Ground" unique_id=827936482]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great3/More4/Ground" unique_id=617265263]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat4/Great3/More4" unique_id=975876740]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great3/More4/Ground2" unique_id=514629841]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great3/More4/Ground2" unique_id=240271889]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great3/More4/Ground2" unique_id=399972552]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great3/More4/Ground2" unique_id=1031925882]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat4/Great3/More4" unique_id=1256235040]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great3/More4/Ground3" unique_id=639258952]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great3/More4/Ground3" unique_id=1958230499]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great3/More4/Ground3" unique_id=1793829004]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great3/More4/Ground3" unique_id=278404922]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat4/Great3/More4" unique_id=972516521]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great3/More4/Ground4" unique_id=430777000]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great3/More4/Ground4" unique_id=2079177293]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great3/More4/Ground4" unique_id=1438795074]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great3/More4/Ground4" unique_id=632630970]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Great4" type="Node2D" parent="MoreGreat4" unique_id=366046232]
+position = Vector2(512, -512)
+
+[node name="More" type="Node2D" parent="MoreGreat4/Great4" unique_id=976838893]
+
+[node name="Ground" type="Node2D" parent="MoreGreat4/Great4/More" unique_id=59553041]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great4/More/Ground" unique_id=1811118740]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great4/More/Ground" unique_id=131469534]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great4/More/Ground" unique_id=49992620]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great4/More/Ground" unique_id=991401359]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat4/Great4/More" unique_id=2143529203]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great4/More/Ground2" unique_id=1536749125]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great4/More/Ground2" unique_id=567317706]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great4/More/Ground2" unique_id=1490321415]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great4/More/Ground2" unique_id=1991219071]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat4/Great4/More" unique_id=113893932]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great4/More/Ground3" unique_id=510656983]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great4/More/Ground3" unique_id=1522187024]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great4/More/Ground3" unique_id=299651750]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great4/More/Ground3" unique_id=1234711510]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat4/Great4/More" unique_id=705286702]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great4/More/Ground4" unique_id=159776537]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great4/More/Ground4" unique_id=1543965098]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great4/More/Ground4" unique_id=663477191]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great4/More/Ground4" unique_id=403363718]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More2" type="Node2D" parent="MoreGreat4/Great4" unique_id=1697272897]
+position = Vector2(0, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat4/Great4/More2" unique_id=1450233778]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great4/More2/Ground" unique_id=753717221]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great4/More2/Ground" unique_id=498711073]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great4/More2/Ground" unique_id=640833421]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great4/More2/Ground" unique_id=1905422624]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat4/Great4/More2" unique_id=2005694060]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great4/More2/Ground2" unique_id=866568387]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great4/More2/Ground2" unique_id=932941255]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great4/More2/Ground2" unique_id=5731506]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great4/More2/Ground2" unique_id=1929039081]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat4/Great4/More2" unique_id=1466491269]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great4/More2/Ground3" unique_id=1785664600]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great4/More2/Ground3" unique_id=1346206178]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great4/More2/Ground3" unique_id=1808767872]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great4/More2/Ground3" unique_id=1792472459]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat4/Great4/More2" unique_id=49105570]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great4/More2/Ground4" unique_id=1815708720]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great4/More2/Ground4" unique_id=184370542]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great4/More2/Ground4" unique_id=1769098072]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great4/More2/Ground4" unique_id=180124523]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More3" type="Node2D" parent="MoreGreat4/Great4" unique_id=32727724]
+position = Vector2(-256, 0)
+
+[node name="Ground" type="Node2D" parent="MoreGreat4/Great4/More3" unique_id=393796292]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great4/More3/Ground" unique_id=1611867233]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great4/More3/Ground" unique_id=824789423]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great4/More3/Ground" unique_id=669235785]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great4/More3/Ground" unique_id=393181835]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat4/Great4/More3" unique_id=1722374999]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great4/More3/Ground2" unique_id=941329200]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great4/More3/Ground2" unique_id=444435820]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great4/More3/Ground2" unique_id=363094478]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great4/More3/Ground2" unique_id=1999544221]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat4/Great4/More3" unique_id=604513124]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great4/More3/Ground3" unique_id=792552785]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great4/More3/Ground3" unique_id=1753104179]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great4/More3/Ground3" unique_id=1140860998]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great4/More3/Ground3" unique_id=1926351130]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat4/Great4/More3" unique_id=708466212]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great4/More3/Ground4" unique_id=407294534]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great4/More3/Ground4" unique_id=599584056]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great4/More3/Ground4" unique_id=1649816598]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great4/More3/Ground4" unique_id=921099139]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="More4" type="Node2D" parent="MoreGreat4/Great4" unique_id=481434107]
+position = Vector2(-256, -256)
+
+[node name="Ground" type="Node2D" parent="MoreGreat4/Great4/More4" unique_id=819941660]
+position = Vector2(-232, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great4/More4/Ground" unique_id=70072362]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great4/More4/Ground" unique_id=1774465509]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great4/More4/Ground" unique_id=1858971159]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great4/More4/Ground" unique_id=198868419]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground2" type="Node2D" parent="MoreGreat4/Great4/More4" unique_id=2110392107]
+position = Vector2(-232, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great4/More4/Ground2" unique_id=2002357351]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great4/More4/Ground2" unique_id=1232443565]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great4/More4/Ground2" unique_id=1942298373]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great4/More4/Ground2" unique_id=834253301]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground3" type="Node2D" parent="MoreGreat4/Great4/More4" unique_id=781530161]
+position = Vector2(-360, 105)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great4/More4/Ground3" unique_id=2124042563]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great4/More4/Ground3" unique_id=1114577000]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great4/More4/Ground3" unique_id=2099762074]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great4/More4/Ground3" unique_id=234543255]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="Ground4" type="Node2D" parent="MoreGreat4/Great4/More4" unique_id=555800493]
+position = Vector2(-360, -23)
+
+[node name="g1" type="Sprite2D" parent="MoreGreat4/Great4/More4/Ground4" unique_id=1650697347]
+texture = ExtResource("1_vn6uf")
+
+[node name="g2" type="Sprite2D" parent="MoreGreat4/Great4/More4/Ground4" unique_id=1496587835]
+position = Vector2(64, 0)
+texture = ExtResource("1_vn6uf")
+
+[node name="g3" type="Sprite2D" parent="MoreGreat4/Great4/More4/Ground4" unique_id=1947825710]
+position = Vector2(64, 64)
+texture = ExtResource("1_vn6uf")
+
+[node name="g4" type="Sprite2D" parent="MoreGreat4/Great4/More4/Ground4" unique_id=1608238357]
+position = Vector2(0, 64)
+texture = ExtResource("1_vn6uf")

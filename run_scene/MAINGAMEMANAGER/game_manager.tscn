@@ -1,0 +1,352 @@
+[gd_scene format=3 uid="uid://cyuny7ao7nvdo"]
+
+[ext_resource type="Script" uid="uid://cg4q2ncaef03s" path="res://code/game_manager.gd" id="1_jupgj"]
+[ext_resource type="Script" uid="uid://b8fqph3pac8bu" path="res://code/GameManager/UiManager/ui_manager.gd" id="4_bhboq"]
+[ext_resource type="Script" uid="uid://brpymdm7l6y7o" path="res://run_scene/MAINGAMEMANAGER/Ui/gameover_ui.gd" id="4_kp6gr"]
+[ext_resource type="Script" uid="uid://y1behb17yvdo" path="res://code/GameManager/CodeManager/input.gd" id="5_1r2fg"]
+[ext_resource type="Script" uid="uid://dol8pbst41iqp" path="res://code/GameManager/PlayerUiManager/PlayerUiManager.gd" id="6_1r2fg"]
+[ext_resource type="Theme" uid="uid://ig01olb8a1ug" path="res://theme/front_theme.tres" id="6_hab6i"]
+[ext_resource type="Script" uid="uid://c7eibiyl1xt15" path="res://run_scene/MAINGAMEMANAGER/windows_manager.gd" id="6_jupgj"]
+[ext_resource type="Script" uid="uid://cnvn4bm7xg10f" path="res://run_scene/MAINGAMEMANAGER/exit_menu.gd" id="7_11aqv"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_kp6gr"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_11aqv"]
+
+[node name="GameManager" type="Node2D" unique_id=223941287 node_paths=PackedStringArray("MonsterManager", "Monster_spwan_time", "DebugInformation", "WindowsManager", "UiManager")]
+script = ExtResource("1_jupgj")
+MonsterManager = NodePath("MonsterManager")
+Monster_spwan_time = NodePath("TimeManager/Monster_time_manage2/Monster_occ")
+DebugInformation = NodePath("DEBUGUI")
+WindowsManager = NodePath("Windows/WindowsManager")
+UiManager = NodePath("UiManager")
+
+[node name="PlayerUiManager" type="Node2D" parent="." unique_id=866399421]
+script = ExtResource("6_1r2fg")
+
+[node name="UiManager" type="Node2D" parent="." unique_id=1243406531 node_paths=PackedStringArray("GameoverUi", "ScenceMonster", "MonsterLimited", "PlayerHp", "PlayerHpMax", "PlayerGlobalPosition", "PlayerCurrentSpeed", "PlayerSpeedLimited", "PlayerSpeedSmooth", "CameraSmooth", "BloodSmooth", "PlayerMagicPoint")]
+script = ExtResource("4_bhboq")
+GameoverUi = NodePath("GameoverUi")
+ScenceMonster = NodePath("../DEBUGUI/MonsterManagerUi/VBoxContainer/CurrentMonster")
+MonsterLimited = NodePath("../DEBUGUI/MonsterManagerUi/VBoxContainer/MonsterLimited")
+PlayerHp = NodePath("../DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerHp")
+PlayerHpMax = NodePath("../DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerHpMax")
+PlayerGlobalPosition = NodePath("../DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerGlobalPosition")
+PlayerCurrentSpeed = NodePath("../DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerCurrentSpeed")
+PlayerSpeedLimited = NodePath("../DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerSpeedLimited")
+PlayerSpeedSmooth = NodePath("../DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerSpeedSmooth")
+CameraSmooth = NodePath("../DEBUGUI/MonsterManagerUi/VBoxContainer/CameraSmooth")
+BloodSmooth = NodePath("../DEBUGUI/MonsterManagerUi/VBoxContainer/BloodSmooth")
+PlayerMagicPoint = NodePath("../DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerMagicPoint")
+
+[node name="GameoverUi" type="Node2D" parent="UiManager" unique_id=521706425 node_paths=PackedStringArray("GameOverLabel")]
+script = ExtResource("4_kp6gr")
+GameOverLabel = NodePath("GamerOver/GameOver")
+
+[node name="GamerOver" type="CanvasLayer" parent="UiManager/GameoverUi" unique_id=1911512883]
+
+[node name="GameOver" type="Label" parent="UiManager/GameoverUi/GamerOver" unique_id=2085438643]
+visible = false
+offset_top = 444.0
+offset_right = 1920.0
+offset_bottom = 541.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/font_size = 72
+text = "The Game has Over : Blood Clear"
+horizontal_alignment = 1
+
+[node name="Back" type="Label" parent="UiManager/GameoverUi/GamerOver/GameOver" unique_id=1791187717]
+layout_mode = 0
+offset_left = 857.0
+offset_top = 132.0
+offset_right = 1025.0
+offset_bottom = 165.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 24
+text = "按鼠标左键返回"
+
+[node name="MonsterManager" type="Node2D" parent="." unique_id=1174591208]
+
+[node name="Num" type="Node2D" parent="MonsterManager" unique_id=1308323780]
+
+[node name="TimeManager" type="Node2D" parent="." unique_id=1702849225]
+
+[node name="Monster_time_manage2" type="Node2D" parent="TimeManager" unique_id=1878841790]
+
+[node name="Monster_occ" type="Timer" parent="TimeManager/Monster_time_manage2" unique_id=234214018]
+one_shot = true
+
+[node name="DEBUGUI" type="CanvasLayer" parent="." unique_id=311957202]
+layer = 100
+visible = false
+
+[node name="Input" type="Control" parent="DEBUGUI" unique_id=1528360862 node_paths=PackedStringArray("MonsterLimited", "PlayerHpMax", "PlayerHp", "PPGlobalPosition", "PlayerSpeedLimited", "PlayerSpeedSmooth", "PlayerMagicPoint")]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 44.0
+offset_right = 101.0
+script = ExtResource("5_1r2fg")
+MonsterLimited = NodePath("../MonsterManagerUi/VBoxContainer/MonsterLimited/MonsterLimited")
+PlayerHpMax = NodePath("../MonsterManagerUi/VBoxContainer/PlayerHpMax/PlayerHpMax")
+PlayerHp = NodePath("../MonsterManagerUi/VBoxContainer/PlayerHp/PlayerHp")
+PPGlobalPosition = NodePath("../MonsterManagerUi/VBoxContainer/PlayerGlobalPosition/PPGlobalPosition")
+PlayerSpeedLimited = NodePath("../MonsterManagerUi/VBoxContainer/PlayerSpeedLimited/PlayerSpeedLimited")
+PlayerSpeedSmooth = NodePath("../MonsterManagerUi/VBoxContainer/PlayerSpeedSmooth/PlayerSpeedSmooth")
+PlayerMagicPoint = NodePath("../MonsterManagerUi/VBoxContainer/PlayerMagicPoint/PlayerMagicPoint")
+
+[node name="Thing" type="Control" parent="DEBUGUI" unique_id=61973830]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="thing" type="Label" parent="DEBUGUI/Thing" unique_id=647453122]
+layout_mode = 0
+offset_left = 1718.0
+offset_right = 1864.0
+offset_bottom = 23.0
+text = "Now Hp:"
+
+[node name="MonsterManagerUi" type="Control" parent="DEBUGUI" unique_id=552659887]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 27.0
+offset_right = 40.0
+offset_bottom = 67.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="DEBUGUI/MonsterManagerUi" unique_id=256849591]
+layout_mode = 0
+offset_left = 40.0
+offset_right = 188.0
+offset_bottom = 158.0
+
+[node name="MonsterLimited" type="Label" parent="DEBUGUI/MonsterManagerUi/VBoxContainer" unique_id=319543522]
+layout_mode = 2
+theme = ExtResource("6_hab6i")
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "MonsterLimited :"
+
+[node name="MonsterLimited" type="LineEdit" parent="DEBUGUI/MonsterManagerUi/VBoxContainer/MonsterLimited" unique_id=1613278209]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 5.0
+offset_right = 355.0
+offset_bottom = 25.0
+theme_override_colors/font_color = Color(0.8745098, 0, 0, 1)
+theme_override_font_sizes/font_size = 8
+text = "NONE"
+placeholder_text = "这里输入数值"
+expand_to_text_length = true
+context_menu_enabled = false
+
+[node name="CurrentMonster" type="Label" parent="DEBUGUI/MonsterManagerUi/VBoxContainer" unique_id=2047141766]
+layout_mode = 2
+theme = ExtResource("6_hab6i")
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "SenceMonsterNum :"
+
+[node name="CurrentMonster" type="LineEdit" parent="DEBUGUI/MonsterManagerUi/VBoxContainer/CurrentMonster" unique_id=1442999517]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 4.0
+offset_right = 355.0
+offset_bottom = 24.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 8
+text = "NONE"
+placeholder_text = "NONE"
+expand_to_text_length = true
+
+[node name="PlayerHpMax" type="Label" parent="DEBUGUI/MonsterManagerUi/VBoxContainer" unique_id=1921302092]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "PlayerHpMax : "
+
+[node name="PlayerHpMax" type="LineEdit" parent="DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerHpMax" unique_id=1363483794]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 6.0
+offset_right = 355.0
+offset_bottom = 26.0
+theme_override_font_sizes/font_size = 8
+placeholder_text = "这里输入数值"
+
+[node name="PlayerHp" type="Label" parent="DEBUGUI/MonsterManagerUi/VBoxContainer" unique_id=1228179855]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "PlayerHp :"
+
+[node name="PlayerHp" type="LineEdit" parent="DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerHp" unique_id=1193758627]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 7.0
+offset_right = 355.0
+offset_bottom = 27.0
+theme_override_font_sizes/font_size = 8
+placeholder_text = "这里输入数值"
+
+[node name="PlayerGlobalPosition" type="Label" parent="DEBUGUI/MonsterManagerUi/VBoxContainer" unique_id=451906]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "PPGlobalPosition :"
+
+[node name="PPGlobalPosition" type="LineEdit" parent="DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerGlobalPosition" unique_id=262376122]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 7.0
+offset_right = 355.0
+offset_bottom = 27.0
+theme_override_font_sizes/font_size = 8
+placeholder_text = "这里输入数值"
+
+[node name="PlayerCurrentSpeed" type="Label" parent="DEBUGUI/MonsterManagerUi/VBoxContainer" unique_id=1083708081]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "PlayerCurrentSpeed :"
+
+[node name="PlayerCurrentSpeed" type="LineEdit" parent="DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerCurrentSpeed" unique_id=1545877897]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 5.0
+offset_right = 355.0
+offset_bottom = 25.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 8
+text = "NONE"
+
+[node name="PlayerSpeedLimited" type="Label" parent="DEBUGUI/MonsterManagerUi/VBoxContainer" unique_id=1346334915]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "PlayerSpeedLimited : "
+
+[node name="PlayerSpeedLimited" type="LineEdit" parent="DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerSpeedLimited" unique_id=1551818946]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 5.0
+offset_right = 355.0
+offset_bottom = 25.0
+theme_override_font_sizes/font_size = 8
+placeholder_text = "这里输入数值"
+
+[node name="PlayerSpeedSmooth" type="Label" parent="DEBUGUI/MonsterManagerUi/VBoxContainer" unique_id=409697942]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "PlayerSpeedSmooth :"
+
+[node name="PlayerSpeedSmooth" type="LineEdit" parent="DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerSpeedSmooth" unique_id=1321428648]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 5.0
+offset_right = 355.0
+offset_bottom = 25.0
+theme_override_font_sizes/font_size = 8
+placeholder_text = "这里输入数值"
+
+[node name="CameraSmooth" type="Label" parent="DEBUGUI/MonsterManagerUi/VBoxContainer" unique_id=2105290849]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "CameraSmooth :"
+
+[node name="Button" type="Button" parent="DEBUGUI/MonsterManagerUi/VBoxContainer/CameraSmooth" unique_id=1517411460]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 5.0
+offset_right = 355.0
+offset_bottom = 25.0
+theme_override_font_sizes/font_size = 8
+text = "switch"
+
+[node name="BloodSmooth" type="Label" parent="DEBUGUI/MonsterManagerUi/VBoxContainer" unique_id=6514636]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "BloodSmooth : "
+
+[node name="Button" type="Button" parent="DEBUGUI/MonsterManagerUi/VBoxContainer/BloodSmooth" unique_id=437857584]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 5.0
+offset_right = 355.0
+offset_bottom = 25.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 8
+text = "TESTNONE"
+
+[node name="PlayerMagicPoint" type="Label" parent="DEBUGUI/MonsterManagerUi/VBoxContainer" unique_id=1987532854]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "MagicPoint : "
+
+[node name="PlayerMagicPoint" type="LineEdit" parent="DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerMagicPoint" unique_id=759178022]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 5.0
+offset_right = 355.0
+offset_bottom = 25.0
+theme_override_font_sizes/font_size = 8
+placeholder_text = "这里输入数值"
+
+[node name="Windows" type="CanvasLayer" parent="." unique_id=482762806]
+
+[node name="WindowsManager" type="Node2D" parent="Windows" unique_id=573197938 node_paths=PackedStringArray("ExitMenu")]
+script = ExtResource("6_jupgj")
+ExitMenu = NodePath("ExitMenu")
+
+[node name="ExitMenu" type="Window" parent="Windows/WindowsManager" unique_id=1572205743 node_paths=PackedStringArray("ReturnToMenu", "ReturnToDesktop")]
+transparent_bg = true
+oversampling_override = 1.0
+title = "Menu"
+initial_position = 1
+size = Vector2i(1600, 800)
+exclusive = true
+transparent = true
+script = ExtResource("7_11aqv")
+ReturnToMenu = NodePath("Button/ReturnMainMenu")
+ReturnToDesktop = NodePath("Button/ReturnToDesktop")
+
+[node name="Back" type="Node2D" parent="Windows/WindowsManager/ExitMenu" unique_id=622713275]
+
+[node name="BackSecond" type="Sprite2D" parent="Windows/WindowsManager/ExitMenu/Back" unique_id=1788255605]
+modulate = Color(0.7135254, 0.6944255, 0.6672199, 1)
+position = Vector2(504, 335)
+scale = Vector2(3022, 1520)
+texture = SubResource("CanvasTexture_kp6gr")
+
+[node name="Back" type="Sprite2D" parent="Windows/WindowsManager/ExitMenu/Back" unique_id=1075861166]
+modulate = Color(0.037033387, 0.47818625, 0.43217248, 1)
+position = Vector2(799.5, 376.5)
+scale = Vector2(1579, 732.99994)
+texture = SubResource("CanvasTexture_11aqv")
+
+[node name="Button" type="Node2D" parent="Windows/WindowsManager/ExitMenu" unique_id=677269485]
+
+[node name="ReturnMainMenu" type="Button" parent="Windows/WindowsManager/ExitMenu/Button" unique_id=431876013]
+offset_left = 18.0
+offset_top = 752.0
+offset_right = 154.0
+offset_bottom = 783.0
+text = "Return MainMeun"
+
+[node name="ReturnToDesktop" type="Button" parent="Windows/WindowsManager/ExitMenu/Button" unique_id=953029712]
+offset_left = 177.0
+offset_top = 752.0
+offset_right = 316.0
+offset_bottom = 783.0
+text = "Return To Desktop"
+
+[connection signal="text_submitted" from="DEBUGUI/MonsterManagerUi/VBoxContainer/MonsterLimited/MonsterLimited" to="DEBUGUI/Input" method="_Scence_Monster_Limited"]
+[connection signal="text_submitted" from="DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerHpMax/PlayerHpMax" to="DEBUGUI/Input" method="_Player_Hp_Max_Change"]
+[connection signal="text_submitted" from="DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerHp/PlayerHp" to="DEBUGUI/Input" method="_Player_Current_hp"]
+[connection signal="text_submitted" from="DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerGlobalPosition/PPGlobalPosition" to="DEBUGUI/Input" method="_Tp_Edit"]
+[connection signal="text_submitted" from="DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerSpeedLimited/PlayerSpeedLimited" to="DEBUGUI/Input" method="_Player_Speed_Limited"]
+[connection signal="text_submitted" from="DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerSpeedSmooth/PlayerSpeedSmooth" to="DEBUGUI/Input" method="_Player_Speed_Smooth"]
+[connection signal="pressed" from="DEBUGUI/MonsterManagerUi/VBoxContainer/CameraSmooth/Button" to="DEBUGUI/Input" method="_camera_Smooth_Switch"]
+[connection signal="pressed" from="DEBUGUI/MonsterManagerUi/VBoxContainer/BloodSmooth/Button" to="DEBUGUI/Input" method="_blood_Smooth_change"]
+[connection signal="text_submitted" from="DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerMagicPoint/PlayerMagicPoint" to="DEBUGUI/Input" method="_magic_Point_Change"]
+[connection signal="pressed" from="Windows/WindowsManager/ExitMenu/Button/ReturnMainMenu" to="Windows/WindowsManager" method="_return_Main_menu"]
+[connection signal="pressed" from="Windows/WindowsManager/ExitMenu/Button/ReturnToDesktop" to="Windows/WindowsManager" method="_return_To_Desktop"]

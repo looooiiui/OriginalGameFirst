@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cwygdm6j5pwal"]
+
+[ext_resource type="Script" uid="uid://cv77u2u0eyhe3" path="res://code/Player_code/DamageDisplay/damageDisplay.gd" id="1_68gky"]
+
+[node name="DamageDisplay" type="Label" unique_id=1405814541]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 32
+text = "ere"
+autowrap_trim_flags = 0
+script = ExtResource("1_68gky")

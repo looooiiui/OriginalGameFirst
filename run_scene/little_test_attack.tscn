@@ -1,0 +1,201 @@
+[gd_scene format=3 uid="uid://5qjlc4504hji"]
+
+[ext_resource type="Script" uid="uid://uungdefop1m6" path="res://code/little_test_attack.gd" id="1_xmqxl"]
+[ext_resource type="Texture2D" uid="uid://dc7v442kihybl" path="res://icon.svg" id="2_rsmyw"]
+[ext_resource type="PackedScene" uid="uid://d2350oqw40p6u" path="res://run_scene/Effect_player/effect.tscn" id="2_um7gu"]
+[ext_resource type="PackedScene" uid="uid://cwygdm6j5pwal" path="res://run_scene/Player/DamageDisplay/DamageDisplay.tscn" id="3_01tx4"]
+[ext_resource type="Script" uid="uid://dex4vc67btrol" path="res://code/Monter_blood.gd" id="3_um7gu"]
+[ext_resource type="Texture2D" uid="uid://cy4qic5e4rdxw" path="res://Sprite/animationSprite/Monster/Blood/MonsterBlood.png" id="5_bumlr"]
+[ext_resource type="Script" uid="uid://cak61bdqwcjey" path="res://code/Monster_code/Monster_blood_Ui/little/control.gd" id="5_um7gu"]
+[ext_resource type="Script" uid="uid://vx5hqtkjhf8h" path="res://code/Monster_code/Monster_hit_code/animatable_body_2d.gd" id="6_palc4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_26kyx"]
+size = Vector2(156, 144)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_3vc1e"]
+
+[sub_resource type="Animation" id="Animation_jdv1c"]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Blood/blood:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(266.00003, 16)]
+}
+
+[sub_resource type="Animation" id="Animation_df5nh"]
+resource_name = "blood"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Blood/blood:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-1.2250061, 18.333332), Vector2(-271.41418, 18.333332)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1047g"]
+_data = {
+&"RESET": SubResource("Animation_jdv1c"),
+&"blood": SubResource("Animation_df5nh")
+}
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_xmqxl"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_rsmyw"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_rsmyw"]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_max = 1000.0
+gravity = Vector3(0, 0, 0)
+scale_min = 3.0
+scale_max = 3.0
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_um7gu"]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 867.86
+initial_velocity_max = 1000.0
+gravity = Vector3(0, 0, 0)
+scale_min = 5.0
+scale_max = 5.0
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_um7gu"]
+
+[node name="littleTestAttack" type="Area2D" unique_id=2081301322 node_paths=PackedStringArray("model_little", "model_back", "model_toward", "model_blood_back", "model_blood", "timer_manager", "Dead_Time", "Dead_Player", "Dead_exp_Player", "Blood_Ui") groups=["Monster"]]
+script = ExtResource("1_xmqxl")
+model_little = NodePath("littleModel")
+model_back = NodePath("Toward/toward")
+model_toward = NodePath("Toward/toward2")
+model_blood_back = NodePath("Blood/back")
+model_blood = NodePath("Blood/blood")
+timer_manager = NodePath("Timer")
+Dead_Time = NodePath("DeadTime")
+hited_re_effort = ExtResource("2_um7gu")
+Dead_Player = NodePath("GPUplayer/Dead")
+Dead_exp_Player = NodePath("GPUplayer/Dead_exp")
+Blood_Ui = NodePath("Blood/MonsterUi/Blood_Display")
+DamageDisplay = ExtResource("3_01tx4")
+metadata/_edit_group_ = true
+
+[node name="theBody" type="CollisionShape2D" parent="." unique_id=689537998 groups=["Monster"]]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_26kyx")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1470745155]
+
+[node name="littleModel" type="Sprite2D" parent="." unique_id=1853265865]
+modulate = Color(1, 0.32385087, 0.6965945, 1)
+scale = Vector2(0.515625, 0.51562494)
+texture = ExtResource("2_rsmyw")
+
+[node name="Timer" type="Timer" parent="." unique_id=901282947]
+wait_time = 0.5
+autostart = true
+
+[node name="DeadTime" type="Timer" parent="." unique_id=2006246333]
+wait_time = 2.0
+one_shot = true
+
+[node name="Blood" type="Node2D" parent="." unique_id=308457192 node_paths=PackedStringArray("Monster", "Blood_player", "Sprite")]
+top_level = true
+script = ExtResource("3_um7gu")
+Monster = NodePath("..")
+Blood_player = NodePath("bloodPlayer")
+Sprite = NodePath("../littleModel")
+metadata/_edit_group_ = true
+
+[node name="blood" type="Sprite2D" parent="Blood" unique_id=253672834]
+modulate = Color(1, 0, 0, 1)
+scale = Vector2(266.00003, 16)
+texture = SubResource("CanvasTexture_3vc1e")
+
+[node name="back" type="Sprite2D" parent="Blood" unique_id=470264978]
+position = Vector2(-28, 11)
+scale = Vector2(7.015625, 4.6562495)
+texture = ExtResource("5_bumlr")
+
+[node name="bloodPlayer" type="AnimationPlayer" parent="Blood" unique_id=282477903]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_1047g")
+
+[node name="Timer" type="Timer" parent="Blood" unique_id=2066448072]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[node name="MonsterUi" type="Control" parent="Blood" unique_id=1761162782 node_paths=PackedStringArray("Monster", "Sprite", "Blood_sprite")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("5_um7gu")
+Monster = NodePath("../..")
+Sprite = NodePath("../../littleModel")
+Blood_sprite = NodePath("../../littleModel")
+
+[node name="Blood_Display" type="Label" parent="Blood/MonsterUi" unique_id=1525657613]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Hp: "
+
+[node name="Toward" type="Node2D" parent="." unique_id=1807107842]
+metadata/_edit_group_ = true
+
+[node name="toward" type="Sprite2D" parent="Toward" unique_id=822481812]
+modulate = Color(0.4876045, 0.65635115, 0.6957748, 1)
+rotation = 1.5707964
+scale = Vector2(16, 68.00001)
+texture = SubResource("CanvasTexture_xmqxl")
+
+[node name="toward2" type="Sprite2D" parent="Toward" unique_id=1828298082]
+position = Vector2(44.999996, 0)
+scale = Vector2(22.000002, 6)
+texture = SubResource("CanvasTexture_rsmyw")
+
+[node name="GPUplayer" type="Node2D" parent="." unique_id=69504732]
+
+[node name="Dead" type="GPUParticles2D" parent="GPUplayer" unique_id=1767962128]
+modulate = Color(1, 0.05490196, 1, 1)
+emitting = false
+amount = 4096
+one_shot = true
+process_material = SubResource("ParticleProcessMaterial_rsmyw")
+
+[node name="Dead_exp" type="GPUParticles2D" parent="GPUplayer" unique_id=1213024477]
+modulate = Color(1, 0, 0, 1)
+emitting = false
+amount = 4096
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_um7gu")
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=2045779071 node_paths=PackedStringArray("Monster")]
+physics_material_override = SubResource("PhysicsMaterial_um7gu")
+script = ExtResource("6_palc4")
+Monster = NodePath("..")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="AnimatableBody2D" unique_id=1289922064]
+scale = Vector2(3.3125005, 3.3125005)
+polygon = PackedVector2Array(-9.999999, -7.8571424, -9.732142, -8.571428, -9.285714, -9.196428, -8.660714, -9.642857, -7.7678566, -9.999999, 7.7678566, -9.999999, 8.571428, -9.732142, 9.196428, -9.285714, 9.642857, -8.660714, 9.910714, -8.035714, 9.999999, -7.5892854, 9.999999, 7.4999995, 9.821428, 8.303571, 9.464285, 9.017857, 8.928571, 9.464285, 8.303571, 9.821428, 7.7678566, 9.999999, -7.6785707, 9.999999, -8.571428, 9.732142, -9.107142, 9.285714, -9.553571, 8.749999, -9.821428, 8.214285, -9.999999, 7.6785707)
+
+[connection signal="area_entered" from="." to="." method="_be_hited"]
+[connection signal="blood" from="." to="Blood" method="_on_little_test_attack_blood"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_is_time_change"]
+[connection signal="timeout" from="Blood/Timer" to="Blood" method="_begin_blood_out"]

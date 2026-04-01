@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://xbul0lp3lo0j"]
+
+[ext_resource type="Script" uid="uid://b35mvcm7acdqv" path="res://code/blood_manage.gd" id="1_kxjo3"]
+[ext_resource type="Script" uid="uid://coqi6bq01wbkh" path="res://code/player_blood.gd" id="2_8ythf"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_26kyx"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_3vc1e"]
+
+[sub_resource type="Animation" id="Animation_3vc1e"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("blood:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(169.00002, 16)]
+}
+
+[sub_resource type="Animation" id="Animation_7cjf1"]
+resource_name = "blood"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("blood:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(169.00002, 16), Vector2(0.99999034, 16)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k5ugh"]
+_data = {
+&"RESET": SubResource("Animation_3vc1e"),
+&"blood": SubResource("Animation_7cjf1")
+}
+
+[node name="BloodManage" type="Node2D" unique_id=389518886 node_paths=PackedStringArray("PlayerBlood")]
+script = ExtResource("1_kxjo3")
+PlayerBlood = NodePath("playerBlood")
+
+[node name="playerBlood" type="Node2D" parent="." unique_id=1947134630 node_paths=PackedStringArray("BloodPlayer")]
+script = ExtResource("2_8ythf")
+BloodPlayer = NodePath("bloodPlayer")
+
+[node name="back" type="Sprite2D" parent="playerBlood" unique_id=286486126]
+scale = Vector2(160, 22.000006)
+texture = SubResource("CanvasTexture_26kyx")
+
+[node name="blood" type="Sprite2D" parent="playerBlood" unique_id=1882273975]
+modulate = Color(1, 0, 0, 1)
+scale = Vector2(169.00002, 16)
+texture = SubResource("CanvasTexture_3vc1e")
+
+[node name="bloodPlayer" type="AnimationPlayer" parent="playerBlood" unique_id=355410469]
+libraries/ = SubResource("AnimationLibrary_k5ugh")

@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://dcsixevurqusm"]
+
+[ext_resource type="PackedScene" uid="uid://5qjlc4504hji" path="res://run_scene/little_test_attack.tscn" id="1_m36l2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m36l2"]
+size = Vector2(136, 132)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m36l2"]
+load_path = "res://.godot/imported/Monster.png-78bf099f1c57e34d64be5623260af491.ctex"
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_m36l2"]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_max = 1000.0
+gravity = Vector3(0, 0, 0)
+scale_min = 3.0
+scale_max = 3.0
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_38tho"]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 867.86
+initial_velocity_max = 1000.0
+gravity = Vector3(0, 0, 0)
+scale_min = 5.0
+scale_max = 5.0
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_m36l2"]
+
+[node name="littleTestAttack" unique_id=2081301322 instance=ExtResource("1_m36l2")]
+
+[node name="theBody" parent="." index="0" unique_id=689537998]
+shape = SubResource("RectangleShape2D_m36l2")
+
+[node name="littleModel" parent="." index="2" unique_id=1853265865]
+modulate = Color(0, 0.7058824, 0, 1)
+scale = Vector2(0.46875, 0.46875)
+texture = SubResource("CompressedTexture2D_m36l2")
+
+[node name="Dead" parent="GPUplayer" parent_id_path=PackedInt32Array(69504732) index="0" unique_id=1767962128]
+amount = 1024
+process_material = SubResource("ParticleProcessMaterial_m36l2")
+
+[node name="Dead_exp" parent="GPUplayer" parent_id_path=PackedInt32Array(69504732) index="1" unique_id=1213024477]
+amount = 2048
+lifetime = 0.4
+process_material = SubResource("ParticleProcessMaterial_38tho")
+
+[node name="AnimatableBody2D" parent="." index="8" unique_id=2045779071]
+physics_material_override = SubResource("PhysicsMaterial_m36l2")
+
+[node name="CollisionPolygon2D" parent="AnimatableBody2D" index="0" unique_id=1289922064]
+scale = Vector2(2.9375005, 2.9375005)

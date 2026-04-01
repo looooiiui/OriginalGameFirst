@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://ei5nsdfxtm33"]
+
+[ext_resource type="Script" uid="uid://cwydg8xjrvpqi" path="res://code/UiCode/PlayerUi/Blood/blood_control.gd" id="1_u0fp2"]
+
+[node name="UI" type="Control" unique_id=1326789036]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="BloodControl" type="Control" parent="." unique_id=1306736150 node_paths=PackedStringArray("Player_Blood_Ui")]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_u0fp2")
+Player_Blood_Ui = NodePath("playerBlood")
+metadata/_edit_use_anchors_ = true
+
+[node name="playerBlood" type="Label" parent="BloodControl" unique_id=1256236020]
+modulate = Color(0, 0.95823485, 0, 1)
+layout_mode = 0
+offset_left = -28.0
+offset_right = 26.0
+offset_bottom = 23.0
+text = "Hp:100"
+metadata/_edit_use_anchors_ = true

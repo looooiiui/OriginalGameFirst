@@ -1,0 +1,153 @@
+[gd_scene format=3 uid="uid://bsm11460bsebe"]
+
+[ext_resource type="Script" uid="uid://d2gpr8vavqfjr" path="res://code/bound_attack.gd" id="1_uoyub"]
+[ext_resource type="Texture2D" uid="uid://cl2e72ff8hl6q" path="res://Sprite/Bullet/bullet_litter.png" id="2_lhnbu"]
+[ext_resource type="Script" uid="uid://nkp6cvdbc7w4" path="res://code/never.gd" id="2_n26eb"]
+[ext_resource type="Script" uid="uid://bdxtleww3yg2k" path="res://code/bound/forNever.gd" id="3_qvj7i"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_n26eb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_26kyx"]
+size = Vector2(32, 10)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_uoyub"]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+emission_shape_offset = Vector3(-31, 0, 0)
+initial_velocity_max = 408.16
+gravity = Vector3(0, 0, 0)
+turbulence_enabled = true
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_n26eb"]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+initial_velocity_min = 1000.0
+initial_velocity_max = 1000.0
+gravity = Vector3(0, 0, 0)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_qvj7i"]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+direction = Vector3(1, 90, 0)
+spread = 5.0
+initial_velocity_max = 1000.0
+gravity = Vector3(0, 0, 0)
+scale_max = 3.0
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_r7kv7"]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+direction = Vector3(1, -90, 0)
+spread = 5.0
+initial_velocity_max = 1000.0
+gravity = Vector3(0, 0, 0)
+scale_max = 3.0
+
+[sub_resource type="Curve" id="Curve_uoyub"]
+_limits = [-200.0, 200.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1e-05, 0.7547302), 0.0, 0.0, 0, 0, Vector2(0.99999, -14.3396), 0.0, 0.0, 0, 0, Vector2(1, -200), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_n26eb"]
+curve = SubResource("Curve_uoyub")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_44wnd"]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 728.56
+initial_velocity_max = 728.56
+gravity = Vector3(0, 0, 0)
+linear_accel_min = 31.429996
+linear_accel_max = 31.429996
+linear_accel_curve = SubResource("CurveTexture_n26eb")
+scale_min = 4.0
+scale_max = 4.0
+turbulence_enabled = true
+
+[node name="boundAttack" type="Area2D" unique_id=706066812 node_paths=PackedStringArray("spawn_Sp", "spawn_Sp2", "front", "hit_gpu", "back_gpu", "delete_time", "Bullet_model") groups=["Attack"]]
+modulate = Color(0.39635608, 0.49123895, 0.98733133, 1)
+script = ExtResource("1_uoyub")
+type = 1
+spawn_Sp = NodePath("middle")
+spawn_Sp2 = NodePath("middle2")
+front = NodePath("front")
+hit_gpu = NodePath("hitExp")
+back_gpu = NodePath("back")
+delete_time = NodePath("Timer")
+Bullet_model = NodePath("Model/Model")
+
+[node name="Model" type="Node2D" parent="." unique_id=1955505608]
+
+[node name="Model" type="Sprite2D" parent="Model" unique_id=1966672816]
+texture = ExtResource("2_lhnbu")
+
+[node name="NEVER" type="Node2D" parent="." unique_id=929958236 node_paths=PackedStringArray("NODE")]
+script = ExtResource("2_n26eb")
+NODE = NodePath("..")
+
+[node name="never" type="Sprite2D" parent="NEVER" unique_id=407975225 node_paths=PackedStringArray("NODE")]
+modulate = Color(1, 1, 1, 0)
+top_level = true
+scale = Vector2(126, 52)
+texture = SubResource("CanvasTexture_n26eb")
+script = ExtResource("3_qvj7i")
+NODE = NodePath("../..")
+
+[node name="phy_body" type="CollisionShape2D" parent="." unique_id=1783078467]
+shape = SubResource("RectangleShape2D_26kyx")
+
+[node name="back" type="GPUParticles2D" parent="." unique_id=788228858]
+modulate = Color(0.14168763, 0.07245169, 0.33972645, 1)
+position = Vector2(15, 1)
+amount = 32
+lifetime = 0.2
+trail_enabled = true
+process_material = SubResource("ParticleProcessMaterial_uoyub")
+
+[node name="front" type="GPUParticles2D" parent="." unique_id=1252981186]
+modulate = Color(0.5442257, 1.3175793e-06, 3.3691526e-07, 1)
+position = Vector2(-32, -1)
+emitting = false
+amount = 521
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_n26eb")
+
+[node name="middle" type="GPUParticles2D" parent="." unique_id=1074769646]
+visible = false
+modulate = Color(0.35686275, 0.62352943, 1, 1)
+position = Vector2(-32, 0)
+emitting = false
+amount = 1024
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_qvj7i")
+
+[node name="middle2" type="GPUParticles2D" parent="." unique_id=945178224]
+visible = false
+modulate = Color(0.35686275, 0.62352943, 1, 1)
+position = Vector2(-32, 0)
+emitting = false
+amount = 1024
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_r7kv7")
+
+[node name="hitExp" type="GPUParticles2D" parent="." unique_id=762318477]
+modulate = Color(0, 0.25882354, 1, 1)
+position = Vector2(45, 0)
+rotation = -3.1415927
+emitting = false
+amount = 32
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_44wnd")
+
+[node name="Timer" type="Timer" parent="." unique_id=766991572]
+one_shot = true
+
+[node name="Back" type="Timer" parent="." unique_id=1497595534]
+wait_time = 0.2
+
+[connection signal="area_entered" from="." to="." method="_hited"]
