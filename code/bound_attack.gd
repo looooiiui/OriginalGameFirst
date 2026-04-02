@@ -24,7 +24,6 @@ static var BulletRecoil : Dictionary[String, float] = {
 @export var cooldown_Time : float
 @export var spawn_Sp : GPUParticles2D
 @export var spawn_Sp2 : GPUParticles2D
-@export var front : GPUParticles2D
 @export var back_gpu : GPUParticles2D
 @export var Bullet_model : Node2D
 @export var damage : float = 0.0
@@ -37,7 +36,6 @@ var is_hited : bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	fly_direction = Player.instance.transform.x
-	front.restart()
 	#时间重置
 	await get_tree().create_timer(10.0).timeout
 	queue_free()

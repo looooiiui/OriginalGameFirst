@@ -5,7 +5,7 @@ extends Node2D
 @export var armInventory : Array[Node2D]
 @export var selectColor : Color = Color(0.148, 0.773, 0.953, 1.0)
 @export var perUsing : int = 0
-
+@export var is_first_add : bool = true
 
 var original_Color : Color
 var nowUsing = null
@@ -13,13 +13,15 @@ var nowUsing = null
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	original_Color = armInventory[0].Back.modulate
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	
+	_first_attend()
 	_change_Inventory(nowSelect)
 	_change_Inventory_Select()
 	_hand_Taken()
-
+	
 func get_Select_Id() -> int:
 	return nowSelect
 
@@ -78,3 +80,13 @@ func _change_Inventory_Select():
 		perUsing = nowSelect
 		nowSelect = 3
 	PlayerUI.instance.currentSelect = nowSelect	
+
+func _first_attend():
+	if is_first_add:
+		if armInventory[nowSelect].selectId in CaseIcon.instance.InstanceManager.InstanceDic:
+			if Player.input_Enable:
+				nowUsing = CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId].instantiate()
+				get_tree().current_scene.add_child(nowUsing)
+				is_first_add = false
+	if GameManager.instance.currentLevel == 0:
+		is_first_add = true

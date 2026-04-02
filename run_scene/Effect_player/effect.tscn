@@ -18,7 +18,7 @@ script = ExtResource("1_knlx7")
 effect = NodePath("be_hited")
 
 [node name="be_hited" type="GPUParticles2D" parent="." unique_id=1497146644]
-amount = 64
+amount = 16
 explosiveness = 1.0
 process_material = SubResource("ParticleProcessMaterial_xmqxl")
 

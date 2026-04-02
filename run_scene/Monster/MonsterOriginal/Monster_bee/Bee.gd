@@ -116,7 +116,6 @@ func took_damage(damage):
 	if not is_dead:
 		MonsterAnim.modulate = Color(0.924, 0.0, 0.236, 1.0)
 		current_blood -= damage
-		print("受到伤害")
 		current_blood = clamp(current_blood, 0.0, original_blood)
 		blood.emit(current_blood, original_blood)
 		var temp_effort = hited_re_effort.instantiate()

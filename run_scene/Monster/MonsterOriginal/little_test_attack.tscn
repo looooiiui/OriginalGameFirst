@@ -173,14 +173,14 @@ texture = SubResource("CanvasTexture_rsmyw")
 [node name="Dead" type="GPUParticles2D" parent="GPUplayer" unique_id=1767962128]
 modulate = Color(1, 0.05490196, 1, 1)
 emitting = false
-amount = 4096
+amount = 64
 one_shot = true
 process_material = SubResource("ParticleProcessMaterial_rsmyw")
 
 [node name="Dead_exp" type="GPUParticles2D" parent="GPUplayer" unique_id=1213024477]
 modulate = Color(1, 0, 0, 1)
 emitting = false
-amount = 4096
+amount = 256
 one_shot = true
 explosiveness = 1.0
 process_material = SubResource("ParticleProcessMaterial_um7gu")
