@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://icsq8iwvai6a"]
+
+[ext_resource type="Script" uid="uid://b7584tki325dc" path="res://code/GridLogic/grid_logic.gd" id="1_4l3w5"]
+
+[node name="GridLogic" type="Node2D" unique_id=1510064625]
+script = ExtResource("1_4l3w5")

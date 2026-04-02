@@ -20,6 +20,8 @@ config/icon="res://icon.svg"
 CaseIconGlobal="*uid://c5ot4hv4pxnbq"
 PlayerUi="*uid://doi3mcft3mfjj"
 GlobalCamera="*uid://cf705erxqcy6g"
+ForGridPic="*uid://d3k8ssnb8e6ne"
+GridLogic="*uid://b7584tki325dc"
 MainPlayer="*uid://cchltm0wyh7qp"
 MainGameManager="*uid://cyuny7ao7nvdo"
 

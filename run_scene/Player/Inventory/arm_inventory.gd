@@ -6,6 +6,7 @@ extends Node2D
 @export var selectColor : Color = Color(0.148, 0.773, 0.953, 1.0)
 @export var perUsing : int = 0
 @export var is_first_add : bool = true
+@export var BackPackWindows : Window
 
 var original_Color : Color
 var nowUsing = null
@@ -33,7 +34,8 @@ func _change_Inventory(now_Select : int):
 	armInventory[perSelect].Back.modulate = original_Color
 	armInventory[nowSelect].Back.modulate = selectColor
 	perSelect = nowSelect
-	
+
+#可以直接实例化的物品
 func _input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		if event.pressed and Player.instance.input_Enable:
@@ -45,8 +47,16 @@ func _input(event):
 							realCase.global_position = Player.instance.global_position
 							realCase.global_rotation = Player.instance.global_rotation
 							get_tree().current_scene.add_child(realCase)
-							
-#判断手持
+				
+				elif armInventory[nowSelect].selectId.length() >= 6 and armInventory[nowSelect].selectId[5] == "C":	
+					if BackPackWindows.visible == false:
+						if CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId] != null:	
+							var realCase = CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId].instantiate()
+							var mouseGlobalPosition : Vector2 = get_global_mouse_position()
+							realCase.global_position = Grid.instance.snap(_get_mouse_world_pos())
+							get_tree().current_scene.add_child(realCase)
+
+#判断手持	
 func _hand_Taken():
 	if nowSelect != perUsing and Player.instance.input_Enable:
 		#防止报空
@@ -60,11 +70,16 @@ func _hand_Taken():
 				if armInventory[nowSelect].selectId in CaseIcon.instance.InstanceManager.InstanceDic:
 					nowUsing = CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId].instantiate()
 					get_tree().current_scene.add_child(nowUsing)
+			else:
+				if nowUsing != null:
+					nowUsing.queue_free()
+					nowUsing = null
 		else:
 			if nowUsing != null:
 				nowUsing.queue_free()
 				nowUsing = null
 		perUsing = nowSelect
+	
 
 func _change_Inventory_Select():
 	if Input.is_action_just_pressed("first_arm"):
@@ -84,9 +99,19 @@ func _change_Inventory_Select():
 func _first_attend():
 	if is_first_add:
 		if armInventory[nowSelect].selectId in CaseIcon.instance.InstanceManager.InstanceDic:
-			if Player.input_Enable:
-				nowUsing = CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId].instantiate()
-				get_tree().current_scene.add_child(nowUsing)
-				is_first_add = false
+			if armInventory[nowSelect].selectId.length() >= 6:
+				if Player.input_Enable:
+					nowUsing = CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId].instantiate()
+					get_tree().current_scene.add_child(nowUsing)
+					is_first_add = false
+				if armInventory[nowSelect].selectId[5] == "C":
+					if nowUsing != null:
+						nowUsing.queue_free()
 	if GameManager.instance.currentLevel == 0:
 		is_first_add = true
+	
+	
+func _get_mouse_world_pos():
+	var vp = get_viewport()
+	return vp.get_camera_2d().get_global_mouse_position()
+	

@@ -48,7 +48,8 @@ static var input_Enable : bool = false
 @export var strength_Mag : float = 1.0
 @export var intelligence_Mag : float = 1.0
 @export var vitality_Mag : float = 1.0
-
+@export var allCoolTime_Mag : float = 1.0
+ 
 
 var input_dir : Vector2
 var is_time : bool = false

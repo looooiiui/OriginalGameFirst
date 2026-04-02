@@ -140,10 +140,11 @@ texture = ExtResource("1_buj3y")
 [node name="BloodPlayer" type="AnimationPlayer" parent="PlayerUiManager/Blood" unique_id=1161666321]
 libraries/ = SubResource("AnimationLibrary_d2hik")
 
-[node name="ArmInventory" type="Node2D" parent="PlayerUiManager" unique_id=1470642694 node_paths=PackedStringArray("armInventory")]
+[node name="ArmInventory" type="Node2D" parent="PlayerUiManager" unique_id=1470642694 node_paths=PackedStringArray("armInventory", "BackPackWindows")]
 position = Vector2(172, 59)
 script = ExtResource("3_d2hik")
 armInventory = [NodePath("1"), NodePath("2"), NodePath("3"), NodePath("4")]
+BackPackWindows = NodePath("../Windows/BackPack")
 
 [node name="1" type="Node2D" parent="PlayerUiManager/ArmInventory" unique_id=1576402638 node_paths=PackedStringArray("Back", "Inventory", "case", "Follow_Case", "UI", "BackPack")]
 script = ExtResource("4_mmta7")

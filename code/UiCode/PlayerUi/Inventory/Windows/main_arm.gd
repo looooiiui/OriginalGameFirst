@@ -12,6 +12,7 @@ static var instance : MainArm
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	armInventory[0].selectId = "10000G"
+	armInventory[1].selectId = "00001C"
 	if MainArm.instance == null:
 		MainArm.instance = self
 	else:

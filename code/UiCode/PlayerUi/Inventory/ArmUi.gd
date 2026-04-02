@@ -37,7 +37,13 @@ func change_case_icon():
 		case.texture = CaseIcon.instance.Case.idToIcon["null"]
 	else:
 		case.texture = null
-
+	
+	if selectId in CaseIcon.instance.Case.idToIcon:
+		case.texture = CaseIcon.instance.Case.idToIcon[selectId]
+	elif selectId != "":
+		case.texture = CaseIcon.instance.Case.idToIcon["null"]
+	else:
+		case.texture = null
 
 func _input(event):
 	var mouse = get_viewport().get_mouse_position()
