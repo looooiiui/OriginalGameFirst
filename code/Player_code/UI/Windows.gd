@@ -9,7 +9,20 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	
 	if Input.is_action_just_pressed("backPack") and GameManager.instance.currentLevel != 0:
-		BackPackWindows.visible = !BackPackWindows.visible
-		GameManager.instance.is_Mouse_Visible = !GameManager.instance.is_Mouse_Visible
-		is_BackPack_Visible = BackPackWindows.visible
+		if !GameManager.instance.WindowsManager.ExitMenu.visible:
+			BackPackWindows.visible = !BackPackWindows.visible
+			is_BackPack_Visible = BackPackWindows.visible
+			if is_BackPack_Visible:
+				GameManager.instance.windowsCount += 1
+			else:
+				GameManager.instance.windowsCount -= 1
+	
+	_check_Main_Menu()
+
+func _check_Main_Menu():
+	if GameManager.instance.currentLevel == 0:
+		if is_BackPack_Visible:
+			BackPackWindows.visible = !BackPackWindows.visible
+			is_BackPack_Visible = false

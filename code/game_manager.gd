@@ -20,6 +20,7 @@ static var instance : GameManager
 @export var is_PlayerUI : bool = false
 @export var WindowsManager : Node2D
 @export var UiManager : Node2D
+@export var windowsMaxlimited : int = 10
 #--------------游戏关卡管理-------------#
 @export var currentLevel : float = 0
 @export var is_Track_Player : bool = false
@@ -29,21 +30,21 @@ static var instance : GameManager
 @export var worldBoundaryXDown : float = 0
 @export var is_Game_Over : bool = false
 #--------------操控设置--------------#
-@export var is_Mouse_Visible : bool = true
+@export var windowsCount : int = 0
 
 func _ready() -> void:
 	if GameManager.instance == null:
 		GameManager.instance = self
 	else:
 		queue_free()
-	test.testInt
+		
 	Monster_spwan_time.wait_time = spawn_time
 	Monster_spwan_time.start()
 	Player.instance.input_Enable = true
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
 func _process(delta: float) -> void:
-	
+
 	#--------调试信息显示-------#
 	if Input.is_action_just_pressed("debug"):
 		if is_Debug == false:
@@ -53,17 +54,10 @@ func _process(delta: float) -> void:
 			DebugInformation.visible = false
 			is_Debug = false
 	
+
+	windowsCount = clamp(windowsCount, 0, windowsMaxlimited)		
+	Mouse_Visible()
 	
-	
-	#---------控制设置---------#
-	if Input.is_action_just_pressed("mouse_visible"):
-		if is_Mouse_Visible:
-			is_Mouse_Visible = false
-		else:
-			is_Mouse_Visible = true
-			
-			
-	Mouse_Visible(is_Mouse_Visible)
 	#------------------------#
 	
 	#----------玩家UI显示---------#
@@ -84,15 +78,15 @@ func _process(delta: float) -> void:
 		is_Game_Over = false
 		get_tree().change_scene_to_file("res://run_scene/main_menu.tscn")
 		Player.instance.real_hp = Player.instance.max_hp
-		GameManager.instance.is_Mouse_Visible = true
 		UiManager.game_Over()
 		
 	gameover_Hp_Clear()
 	UI_Player_visible()
 
-
-func Mouse_Visible(is_Mouse_Visible : bool):
-	if is_Mouse_Visible:
+func Mouse_Visible():
+	#防windows出错
+	
+	if windowsCount > 0:
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	else:
 		Input.mouse_mode = Input.MouseMode.MOUSE_MODE_CONFINED_HIDDEN

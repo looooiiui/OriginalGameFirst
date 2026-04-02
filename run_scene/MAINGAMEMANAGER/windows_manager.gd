@@ -10,22 +10,16 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	
 	if Input.is_action_just_pressed("ExitMenu"):
-		ExitMenu.visible = !ExitMenu.visible
-		if ExitMenu.visible == true:
-			GameManager.instance.is_Mouse_Visible = true
-		else:
-			GameManager.instance.is_Mouse_Visible = false
-		
-		if GameManager.instance.currentLevel == 0:
-			GameManager.instance.is_Mouse_Visible = true
+		change_Windows_Visible()
 
 func change_Windows_Visible():
 	ExitMenu.visible = !ExitMenu.visible
 	if ExitMenu.visible == true:
-		GameManager.instance.is_Mouse_Visible = true
+		GameManager.instance.windowsCount += 1
 	else:
-		GameManager.instance.is_Mouse_Visible = false
+		GameManager.instance.windowsCount -= 1
 
 
 func _return_Main_menu() -> void:

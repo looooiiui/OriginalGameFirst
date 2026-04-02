@@ -3,9 +3,10 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	GameManager.instance.windowsCount = 1
 	GameManager.instance.currentLevel = 0
 	Player.instance.input_Enable = false
-
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

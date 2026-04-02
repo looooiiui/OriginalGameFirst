@@ -104,5 +104,7 @@ func Camera_Smooth_control():
 func game_Over():
 	if GameManager.instance.is_Game_Over:
 		GameoverUi.GameOverLabel.visible = true
+		GameManager.instance.windowsCount += 1
 	else:
+		GameManager.instance.windowsCount -= 1
 		GameoverUi.GameOverLabel.visible = false

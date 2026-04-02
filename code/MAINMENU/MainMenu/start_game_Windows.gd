@@ -17,7 +17,7 @@ func _Back_MainMenu() -> void:
 
 
 func _Original_Level() -> void:
-	get_tree().change_scene_to_file("res://run_scene/node_2d.tscn")
+	get_tree().change_scene_to_file("res://run_scene/Level/node_2d.tscn")
 
 
 func _Random_Level() -> void:

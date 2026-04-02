@@ -12,7 +12,7 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Player.input_Enable = true
-	GameManager.instance.is_Mouse_Visible = false
+	GameManager.instance.windowsCount = 0
 	GameManager.instance.worldBoundaryXLeft = worldBoundaryXLeft
 	GameManager.instance.worldBoundaryXRight = worldBoundaryXRight
 	GameManager.instance.worldBoundaryXUp = worldBoundaryXUp
