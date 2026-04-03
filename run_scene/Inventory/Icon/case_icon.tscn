@@ -11,9 +11,12 @@
 [ext_resource type="PackedScene" uid="uid://15u7m6g5pppv" path="res://run_scene/AttactCase/bullet_little/bound_attack.tscn" id="8_hgpgj"]
 [ext_resource type="Texture2D" uid="uid://ccgj67r7vdvb7" path="res://Sprite/player_test.png" id="8_qux86"]
 [ext_resource type="PackedScene" uid="uid://caqd63fcc4ldq" path="res://run_scene/AttactCase/ButtleMoreLittle/bound_attack.tscn" id="9_c4sk4"]
+[ext_resource type="Texture2D" uid="uid://bt0rkc6hkty4m" path="res://Sprite/Monster64X.png" id="9_hiajp"]
 [ext_resource type="PackedScene" uid="uid://bsm11460bsebe" path="res://run_scene/AttactCase/bullet_little/Bullet_little.tscn" id="10_dcolj"]
 [ext_resource type="PackedScene" uid="uid://cju2qael3846t" path="res://run_scene/Inventory/Things/10000G.tscn" id="11_c4sk4"]
 [ext_resource type="PackedScene" uid="uid://bw1hqmk4p0rbo" path="res://run_scene/Inventory/Things/Case/00001c.tscn" id="14_d5e5e"]
+[ext_resource type="PackedScene" uid="uid://pddclhsrv17f" path="res://run_scene/Inventory/Things/Case/00002C.tscn" id="16_734ha"]
+[ext_resource type="PackedScene" uid="uid://cp7wrgbr4ejyl" path="res://run_scene/Inventory/Things/Attack/10001G.tscn" id="17_734ha"]
 
 [node name="CaseIcon" type="Node2D" unique_id=827709238 node_paths=PackedStringArray("InstanceManager", "ArmIcon", "Case")]
 script = ExtResource("1_x61yx")
@@ -33,6 +36,7 @@ idToIcon = Dictionary[String, Texture2D]({
 script = ExtResource("6_eufo6")
 idToIcon = Dictionary[String, Texture2D]({
 "00001C": ExtResource("8_qux86"),
+"00002C": ExtResource("9_hiajp"),
 "null": ExtResource("3_eufo6")
 })
 
@@ -42,6 +46,8 @@ InstanceDic = Dictionary[String, PackedScene]({
 "00001A": ExtResource("8_hgpgj"),
 "00001C": ExtResource("14_d5e5e"),
 "00002A": ExtResource("10_dcolj"),
+"00002C": ExtResource("16_734ha"),
 "00003A": ExtResource("9_c4sk4"),
-"10000G": ExtResource("11_c4sk4")
+"10000G": ExtResource("11_c4sk4"),
+"10001G": ExtResource("17_734ha")
 })

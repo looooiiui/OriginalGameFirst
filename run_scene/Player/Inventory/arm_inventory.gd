@@ -51,10 +51,11 @@ func _input(event):
 				elif armInventory[nowSelect].selectId.length() >= 6 and armInventory[nowSelect].selectId[5] == "C":	
 					if BackPackWindows.visible == false:
 						if CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId] != null:	
-							var realCase = CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId].instantiate()
-							var mouseGlobalPosition : Vector2 = get_global_mouse_position()
-							realCase.global_position = Grid.instance.snap(_get_mouse_world_pos())
-							get_tree().current_scene.add_child(realCase)
+							var mouse_Grip_Position = Grid.instance.to_grid(_get_mouse_world_pos())
+							if Player.instance.current_Grip != mouse_Grip_Position:
+								var realCase = CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId].instantiate()
+								realCase.global_position = Grid.instance.snap(_get_mouse_world_pos())
+								get_tree().current_scene.add_child(realCase)
 
 #判断手持	
 func _hand_Taken():

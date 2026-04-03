@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://v12v04y8fu47" path="res://Sprite/animationSprite/Player/formalRun.png" id="6_d64p3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7cjf1"]
-size = Vector2(29, 71)
+size = Vector2(64, 63)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d64p3"]
 atlas = ExtResource("5_5dgva")
@@ -306,15 +306,41 @@ animations = [{
 [node name="Player" type="CharacterBody2D" unique_id=573955802 node_paths=PackedStringArray("MeleeCooldown", "PlayerAction") groups=["Player"]]
 position = Vector2(10, 6)
 script = ExtResource("1_rlq3c")
+move_speed = null
+playerToward = null
+meleeDamage = null
 Melee = ExtResource("2_6dqgl")
+current_Grip = null
+original_time = null
+real_time = null
 MeleeCooldown = NodePath("TimeManager/MeleeCooldown/melee")
+max_hp = null
+real_hp = null
+move_smooth = null
+stop_smooth = null
 Back_effect = ExtResource("3_yf2wp")
+back_attack = null
+rotate_Smooth = null
 PlayerAction = NodePath("AnimatedSprite2D")
+is_running = null
+is_Melee = null
+now_Arm_select = null
+offset = null
+max_Magic_Point = null
+attackDamageMag = null
+defense_Mag = null
+magic_Attack_Mag = null
+magic_defense_Mag = null
+dexterity_Mag = null
+strength_Mag = null
+intelligence_Mag = null
+vitality_Mag = null
+allCoolTime_Mag = null
 metadata/_edit_group_ = true
 
 [node name="the_true_coll" type="CollisionShape2D" parent="." unique_id=1619025999 groups=["Player"]]
 top_level = true
-position = Vector2(-1.5, 9.5)
+position = Vector2(-2, 9.5)
 shape = SubResource("RectangleShape2D_7cjf1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1177115828]

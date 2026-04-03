@@ -13,6 +13,8 @@ static var instance : MainArm
 func _ready() -> void:
 	armInventory[0].selectId = "10000G"
 	armInventory[1].selectId = "00001C"
+	armInventory[2].selectId = "00002C"
+	armInventory[3].selectId = "10001G"
 	if MainArm.instance == null:
 		MainArm.instance = self
 	else:

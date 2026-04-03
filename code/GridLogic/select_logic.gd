@@ -27,7 +27,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	
-	if !is_Original:
+	if !is_Original and GameManager.instance.currentLevel != 0:
 		#初始化高亮图标
 		perLevel = GameManager.instance.currentLevel
 		real_grip = SelectedGrid.instantiate()
@@ -45,14 +45,19 @@ func _process(delta: float) -> void:
 		perLevel = GameManager.instance.currentLevel
 	
 	_grid_HighLight()
-	
+	_clear_Main_Menu()
 	
 	
 func _grid_HighLight():
 	
 	mouseGlobalPosition = get_global_mouse_position()
 	currentGrip = Grid.instance.to_grid(mouseGlobalPosition)
-	if currentGrip != PerGrip:
+	if currentGrip != PerGrip and real_grip != null:
 		real_grip.global_position = Grid.instance.snap(mouseGlobalPosition)
 		PerGrip = currentGrip
 		
+func _clear_Main_Menu():
+	if GameManager.instance.currentLevel == 0:
+		if real_grip != null:
+			real_grip.queue_free()
+			is_Original = false

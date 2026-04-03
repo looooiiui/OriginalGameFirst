@@ -13,6 +13,7 @@ static var input_Enable : bool = false
 @export var playerToward : bool = true
 @export var meleeDamage : float = 20
 @export var Melee : PackedScene
+@export var current_Grip : Vector2i
 #计时器
 @export var original_time : float = 0.3
 @export var real_time : float = 0.3
@@ -49,7 +50,7 @@ static var input_Enable : bool = false
 @export var intelligence_Mag : float = 1.0
 @export var vitality_Mag : float = 1.0
 @export var allCoolTime_Mag : float = 1.0
- 
+
 
 var input_dir : Vector2
 var is_time : bool = false
@@ -72,6 +73,7 @@ func _process(delta: float) -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
 	
+	_cal_Grip_Position()
 	#玩家控制
 	PlayerAction.global_position = global_position
 	if input_Enable:
@@ -95,7 +97,7 @@ func _physics_process(delta: float) -> void:
 	rotation = lerp(rotation, wrapf(rotation + target_dir_change, -2 * PI, 2 * PI), rotate_Smooth)
 	
 	#控制后座方向
-
+	
 	
 	#攻击控制(互动控制)
 
@@ -162,3 +164,6 @@ func _input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		if event.pressed and input_Enable:
 			pass
+
+func _cal_Grip_Position():
+	current_Grip = Grid.instance.to_grid(global_position)

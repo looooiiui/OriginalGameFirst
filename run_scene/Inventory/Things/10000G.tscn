@@ -3,12 +3,12 @@
 [ext_resource type="Script" uid="uid://djv0n3pts2ls5" path="res://code/CaseIcon/Thing/100A/100A.gd" id="1_v3jmv"]
 [ext_resource type="Texture2D" uid="uid://bmyopmleqpvb1" path="res://Sprite/Gun/Static/10000G.png" id="2_otq4c"]
 
-[node name="10000A" type="Node2D" unique_id=696030071 node_paths=PackedStringArray("OriginalCoolTimer")]
+[node name="10000G" type="Node2D" unique_id=696030071 node_paths=PackedStringArray("OriginalCoolTimer")]
 script = ExtResource("1_v3jmv")
-could_Buttle = Array[String](["00002A"])
+could_Buttle = Array[String](["00002A", "00001A", "00003A"])
 OriginalCoolTimer = NodePath("cooltime")
 
-[node name="10000A" type="Sprite2D" parent="." unique_id=1864006065]
+[node name="10000G" type="Sprite2D" parent="." unique_id=1864006065]
 texture = ExtResource("2_otq4c")
 
 [node name="cooltime" type="Timer" parent="." unique_id=1782875213]
