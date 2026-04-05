@@ -5,6 +5,7 @@
 [sub_resource type="CanvasTexture" id="CanvasTexture_td4sp"]
 
 [node name="10001G" unique_id=696030071 instance=ExtResource("1_td4sp")]
+current_state = 1
 gunType = 1
 
 [node name="10000G" parent="." index="0" unique_id=1864006065]

@@ -32,6 +32,8 @@ static var instance : GameManager
 #--------------操控设置--------------#
 @export var windowsCount : int = 0
 
+
+
 func _ready() -> void:
 	if GameManager.instance == null:
 		GameManager.instance = self

@@ -14,6 +14,7 @@ enum TheMainType {MAINARM, BACKMENT, EQUIMENT}
 @export var selectColor : Color = Color(0.148, 0.773, 0.953, 0.5)
 @export var is_Case_Taken : bool = false
 @export var selectOffset : float = 0.5
+
 var is_Mouse_Inside : bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -25,7 +26,6 @@ func _process(delta: float) -> void:
 	if Follow_Case:
 		selectId = Follow_Case.selectId
 		
-	
 	_mouse_Inside_Light()
 	change_case_icon()
 	_follow_Mouse()
@@ -33,18 +33,13 @@ func _process(delta: float) -> void:
 func change_case_icon():
 	if selectId in CaseIcon.instance.ArmIcon.idToIcon:
 		case.texture = CaseIcon.instance.ArmIcon.idToIcon[selectId]
-	elif selectId != "":
-		case.texture = CaseIcon.instance.Case.idToIcon["null"]
-	else:
-		case.texture = null
-	
-	if selectId in CaseIcon.instance.Case.idToIcon:
+	elif selectId in CaseIcon.instance.Case.idToIcon:
 		case.texture = CaseIcon.instance.Case.idToIcon[selectId]
 	elif selectId != "":
 		case.texture = CaseIcon.instance.Case.idToIcon["null"]
 	else:
 		case.texture = null
-
+	
 func _input(event):
 	var mouse = get_viewport().get_mouse_position()
 		
@@ -103,3 +98,4 @@ func _follow_Mouse():
 		case.global_transform.origin = mouse
 	else:
 		case.transform.origin = Back.transform.origin
+		

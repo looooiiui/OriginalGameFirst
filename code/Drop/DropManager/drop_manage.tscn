@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://qu5m5w5uve86"]
+
+[ext_resource type="Script" uid="uid://ctuv22rc7d35h" path="res://run_scene/DropManager/Rrop_manager.gd" id="1_blg4g"]
+[ext_resource type="PackedScene" uid="uid://cju2qael3846t" path="res://run_scene/Inventory/Things/10000G.tscn" id="2_2u6w2"]
+
+[node name="DropManage" type="Node2D" unique_id=1903834569]
+script = ExtResource("1_blg4g")
+temp = ExtResource("2_2u6w2")

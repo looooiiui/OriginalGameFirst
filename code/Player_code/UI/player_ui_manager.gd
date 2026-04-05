@@ -7,6 +7,7 @@ static var instance : PlayerUI
 @export var Blood_player : AnimationPlayer
 @export var currentSelect : int = 0
 @export var ArmInventory : Node2D
+@export var BackPackNode : Node2D
 
 var real_play_time : float
 var all_play_time : float

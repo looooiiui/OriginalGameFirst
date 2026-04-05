@@ -5,6 +5,7 @@
 
 [node name="10000G" type="Node2D" unique_id=696030071 node_paths=PackedStringArray("OriginalCoolTimer")]
 script = ExtResource("1_v3jmv")
+current_state = 1
 could_Buttle = Array[String](["00002A", "00001A", "00003A"])
 OriginalCoolTimer = NodePath("cooltime")
 

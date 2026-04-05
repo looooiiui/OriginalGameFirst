@@ -5,7 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://c5vqdg8ahnbq4" path="res://Sprite/BACK/Back_UP.png" id="3_eufo6"]
 [ext_resource type="Texture2D" uid="uid://cl2e72ff8hl6q" path="res://Sprite/Bullet/bullet_litter.png" id="3_te7lt"]
 [ext_resource type="Texture2D" uid="uid://xnw2bcfc6pp8" path="res://Sprite/Bullet/buttet_new.png" id="4_eufo6"]
-[ext_resource type="Texture2D" uid="uid://bmyopmleqpvb1" path="res://Sprite/Gun/Static/10000G.png" id="5_dcolj"]
 [ext_resource type="Script" uid="uid://biuy8trky66cj" path="res://run_scene/Inventory/Icon/Case/case.gd" id="6_eufo6"]
 [ext_resource type="Script" uid="uid://2untal3d016f" path="res://code/CaseIcon/InstanceManager/instanceManager.gd" id="7_odlxj"]
 [ext_resource type="PackedScene" uid="uid://15u7m6g5pppv" path="res://run_scene/AttactCase/bullet_little/bound_attack.tscn" id="8_hgpgj"]
@@ -18,6 +17,9 @@
 [ext_resource type="PackedScene" uid="uid://pddclhsrv17f" path="res://run_scene/Inventory/Things/Case/00002C.tscn" id="16_734ha"]
 [ext_resource type="PackedScene" uid="uid://cp7wrgbr4ejyl" path="res://run_scene/Inventory/Things/Attack/10001G.tscn" id="17_734ha"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hiajp"]
+load_path = "res://.godot/imported/10000G.png-aa52d5414e30b0bae7cbf52b1c5e7fb2.ctex"
+
 [node name="CaseIcon" type="Node2D" unique_id=827709238 node_paths=PackedStringArray("InstanceManager", "ArmIcon", "Case")]
 script = ExtResource("1_x61yx")
 InstanceManager = NodePath("InstanceManager")
@@ -29,7 +31,7 @@ script = ExtResource("2_girj7")
 idToIcon = Dictionary[String, Texture2D]({
 "00002A": ExtResource("3_te7lt"),
 "00003A": ExtResource("4_eufo6"),
-"10000G": ExtResource("5_dcolj")
+"10000G": SubResource("CompressedTexture2D_hiajp")
 })
 
 [node name="Case" type="Node2D" parent="." unique_id=1399456806]

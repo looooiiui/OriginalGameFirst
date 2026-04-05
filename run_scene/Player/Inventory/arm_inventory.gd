@@ -65,11 +65,16 @@ func _hand_Taken():
 			#防止字符串越界
 			if armInventory[nowSelect].selectId.length() >= 6 and armInventory[nowSelect].selectId[5] == "G":
 				if nowUsing != null:
-					nowUsing.queue_free()
-					nowUsing = null
+					print("ni")
+					if nowUsing.current_state == nowUsing.GunState.HAND:
+						nowUsing.queue_free()
+						nowUsing = null
+					else:
+						nowUsing = null
 				#实例化手持物品
 				if armInventory[nowSelect].selectId in CaseIcon.instance.InstanceManager.InstanceDic:
 					nowUsing = CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId].instantiate()
+					nowUsing.current_state = nowUsing.GunState.HAND
 					get_tree().current_scene.add_child(nowUsing)
 			else:
 				if nowUsing != null:
@@ -115,4 +120,5 @@ func _first_attend():
 func _get_mouse_world_pos():
 	var vp = get_viewport()
 	return vp.get_camera_2d().get_global_mouse_position()
+	
 	
