@@ -45,10 +45,10 @@ func _can_drop_detect():
 		drop_current = 0		
 		
 func _drop_append():
-		if drop_current < drop_maxLimited:
-			var inst = temp.instantiate()
-			get_tree().current_scene.add_child(inst)
-			drop_current += 1
+	if drop_current < drop_maxLimited:
+		var inst = temp.instantiate()
+		get_tree().current_scene.add_child(inst)
+		drop_current += 1
 			
 func _stop_game():
 	drop_current = 0

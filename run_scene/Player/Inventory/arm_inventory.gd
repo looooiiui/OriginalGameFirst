@@ -3,10 +3,12 @@ extends Node2D
 @export var nowSelect : int = 0
 @export var perSelect : int = 0
 @export var armInventory : Array[Node2D]
+@export var armDisplayInvertory : Array[Node2D]
 @export var selectColor : Color = Color(0.148, 0.773, 0.953, 1.0)
 @export var perUsing : int = 0
 @export var is_first_add : bool = true
 @export var BackPackWindows : Window
+
 
 var original_Color : Color
 var nowUsing = null
@@ -33,6 +35,9 @@ func _change_Inventory(now_Select : int):
 	
 	armInventory[perSelect].Back.modulate = original_Color
 	armInventory[nowSelect].Back.modulate = selectColor
+	
+	armDisplayInvertory[perSelect].Back.modulate = original_Color
+	armDisplayInvertory[nowSelect].Back.modulate = selectColor
 	perSelect = nowSelect
 
 #可以直接实例化的物品
@@ -59,31 +64,33 @@ func _input(event):
 
 #判断手持	
 func _hand_Taken():
+	
+	
+	
+	if Input.is_action_just_pressed("drop"):
+		if nowUsing != null:
+			if armInventory[nowSelect].selectId.length() >= 6 and armInventory[nowSelect].selectId[5] == "G":
+				nowUsing.current_state = nowUsing.GunState.DROP
+				armInventory[nowSelect].selectId = ""
+				nowUsing = null	
+
 	if nowSelect != perUsing and Player.instance.input_Enable:
 		#防止报空
+		if nowUsing != null:
+			if armInventory[perUsing].selectId.length() >= 6 and armInventory[perUsing].selectId[5] == "G":
+				nowUsing.queue_free()
+				nowUsing = null
+		
 		if armInventory[nowSelect].selectId != "":
 			#防止字符串越界
 			if armInventory[nowSelect].selectId.length() >= 6 and armInventory[nowSelect].selectId[5] == "G":
-				if nowUsing != null:
-					print("ni")
-					if nowUsing.current_state == nowUsing.GunState.HAND:
-						nowUsing.queue_free()
-						nowUsing = null
-					else:
-						nowUsing = null
 				#实例化手持物品
 				if armInventory[nowSelect].selectId in CaseIcon.instance.InstanceManager.InstanceDic:
 					nowUsing = CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId].instantiate()
+					nowUsing.global_position = Player.instance.global_position
 					nowUsing.current_state = nowUsing.GunState.HAND
 					get_tree().current_scene.add_child(nowUsing)
-			else:
-				if nowUsing != null:
-					nowUsing.queue_free()
-					nowUsing = null
-		else:
-			if nowUsing != null:
-				nowUsing.queue_free()
-				nowUsing = null
+
 		perUsing = nowSelect
 	
 
@@ -108,11 +115,12 @@ func _first_attend():
 			if armInventory[nowSelect].selectId.length() >= 6:
 				if Player.input_Enable:
 					nowUsing = CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId].instantiate()
+					nowUsing.current_state = nowUsing.GunState.HAND
 					get_tree().current_scene.add_child(nowUsing)
-					is_first_add = false
 				if armInventory[nowSelect].selectId[5] == "C":
 					if nowUsing != null:
 						nowUsing.queue_free()
+		is_first_add = false
 	if GameManager.instance.currentLevel == 0:
 		is_first_add = true
 	

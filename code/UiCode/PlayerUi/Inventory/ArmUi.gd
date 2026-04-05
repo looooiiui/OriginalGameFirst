@@ -73,7 +73,7 @@ func _mouse_Inside_Light():
 	if _mouse_Inside():
 		modulate = selectColor
 	else:
-		modulate = originalColor	
+		modulate = originalColor
 	
 #判断鼠标入内	
 func _mouse_Inside() -> bool:

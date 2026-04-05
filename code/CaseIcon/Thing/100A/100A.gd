@@ -8,7 +8,6 @@ static var id_dic : Dictionary[int, String] = {
 	GunType.ORIGINALMORE : "10001G"
 }
 
-
 @export var current_state : GunState
 @export var gunType : GunType
 @export var could_Buttle : Array[String]
@@ -67,11 +66,10 @@ func _player_detect():
 			if Player.instance.global_position.x > global_position.x - drop_thing.instance.take_range:
 				if Player.instance.global_position.y < global_position.y + drop_thing.instance.take_range:
 					if Player.instance.global_position.y > global_position.y - drop_thing.instance.take_range:
-						if Input.is_action_just_pressed("take_drop") and !in_hand:
+						if Input.is_action_just_pressed("take_drop") and current_state != GunState.HAND:
 							PlayerUI.instance.BackPackNode.BackPackWindows.check_empty(id_dic[gunType])
-							in_hand = false
 							queue_free()
-	
+
 	if current_state == GunState.HAND:
 		if Input.is_action_just_pressed("drop"):
 			current_state = GunState.DROP
