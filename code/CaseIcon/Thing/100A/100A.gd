@@ -8,6 +8,7 @@ static var id_dic : Dictionary[int, String] = {
 	GunType.ORIGINALMORE : "10001G"
 }
 
+
 @export var current_state : GunState
 @export var gunType : GunType
 @export var could_Buttle : Array[String]

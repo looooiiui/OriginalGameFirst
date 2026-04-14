@@ -62,6 +62,7 @@ func _input(event):
 								realCase.global_position = Grid.instance.snap(_get_mouse_world_pos())
 								get_tree().current_scene.add_child(realCase)
 
+
 #判断手持	
 func _hand_Taken():
 	
@@ -128,5 +129,12 @@ func _first_attend():
 func _get_mouse_world_pos():
 	var vp = get_viewport()
 	return vp.get_camera_2d().get_global_mouse_position()
+	
+#测试临时代码(防止主物品栏拖动)
+func _stop_move():
+	armDisplayInvertory[0]
+	armDisplayInvertory[1]
+	armDisplayInvertory[2]
+	armDisplayInvertory[3]
 	
 	
