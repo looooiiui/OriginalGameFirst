@@ -21,12 +21,11 @@ func _ready() -> void:
 	GameManager.instance.worldBoundaryXLeft = -randomWorldX
 	GameManager.instance.worldBoundaryXRight = randomWorldX
 	
-	for i in range(-randomWorldX, randomWorldX, 4):
-		for j in range(-randomWorldY, randomWorldY, 4):
-			randomX = randi_range(0, 0)
-			randomY = randi_range(0, 0)
-			randomPicture = randi_range(0, 3)
-			RandomGround.set_cell(Vector2i(i, j), randomPicture, Vector2i(randomX, randomY))
+##	for i in range(-randomWorldX, randomWorldX, 4):
+##		for j in range(-rand omWorldY, randomWorldY, 4):
+##			randomY = randi_range(0, 0)
+##			randomPicture = randi_range(0, 3)
+##			RandomGround.set_cell(Vector2i(i, j), randomPicture, Vector2i(randomX, randomY))
 		
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

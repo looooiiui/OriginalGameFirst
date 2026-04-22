@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="2dSELF"
-run/main_scene="uid://dsaysc8ne3bxs"
+run/main_scene="uid://d00jd8c4eaglh"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -31,6 +31,10 @@ MainGameManager="*uid://cyuny7ao7nvdo"
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/stretch/mode="canvas_items"
+
+[dotnet]
+
+project/assembly_name="2dSELF"
 
 [global_group]
 

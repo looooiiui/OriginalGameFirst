@@ -8,10 +8,7 @@
 [ext_resource type="Theme" uid="uid://ig01olb8a1ug" path="res://theme/front_theme.tres" id="6_hab6i"]
 [ext_resource type="Script" uid="uid://c7eibiyl1xt15" path="res://run_scene/MAINGAMEMANAGER/windows_manager.gd" id="6_jupgj"]
 [ext_resource type="Script" uid="uid://cnvn4bm7xg10f" path="res://run_scene/MAINGAMEMANAGER/exit_menu.gd" id="7_11aqv"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_kp6gr"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_11aqv"]
+[ext_resource type="Texture2D" uid="uid://c3cq77nocfsxc" path="res://Sprite/BACK/ESCBACK/EscBack.png" id="9_bhboq"]
 
 [node name="GameManager" type="Node2D" unique_id=223941287 node_paths=PackedStringArray("MonsterManager", "Monster_spwan_time", "DebugInformation", "WindowsManager", "UiManager")]
 script = ExtResource("1_jupgj")
@@ -311,17 +308,10 @@ ReturnToDesktop = NodePath("Button/ReturnToDesktop")
 
 [node name="Back" type="Node2D" parent="Windows/WindowsManager/ExitMenu" unique_id=622713275]
 
-[node name="BackSecond" type="Sprite2D" parent="Windows/WindowsManager/ExitMenu/Back" unique_id=1788255605]
-modulate = Color(0.7135254, 0.6944255, 0.6672199, 1)
-position = Vector2(504, 335)
-scale = Vector2(3022, 1520)
-texture = SubResource("CanvasTexture_kp6gr")
-
-[node name="Back" type="Sprite2D" parent="Windows/WindowsManager/ExitMenu/Back" unique_id=1075861166]
-modulate = Color(0.037033387, 0.47818625, 0.43217248, 1)
-position = Vector2(799.5, 376.5)
-scale = Vector2(1579, 732.99994)
-texture = SubResource("CanvasTexture_11aqv")
+[node name="Back" type="Sprite2D" parent="Windows/WindowsManager/ExitMenu/Back" unique_id=40473692]
+position = Vector2(871, 423.5)
+scale = Vector2(0.78095233, 0.7055375)
+texture = ExtResource("9_bhboq")
 
 [node name="Button" type="Node2D" parent="Windows/WindowsManager/ExitMenu" unique_id=677269485]
 

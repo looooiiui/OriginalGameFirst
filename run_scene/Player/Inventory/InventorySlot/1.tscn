@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://d2ep05l21dx7i"]
+
+[ext_resource type="Script" uid="uid://ciibfluc3sbtn" path="res://code/UiCode/PlayerUi/Inventory/ArmUi.gd" id="1_1wjox"]
+[ext_resource type="Texture2D" uid="uid://csjo1c16subgu" path="res://Sprite/Ui/Inventory.png" id="2_v4ka5"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_d2hik"]
+
+[node name="1" type="Node2D" unique_id=367580399 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
+script = ExtResource("1_1wjox")
+type = 1
+Back = NodePath("back1")
+Inventory = NodePath("1")
+case = NodePath("Case")
+BackPack = NodePath("")
+
+[node name="back1" type="Sprite2D" parent="." unique_id=1270667597]
+modulate = Color(0.47137535, 0.4713753, 0.4713753, 1)
+position = Vector2(28.5, 0)
+scale = Vector2(66.015, 67)
+texture = SubResource("CanvasTexture_d2hik")
+
+[node name="1" type="Sprite2D" parent="." unique_id=1949240908]
+position = Vector2(28, -2)
+texture = ExtResource("2_v4ka5")
+
+[node name="Case" type="Sprite2D" parent="." unique_id=715097475]
+position = Vector2(29, 2)

@@ -11,8 +11,9 @@
 [ext_resource type="Script" uid="uid://doxtj7mtt06ru" path="res://run_scene/Player/UI/back_Pack_Windows.gd" id="7_pu4bc"]
 [ext_resource type="Script" uid="uid://dh5qlvlthu800" path="res://code/UiCode/PlayerUi/Inventory/Windows/main_arm.gd" id="8_pu4bc"]
 [ext_resource type="Script" uid="uid://dbpnvnlcoexjs" path="res://run_scene/Player/UI/Backrow.gd" id="10_3b6uv"]
+[ext_resource type="Texture2D" uid="uid://wy6rpmdxl35h" path="res://Sprite/BACK/Backpacked/Back.png" id="10_b2p4r"]
 [ext_resource type="Script" uid="uid://iby1niapovei" path="res://run_scene/Player/UI/equipmentWindows.gd" id="11_hyiwk"]
-[ext_resource type="Texture2D" uid="uid://cf7jqf0spquwu" path="res://Sprite/Monster.png" id="12_wal6e"]
+[ext_resource type="Texture2D" uid="uid://bg26nqu33tga" path="res://Sprite/BACK/Backpacked/EquipBack.png" id="14_b2p4r"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_cmx82"]
 
@@ -94,7 +95,7 @@ _data = {
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_d2hik"]
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_2vdon"]
+[sub_resource type="CanvasTexture" id="CanvasTexture_u5kfp"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_hyiwk"]
 
@@ -146,16 +147,15 @@ libraries/ = SubResource("AnimationLibrary_d2hik")
 position = Vector2(172, 59)
 script = ExtResource("3_d2hik")
 armInventory = [NodePath("../Windows/BackPack/BackPack/MainArm/1"), NodePath("../Windows/BackPack/BackPack/MainArm/2"), NodePath("../Windows/BackPack/BackPack/MainArm/3"), NodePath("../Windows/BackPack/BackPack/MainArm/4")]
-armDisplayInvertory = [NodePath("1"), NodePath("3/2"), NodePath("3"), NodePath("4")]
+armDisplayInvertory = [NodePath("1"), NodePath("2"), NodePath("3"), NodePath("4")]
 BackPackWindows = NodePath("../Windows/BackPack")
 
-[node name="1" type="Node2D" parent="PlayerUiManager/ArmInventory" unique_id=1576402638 node_paths=PackedStringArray("Back", "Inventory", "case", "Follow_Case", "UI", "BackPack")]
+[node name="1" type="Node2D" parent="PlayerUiManager/ArmInventory" unique_id=1576402638 node_paths=PackedStringArray("Back", "Inventory", "case", "Follow_Case", "BackPack")]
 script = ExtResource("4_mmta7")
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
 Follow_Case = NodePath("../../Windows/BackPack/BackPack/MainArm/1")
-UI = NodePath("../../..")
 BackPack = NodePath("../../Windows")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/ArmInventory/1" unique_id=223322763]
@@ -171,14 +171,35 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/ArmInventory/1" unique_id=1477716615]
 position = Vector2(29, 2)
 
-[node name="3" type="Node2D" parent="PlayerUiManager/ArmInventory" unique_id=481039465 node_paths=PackedStringArray("Back", "Inventory", "case", "Follow_Case", "UI", "BackPack")]
+[node name="2" type="Node2D" parent="PlayerUiManager/ArmInventory" unique_id=382390023 node_paths=PackedStringArray("Back", "Inventory", "case", "Follow_Case", "BackPack")]
+position = Vector2(66, 0)
+script = ExtResource("4_mmta7")
+Back = NodePath("back1")
+Inventory = NodePath("1")
+case = NodePath("Case")
+Follow_Case = NodePath("../../Windows/BackPack/BackPack/MainArm/2")
+BackPack = NodePath("../../Windows")
+
+[node name="back1" type="Sprite2D" parent="PlayerUiManager/ArmInventory/2" unique_id=686835483]
+modulate = Color(0.47137535, 0.4713753, 0.4713753, 1)
+position = Vector2(28.5, 0)
+scale = Vector2(66.015, 67)
+texture = SubResource("CanvasTexture_d2hik")
+
+[node name="1" type="Sprite2D" parent="PlayerUiManager/ArmInventory/2" unique_id=551384181]
+position = Vector2(28, -2)
+texture = ExtResource("3_ruaaq")
+
+[node name="Case" type="Sprite2D" parent="PlayerUiManager/ArmInventory/2" unique_id=979337458]
+position = Vector2(29, 2)
+
+[node name="3" type="Node2D" parent="PlayerUiManager/ArmInventory" unique_id=481039465 node_paths=PackedStringArray("Back", "Inventory", "case", "Follow_Case", "BackPack")]
 position = Vector2(132, 0)
 script = ExtResource("4_mmta7")
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
 Follow_Case = NodePath("../../Windows/BackPack/BackPack/MainArm/3")
-UI = NodePath("../../..")
 BackPack = NodePath("../../Windows")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/ArmInventory/3" unique_id=579391863]
@@ -194,37 +215,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/ArmInventory/3" unique_id=1406512644]
 position = Vector2(29, 2)
 
-[node name="2" type="Node2D" parent="PlayerUiManager/ArmInventory/3" unique_id=382390023 node_paths=PackedStringArray("Back", "Inventory", "case", "Follow_Case", "UI", "BackPack")]
-position = Vector2(-66, 0)
-script = ExtResource("4_mmta7")
-Back = NodePath("back1")
-Inventory = NodePath("1")
-case = NodePath("Case")
-Follow_Case = NodePath("../../../Windows/BackPack/BackPack/MainArm/2")
-UI = NodePath("../../../..")
-BackPack = NodePath("../../../Windows")
-
-[node name="back1" type="Sprite2D" parent="PlayerUiManager/ArmInventory/3/2" unique_id=686835483]
-modulate = Color(0.47137535, 0.4713753, 0.4713753, 1)
-position = Vector2(28.5, 0)
-scale = Vector2(66.015, 67)
-texture = SubResource("CanvasTexture_d2hik")
-
-[node name="1" type="Sprite2D" parent="PlayerUiManager/ArmInventory/3/2" unique_id=551384181]
-position = Vector2(28, -2)
-texture = ExtResource("3_ruaaq")
-
-[node name="Case" type="Sprite2D" parent="PlayerUiManager/ArmInventory/3/2" unique_id=979337458]
-position = Vector2(29, 2)
-
-[node name="4" type="Node2D" parent="PlayerUiManager/ArmInventory" unique_id=1972814124 node_paths=PackedStringArray("Back", "Inventory", "case", "Follow_Case", "UI", "BackPack")]
+[node name="4" type="Node2D" parent="PlayerUiManager/ArmInventory" unique_id=1972814124 node_paths=PackedStringArray("Back", "Inventory", "case", "Follow_Case", "BackPack")]
 position = Vector2(198, 0)
 script = ExtResource("4_mmta7")
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
 Follow_Case = NodePath("../../Windows/BackPack/BackPack/MainArm/4")
-UI = NodePath("../../..")
 BackPack = NodePath("../../Windows")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/ArmInventory/4" unique_id=1930426336]
@@ -251,16 +248,35 @@ borderless = true
 script = ExtResource("7_pu4bc")
 Back_row = [NodePath("BackPack/Row1"), NodePath("BackPack/Row2"), NodePath("BackPack/Row3")]
 
-[node name="Back" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack" unique_id=492315703]
-modulate = Color(0.86935663, 0.8785009, 0.89987123, 1)
-scale = Vector2(1972.0001, 1368)
-texture = SubResource("CanvasTexture_2vdon")
+[node name="Main" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack" unique_id=1632587365]
+position = Vector2(464, 278)
+scale = Vector2(0.37362638, 0.4286645)
+texture = ExtResource("10_b2p4r")
 
-[node name="Main" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack" unique_id=1719777381]
-modulate = Color(0.7782734, 0.90440404, 0.9520605, 1)
-position = Vector2(397.5, 275.5)
-scale = Vector2(749.00006, 503.00003)
-texture = SubResource("CanvasTexture_2vdon")
+[node name="Lines" type="Node2D" parent="PlayerUiManager/Windows/BackPack" unique_id=1709874724]
+modulate = Color(0.12941177, 0.5411765, 0.30980393, 0.24705882)
+
+[node name="Up" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Lines" unique_id=488039104]
+position = Vector2(388.00003, 4.999999)
+scale = Vector2(882, 22)
+texture = SubResource("CanvasTexture_u5kfp")
+
+[node name="Down" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Lines" unique_id=112897448]
+position = Vector2(404, 594)
+scale = Vector2(882, 22)
+texture = SubResource("CanvasTexture_u5kfp")
+
+[node name="Left" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Lines" unique_id=761635134]
+position = Vector2(6.9999995, 401)
+rotation = 1.5707964
+scale = Vector2(882, 22)
+texture = SubResource("CanvasTexture_u5kfp")
+
+[node name="Right" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Lines" unique_id=1832492131]
+position = Vector2(794, 362.00003)
+rotation = 1.5707964
+scale = Vector2(882, 22)
+texture = SubResource("CanvasTexture_u5kfp")
 
 [node name="BackPack" type="Node2D" parent="PlayerUiManager/Windows/BackPack" unique_id=1154707921]
 
@@ -269,14 +285,13 @@ position = Vector2(16, 0)
 script = ExtResource("10_3b6uv")
 Raw = [NodePath("1"), NodePath("2"), NodePath("3"), NodePath("4"), NodePath("5"), NodePath("6"), NodePath("7"), NodePath("8"), NodePath("9"), NodePath("10")]
 
-[node name="1" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=566398050 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="1" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=566398050 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(28, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/1" unique_id=1382701244]
@@ -292,14 +307,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/1" unique_id=2030645099]
 position = Vector2(29, 2)
 
-[node name="2" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=452926242 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="2" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=452926242 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(100, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/2" unique_id=1978943853]
@@ -315,14 +329,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/2" unique_id=545752980]
 position = Vector2(29, 2)
 
-[node name="3" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=1883456583 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="3" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=1883456583 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(172, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/3" unique_id=1513835293]
@@ -338,14 +351,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/3" unique_id=102016999]
 position = Vector2(29, 2)
 
-[node name="4" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=960156563 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="4" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=960156563 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(244, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/4" unique_id=320143059]
@@ -361,14 +373,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/4" unique_id=1538753698]
 position = Vector2(29, 2)
 
-[node name="5" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=1314663879 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="5" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=1314663879 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(316, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/5" unique_id=1025731790]
@@ -384,14 +395,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/5" unique_id=1302802357]
 position = Vector2(29, 2)
 
-[node name="6" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=554795243 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="6" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=554795243 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(388, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/6" unique_id=1505115983]
@@ -407,14 +417,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/6" unique_id=1754292353]
 position = Vector2(29, 2)
 
-[node name="7" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=1220415931 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="7" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=1220415931 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(460, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/7" unique_id=630299811]
@@ -430,14 +439,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/7" unique_id=212337492]
 position = Vector2(29, 2)
 
-[node name="8" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=258051605 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="8" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=258051605 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(532, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/8" unique_id=1152926012]
@@ -453,14 +461,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/8" unique_id=991618425]
 position = Vector2(29, 2)
 
-[node name="9" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=446115101 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="9" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=446115101 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(604, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/9" unique_id=1090985471]
@@ -476,14 +483,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/9" unique_id=943189470]
 position = Vector2(29, 2)
 
-[node name="10" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=1233115181 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="10" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1" unique_id=1233115181 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(677, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row1/10" unique_id=1161210986]
@@ -504,14 +510,13 @@ position = Vector2(16, -72)
 script = ExtResource("10_3b6uv")
 Raw = [NodePath("1"), NodePath("2"), NodePath("3"), NodePath("4"), NodePath("5"), NodePath("6"), NodePath("7"), NodePath("8"), NodePath("9"), NodePath("10")]
 
-[node name="1" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=1189645798 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="1" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=1189645798 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(28, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/1" unique_id=697210664]
@@ -527,14 +532,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/1" unique_id=1202697]
 position = Vector2(29, 2)
 
-[node name="2" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=21973640 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="2" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=21973640 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(100, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/2" unique_id=1506952223]
@@ -550,14 +554,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/2" unique_id=535190438]
 position = Vector2(29, 2)
 
-[node name="3" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=1644253972 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="3" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=1644253972 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(172, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/3" unique_id=515958696]
@@ -573,14 +576,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/3" unique_id=1659652715]
 position = Vector2(29, 2)
 
-[node name="4" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=357564931 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="4" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=357564931 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(244, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/4" unique_id=1000435909]
@@ -596,14 +598,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/4" unique_id=263430346]
 position = Vector2(29, 2)
 
-[node name="5" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=1015991257 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="5" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=1015991257 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(316, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/5" unique_id=878846416]
@@ -619,14 +620,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/5" unique_id=1488330286]
 position = Vector2(29, 2)
 
-[node name="6" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=1311716690 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="6" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=1311716690 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(388, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/6" unique_id=41149356]
@@ -642,14 +642,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/6" unique_id=1646633636]
 position = Vector2(29, 2)
 
-[node name="7" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=1800424823 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="7" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=1800424823 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(460, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/7" unique_id=1722828279]
@@ -665,14 +664,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/7" unique_id=230488450]
 position = Vector2(29, 2)
 
-[node name="8" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=2099831120 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="8" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=2099831120 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(532, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/8" unique_id=47656243]
@@ -688,14 +686,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/8" unique_id=741574056]
 position = Vector2(29, 2)
 
-[node name="9" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=1624898311 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="9" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=1624898311 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(604, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/9" unique_id=1820823285]
@@ -711,14 +708,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/9" unique_id=454213042]
 position = Vector2(29, 2)
 
-[node name="10" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=1458972096 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="10" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2" unique_id=1458972096 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(677, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row2/10" unique_id=1951199443]
@@ -739,14 +735,13 @@ position = Vector2(16, -143)
 script = ExtResource("10_3b6uv")
 Raw = [NodePath("1"), NodePath("2"), NodePath("3"), NodePath("4"), NodePath("5"), NodePath("6"), NodePath("7"), NodePath("8"), NodePath("9"), NodePath("10")]
 
-[node name="1" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=45120231 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="1" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=45120231 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(28, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/1" unique_id=1300855142]
@@ -762,14 +757,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/1" unique_id=535582081]
 position = Vector2(29, 2)
 
-[node name="2" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=1679946635 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="2" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=1679946635 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(100, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/2" unique_id=1135068262]
@@ -785,14 +779,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/2" unique_id=102330720]
 position = Vector2(29, 2)
 
-[node name="3" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=152848356 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="3" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=152848356 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(172, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/3" unique_id=1558397429]
@@ -808,14 +801,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/3" unique_id=843148437]
 position = Vector2(29, 2)
 
-[node name="4" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=1765045198 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="4" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=1765045198 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(244, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/4" unique_id=1302675343]
@@ -831,14 +823,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/4" unique_id=1726219829]
 position = Vector2(29, 2)
 
-[node name="5" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=1086088264 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="5" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=1086088264 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(316, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/5" unique_id=361668026]
@@ -854,14 +845,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/5" unique_id=848141259]
 position = Vector2(29, 2)
 
-[node name="6" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=1271440610 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="6" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=1271440610 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(388, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/6" unique_id=219570573]
@@ -877,14 +867,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/6" unique_id=1108384766]
 position = Vector2(29, 2)
 
-[node name="7" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=1417506134 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="7" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=1417506134 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(460, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/7" unique_id=291448152]
@@ -900,14 +889,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/7" unique_id=702978613]
 position = Vector2(29, 2)
 
-[node name="8" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=725707082 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="8" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=725707082 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(532, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/8" unique_id=1860267231]
@@ -923,14 +911,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/8" unique_id=1138892588]
 position = Vector2(29, 2)
 
-[node name="9" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=1624264659 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="9" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=1624264659 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(604, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/9" unique_id=1052143231]
@@ -946,14 +933,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/9" unique_id=1013899469]
 position = Vector2(29, 2)
 
-[node name="10" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=1519164476 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="10" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3" unique_id=1519164476 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(677, 408)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/Row3/10" unique_id=2075209944]
@@ -974,7 +960,7 @@ position = Vector2(16, 1)
 script = ExtResource("8_pu4bc")
 armInventory = [NodePath("1"), NodePath("2"), NodePath("3"), NodePath("4")]
 
-[node name="1" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/MainArm" unique_id=1945288477 node_paths=PackedStringArray("Back", "Inventory", "case", "Follow_Case", "UI", "BackPack")]
+[node name="1" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/MainArm" unique_id=1945288477 node_paths=PackedStringArray("Back", "Inventory", "case", "Follow_Case", "BackPack")]
 position = Vector2(28, 563)
 script = ExtResource("4_mmta7")
 type = 1
@@ -982,7 +968,6 @@ Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
 Follow_Case = NodePath("../../../../../ArmInventory/1")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/MainArm/1" unique_id=1790927215]
@@ -998,15 +983,14 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/MainArm/1" unique_id=227204756]
 position = Vector2(29, 2)
 
-[node name="2" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/MainArm" unique_id=1808372879 node_paths=PackedStringArray("Back", "Inventory", "case", "Follow_Case", "UI", "BackPack")]
+[node name="2" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/MainArm" unique_id=1808372879 node_paths=PackedStringArray("Back", "Inventory", "case", "Follow_Case", "BackPack")]
 position = Vector2(100, 563)
 script = ExtResource("4_mmta7")
 type = 1
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-Follow_Case = NodePath("../../../../../ArmInventory/3/2")
-UI = NodePath("../../../../../..")
+Follow_Case = NodePath("../../../../../ArmInventory/2")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/MainArm/2" unique_id=100187105]
@@ -1022,7 +1006,7 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/MainArm/2" unique_id=1742744883]
 position = Vector2(29, 2)
 
-[node name="3" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/MainArm" unique_id=1927876505 node_paths=PackedStringArray("Back", "Inventory", "case", "Follow_Case", "UI", "BackPack")]
+[node name="3" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/MainArm" unique_id=1927876505 node_paths=PackedStringArray("Back", "Inventory", "case", "Follow_Case", "BackPack")]
 position = Vector2(172, 563)
 script = ExtResource("4_mmta7")
 type = 1
@@ -1030,7 +1014,6 @@ Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
 Follow_Case = NodePath("../../../../../ArmInventory/3")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/MainArm/3" unique_id=1524168356]
@@ -1046,7 +1029,7 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/MainArm/3" unique_id=2018140311]
 position = Vector2(29, 2)
 
-[node name="4" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/MainArm" unique_id=70086684 node_paths=PackedStringArray("Back", "Inventory", "case", "Follow_Case", "UI", "BackPack")]
+[node name="4" type="Node2D" parent="PlayerUiManager/Windows/BackPack/BackPack/MainArm" unique_id=70086684 node_paths=PackedStringArray("Back", "Inventory", "case", "Follow_Case", "BackPack")]
 position = Vector2(244, 563)
 script = ExtResource("4_mmta7")
 type = 1
@@ -1054,7 +1037,6 @@ Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
 Follow_Case = NodePath("../../../../../ArmInventory/4")
-UI = NodePath("../../../../../..")
 BackPack = NodePath("../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/BackPack/MainArm/4" unique_id=1815989988]
@@ -1074,7 +1056,6 @@ position = Vector2(29, 2)
 oversampling_override = 1.0
 position = Vector2i(0, 36)
 size = Vector2i(300, 600)
-visible = false
 borderless = true
 script = ExtResource("11_hyiwk")
 NodeWindows = NodePath("..")
@@ -1084,17 +1065,15 @@ modulate = Color(0.627451, 1, 1, 1)
 scale = Vector2(1064, 1308)
 texture = SubResource("CanvasTexture_hyiwk")
 
-[node name="Main" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment" unique_id=1489591448]
-modulate = Color(0.627451, 1, 1, 1)
-self_modulate = Color(0.6509804, 0.74509805, 1, 1)
-position = Vector2(150.5, 300.49994)
-scale = Vector2(261.00003, 562.99994)
-texture = SubResource("CanvasTexture_hyiwk")
+[node name="Main" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment" unique_id=2058960258]
+position = Vector2(150.5, 298)
+scale = Vector2(0.14908423, 0.45863196)
+texture = ExtResource("10_b2p4r")
 
 [node name="MainUi" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment" unique_id=181886914]
-position = Vector2(187.5, 166)
-scale = Vector2(1.3671876, 2.2187502)
-texture = ExtResource("12_wal6e")
+position = Vector2(301, 164.99998)
+scale = Vector2(0.19958496, 0.14160156)
+texture = ExtResource("14_b2p4r")
 
 [node name="Equipment" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment" unique_id=2072448139]
 
@@ -1103,14 +1082,13 @@ texture = ExtResource("12_wal6e")
 [node name="Row1" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General" unique_id=1645554637]
 position = Vector2(7, -20)
 
-[node name="1" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row1" unique_id=1348322075 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="1" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row1" unique_id=1348322075 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(25, 421)
 script = ExtResource("4_mmta7")
 type = 2
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../../../..")
 BackPack = NodePath("../../../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row1/1" unique_id=1282749228]
@@ -1126,14 +1104,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row1/1" unique_id=1785883707]
 position = Vector2(29, 2)
 
-[node name="2" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row1" unique_id=525552658 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="2" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row1" unique_id=525552658 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(116, 421)
 script = ExtResource("4_mmta7")
 type = 2
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../../../..")
 BackPack = NodePath("../../../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row1/2" unique_id=2109641775]
@@ -1149,14 +1126,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row1/2" unique_id=944866077]
 position = Vector2(29, 2)
 
-[node name="3" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row1" unique_id=595113226 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="3" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row1" unique_id=595113226 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(205, 421)
 script = ExtResource("4_mmta7")
 type = 2
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../../../..")
 BackPack = NodePath("../../../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row1/3" unique_id=268969605]
@@ -1175,14 +1151,13 @@ position = Vector2(29, 2)
 [node name="Row2" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General" unique_id=982783518]
 position = Vector2(7, 53)
 
-[node name="1" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row2" unique_id=1291860249 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="1" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row2" unique_id=1291860249 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(25, 421)
 script = ExtResource("4_mmta7")
 type = 2
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../../../..")
 BackPack = NodePath("../../../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row2/1" unique_id=1593807041]
@@ -1198,14 +1173,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row2/1" unique_id=2063645310]
 position = Vector2(29, 2)
 
-[node name="2" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row2" unique_id=135665467 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="2" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row2" unique_id=135665467 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(116, 421)
 script = ExtResource("4_mmta7")
 type = 2
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../../../..")
 BackPack = NodePath("../../../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row2/2" unique_id=1197238372]
@@ -1221,14 +1195,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row2/2" unique_id=853259251]
 position = Vector2(29, 2)
 
-[node name="3" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row2" unique_id=1766208407 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="3" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row2" unique_id=1766208407 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(205, 421)
 script = ExtResource("4_mmta7")
 type = 2
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../../../..")
 BackPack = NodePath("../../../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row2/3" unique_id=593558051]
@@ -1247,14 +1220,13 @@ position = Vector2(29, 2)
 [node name="Row3" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General" unique_id=811351293]
 position = Vector2(7, 127)
 
-[node name="1" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row3" unique_id=1280030321 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="1" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row3" unique_id=1280030321 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(25, 421)
 script = ExtResource("4_mmta7")
 type = 2
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../../../..")
 BackPack = NodePath("../../../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row3/1" unique_id=850127114]
@@ -1270,14 +1242,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row3/1" unique_id=1457724092]
 position = Vector2(29, 2)
 
-[node name="2" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row3" unique_id=1678252555 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="2" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row3" unique_id=1678252555 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(116, 421)
 script = ExtResource("4_mmta7")
 type = 2
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../../../..")
 BackPack = NodePath("../../../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row3/2" unique_id=383236707]
@@ -1293,14 +1264,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row3/2" unique_id=2084809336]
 position = Vector2(29, 2)
 
-[node name="3" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row3" unique_id=1576746101 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="3" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row3" unique_id=1576746101 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(205, 421)
 script = ExtResource("4_mmta7")
 type = 2
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../../../..")
 BackPack = NodePath("../../../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/General/Row3/3" unique_id=1670454189]
@@ -1319,14 +1289,13 @@ position = Vector2(29, 2)
 [node name="Main" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment" unique_id=1749449101]
 position = Vector2(7, 0)
 
-[node name="1" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/Main" unique_id=710907777 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="1" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/Main" unique_id=710907777 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(25, 53)
 script = ExtResource("4_mmta7")
 type = 2
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../../..")
 BackPack = NodePath("../../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/Main/1" unique_id=1479202311]
@@ -1342,14 +1311,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/Main/1" unique_id=1839562543]
 position = Vector2(29, 2)
 
-[node name="2" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/Main" unique_id=1226068315 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="2" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/Main" unique_id=1226068315 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(25, 127)
 script = ExtResource("4_mmta7")
 type = 2
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../../..")
 BackPack = NodePath("../../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/Main/2" unique_id=473333161]
@@ -1365,14 +1333,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/Main/2" unique_id=454311727]
 position = Vector2(29, 2)
 
-[node name="3" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/Main" unique_id=146784797 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="3" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/Main" unique_id=146784797 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(25, 201)
 script = ExtResource("4_mmta7")
 type = 2
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../../..")
 BackPack = NodePath("../../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/Main/3" unique_id=677001260]
@@ -1388,14 +1355,13 @@ texture = ExtResource("3_ruaaq")
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/Main/3" unique_id=217457182]
 position = Vector2(29, 2)
 
-[node name="4" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/Main" unique_id=461985931 node_paths=PackedStringArray("Back", "Inventory", "case", "UI", "BackPack")]
+[node name="4" type="Node2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/Main" unique_id=461985931 node_paths=PackedStringArray("Back", "Inventory", "case", "BackPack")]
 position = Vector2(25, 275)
 script = ExtResource("4_mmta7")
 type = 2
 Back = NodePath("back1")
 Inventory = NodePath("1")
 case = NodePath("Case")
-UI = NodePath("../../../../../../..")
 BackPack = NodePath("../../../../..")
 
 [node name="back1" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/Main/4" unique_id=614315304]
