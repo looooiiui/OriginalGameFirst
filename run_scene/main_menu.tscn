@@ -13,6 +13,7 @@
 [ext_resource type="Script" uid="uid://bi1btvxog55ac" path="res://code/MAINMENU/MainMenu/Startwindows.gd" id="11_0rmad"]
 [ext_resource type="Script" uid="uid://bfifpx4n7tif8" path="res://code/MAINMENU/MainMenu/start_game_Windows.gd" id="12_ts5te"]
 [ext_resource type="Texture2D" uid="uid://c3cq77nocfsxc" path="res://Sprite/BACK/ESCBACK/EscBack.png" id="13_mbe66"]
+[ext_resource type="Texture2D" uid="uid://k80ueix4mnnc" path="res://Sprite/Button/commonButton2.png" id="14_y8ndy"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_tumwk"]
 
@@ -498,10 +499,10 @@ texture = ExtResource("2_ts5te")
 [node name="MainMenuUi" type="Control" parent="." unique_id=174025537]
 layout_mode = 3
 anchors_preset = 0
-offset_left = -856.0
-offset_top = -363.0
-offset_right = -816.0
-offset_bottom = -323.0
+offset_left = -887.0
+offset_top = -572.0
+offset_right = -847.0
+offset_bottom = -532.0
 
 [node name="Ui" type="Node2D" parent="MainMenuUi" unique_id=1767613277]
 position = Vector2(856, 363)
@@ -516,22 +517,10 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="MainName" type="Label" parent="MainMenuUi/Ui/NormalUi" unique_id=1729213956]
-layout_mode = 0
-offset_left = -881.0
-offset_top = -459.0
-offset_right = -199.0
-offset_bottom = -330.0
-theme_override_colors/font_color = Color(0.81960785, 0.7921569, 1, 1)
-theme_override_colors/font_outline_color = Color(0, 0.46439385, 2.8878452e-07, 1)
-theme_override_constants/outline_size = 20
-theme_override_font_sizes/font_size = 96
-text = "第一测试版本"
-
 [node name="MainUI" type="Node2D" parent="MainMenuUi/Ui" unique_id=557350259]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MainMenuUi/Ui/MainUI" unique_id=853881983]
-position = Vector2(245, -23)
+position = Vector2(332, 227.99998)
 scale = Vector2(7.65625, 7.65625)
 sprite_frames = SubResource("SpriteFrames_weat6")
 animation = &"idle"
@@ -613,7 +602,7 @@ frame_progress = 0.0104504395
 [node name="AcceptDialog" type="AcceptDialog" parent="." unique_id=1647337536]
 oversampling_override = 1.0
 title = "更新内容"
-position = Vector2i(600, 400)
+position = Vector2i(481, 400)
 size = Vector2i(800, 200)
 visible = true
 dialog_text = "1. 这是第一个更新版本，即将进入玩法堆叠"
@@ -624,14 +613,15 @@ dialog_text = "1. 这是第一个更新版本，即将进入玩法堆叠"
 script = ExtResource("11_0rmad")
 StartWindows = NodePath("StartGame")
 
-[node name="StartGame" type="Window" parent="Windows/Windows" unique_id=455016705 node_paths=PackedStringArray("BackButton")]
+[node name="StartGame" type="Window" parent="Windows/Windows" unique_id=455016705 node_paths=PackedStringArray("BackButton", "StartCanvas", "WindowStartCanvas")]
 oversampling_override = 1.0
 position = Vector2i(0, 36)
 size = Vector2i(1200, 600)
 exclusive = true
-borderless = true
 script = ExtResource("12_ts5te")
 BackButton = NodePath("Ui/Back")
+StartCanvas = NodePath("../../../Effect/Start")
+WindowStartCanvas = NodePath("Effect/Start")
 
 [node name="Ui" type="Node2D" parent="Windows/Windows/StartGame" unique_id=2056707777]
 
@@ -646,7 +636,7 @@ scale = Vector2(0.59340656, 0.5107492)
 texture = ExtResource("13_mbe66")
 
 [node name="Lines" type="Node2D" parent="Windows/Windows/StartGame/Ui" unique_id=1418423327]
-modulate = Color(0, 1, 0.8039216, 0.25490198)
+modulate = Color(0, 1, 0.8039216, 0.5921569)
 
 [node name="Up" type="Sprite2D" parent="Windows/Windows/StartGame/Ui/Lines" unique_id=1273119671]
 modulate = Color(0.21960784, 0.30588236, 0.2901961, 1)
@@ -677,14 +667,16 @@ texture = SubResource("CanvasTexture_mbe66")
 offset_right = 176.0
 offset_bottom = 34.0
 text = "BackMainMeun"
+icon = ExtResource("14_y8ndy")
+flat = true
 
 [node name="title" type="Label" parent="Windows/Windows/StartGame/Ui" unique_id=88136128]
 offset_right = 1200.0
 offset_bottom = 65.0
-theme_override_colors/font_color = Color(0.79607844, 0.92156863, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 20
-theme_override_font_sizes/font_size = 48
-text = "Choose Map"
+theme_override_font_sizes/font_size = 24
+text = "选择"
 horizontal_alignment = 1
 
 [node name="Choose" type="Node2D" parent="Windows/Windows/StartGame" unique_id=1765590619]
@@ -692,11 +684,21 @@ horizontal_alignment = 1
 [node name="randomLevel" type="Button" parent="Windows/Windows/StartGame/Choose" unique_id=1251393930]
 offset_left = 521.0
 offset_top = 278.0
-offset_right = 687.0
+offset_right = 720.0
 offset_bottom = 319.0
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 24
 text = "Random Level"
+icon = ExtResource("14_y8ndy")
+flat = true
+
+[node name="Effect" type="Node2D" parent="Windows/Windows/StartGame" unique_id=1463433157]
+
+[node name="Start" type="CanvasModulate" parent="Windows/Windows/StartGame/Effect" unique_id=282482627]
+
+[node name="Effect" type="Node2D" parent="." unique_id=570640812]
+
+[node name="Start" type="CanvasModulate" parent="Effect" unique_id=294569808]
 
 [connection signal="pressed" from="MainMenuUi/StartGame" to="." method="_first_test"]
 [connection signal="pressed" from="MainMenuUi/StartGame" to="Windows/Windows" method="_on_start_game_pressed"]

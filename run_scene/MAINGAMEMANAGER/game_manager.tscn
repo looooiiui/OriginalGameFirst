@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://c7eibiyl1xt15" path="res://run_scene/MAINGAMEMANAGER/windows_manager.gd" id="6_jupgj"]
 [ext_resource type="Script" uid="uid://cnvn4bm7xg10f" path="res://run_scene/MAINGAMEMANAGER/exit_menu.gd" id="7_11aqv"]
 [ext_resource type="Texture2D" uid="uid://c3cq77nocfsxc" path="res://Sprite/BACK/ESCBACK/EscBack.png" id="9_bhboq"]
+[ext_resource type="Texture2D" uid="uid://k80ueix4mnnc" path="res://Sprite/Button/commonButton2.png" id="10_1r2fg"]
 
 [node name="GameManager" type="Node2D" unique_id=223941287 node_paths=PackedStringArray("MonsterManager", "Monster_spwan_time", "DebugInformation", "WindowsManager", "UiManager")]
 script = ExtResource("1_jupgj")
@@ -321,13 +322,17 @@ offset_top = 752.0
 offset_right = 154.0
 offset_bottom = 783.0
 text = "Return MainMeun"
+icon = ExtResource("10_1r2fg")
+flat = true
 
 [node name="ReturnToDesktop" type="Button" parent="Windows/WindowsManager/ExitMenu/Button" unique_id=953029712]
-offset_left = 177.0
+offset_left = 191.0
 offset_top = 752.0
-offset_right = 316.0
-offset_bottom = 783.0
+offset_right = 366.0
+offset_bottom = 792.0
 text = "Return To Desktop"
+icon = ExtResource("10_1r2fg")
+flat = true
 
 [connection signal="text_submitted" from="DEBUGUI/MonsterManagerUi/VBoxContainer/MonsterLimited/MonsterLimited" to="DEBUGUI/Input" method="_Scence_Monster_Limited"]
 [connection signal="text_submitted" from="DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerHpMax/PlayerHpMax" to="DEBUGUI/Input" method="_Player_Hp_Max_Change"]

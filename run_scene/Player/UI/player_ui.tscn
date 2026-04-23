@@ -14,6 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://wy6rpmdxl35h" path="res://Sprite/BACK/Backpacked/Back.png" id="10_b2p4r"]
 [ext_resource type="Script" uid="uid://iby1niapovei" path="res://run_scene/Player/UI/equipmentWindows.gd" id="11_hyiwk"]
 [ext_resource type="Texture2D" uid="uid://bg26nqu33tga" path="res://Sprite/BACK/Backpacked/EquipBack.png" id="14_b2p4r"]
+[ext_resource type="Script" uid="uid://tkkx25w1wkcf" path="res://run_scene/Player/UI/player_level.gd" id="15_q6jka"]
+[ext_resource type="Texture2D" uid="uid://cpjcqvawvskr6" path="res://Sprite/animationSprite/Player/Level/Level2.png" id="15_u5kfp"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_cmx82"]
 
@@ -98,6 +100,8 @@ _data = {
 [sub_resource type="CanvasTexture" id="CanvasTexture_u5kfp"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_hyiwk"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_q6jka"]
 
 [node name="PlayerUi" type="CanvasLayer" unique_id=2018247639]
 
@@ -244,6 +248,7 @@ BackPackWindows = NodePath("BackPack")
 [node name="BackPack" type="Window" parent="PlayerUiManager/Windows" unique_id=1924130942 node_paths=PackedStringArray("Back_row")]
 oversampling_override = 1.0
 size = Vector2i(800, 600)
+visible = false
 borderless = true
 script = ExtResource("7_pu4bc")
 Back_row = [NodePath("BackPack/Row1"), NodePath("BackPack/Row2"), NodePath("BackPack/Row3")]
@@ -1056,6 +1061,7 @@ position = Vector2(29, 2)
 oversampling_override = 1.0
 position = Vector2i(0, 36)
 size = Vector2i(300, 600)
+visible = false
 borderless = true
 script = ExtResource("11_hyiwk")
 NodeWindows = NodePath("..")
@@ -1376,3 +1382,30 @@ texture = ExtResource("3_ruaaq")
 
 [node name="Case" type="Sprite2D" parent="PlayerUiManager/Windows/BackPack/Equipment/Equipment/Main/4" unique_id=570355835]
 position = Vector2(29, 2)
+
+[node name="PlayerLevel" type="Node2D" parent="PlayerUiManager" unique_id=702287513 node_paths=PackedStringArray("InLevel", "LevelUi")]
+script = ExtResource("15_q6jka")
+InLevel = NodePath("Level/Level/InLevel")
+LevelUi = NodePath("Level/LevelUi")
+
+[node name="Level" type="Node2D" parent="PlayerUiManager/PlayerLevel" unique_id=1161567510]
+
+[node name="Level" type="Sprite2D" parent="PlayerUiManager/PlayerLevel/Level" unique_id=415777666]
+position = Vector2(1007, 55.000004)
+scale = Vector2(2.0507813, 0.43750012)
+texture = ExtResource("15_u5kfp")
+
+[node name="InLevel" type="Sprite2D" parent="PlayerUiManager/PlayerLevel/Level/Level" unique_id=65904175]
+modulate = Color(1, 0.9098039, 1, 1)
+show_behind_parent = true
+position = Vector2(-249.66098, -1.04904175e-05)
+scale = Vector2(1, 51)
+texture = SubResource("CanvasTexture_q6jka")
+offset = Vector2(0.49997526, 0)
+
+[node name="LevelUi" type="Label" parent="PlayerUiManager/PlayerLevel/Level" unique_id=2048352410]
+offset_left = 829.0
+offset_top = 22.0
+offset_right = 1196.0
+offset_bottom = 45.0
+text = "当前等级:               当前经验:               升级所需经验:"

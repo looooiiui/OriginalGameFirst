@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dnrpow880ml8y"]
+
+[ext_resource type="Script" uid="uid://cke6yl5m2oorn" path="res://NewScenes/Monster/Original/new_original.gd" id="1_qr3v4"]
+[ext_resource type="Texture2D" uid="uid://dc7v442kihybl" path="res://icon.svg" id="2_2eh08"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nco1r"]
+size = Vector2(128, 128)
+
+[node name="newOriginal" type="CharacterBody2D" unique_id=1913685970 node_paths=PackedStringArray("_agent")]
+script = ExtResource("1_qr3v4")
+_agent = NodePath("TestAgent")
+
+[node name="newOriginColl" type="CollisionShape2D" parent="." unique_id=240156304]
+shape = SubResource("RectangleShape2D_nco1r")
+
+[node name="newOriginalSprite" type="Sprite2D" parent="." unique_id=1756647589]
+texture = ExtResource("2_2eh08")
+
+[node name="TestAgent" type="NavigationAgent2D" parent="." unique_id=1623616472]

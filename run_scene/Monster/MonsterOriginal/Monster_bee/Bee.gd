@@ -94,9 +94,6 @@ func _process(delta: float) -> void:
 	
 	MonsterAnimPlay()
 	perGlobalPosition = global_position
-	
-	#-------边界管理------#
-	out_Boundary(global_position.x, global_position.y)
 
 func _on_body_entered(body: Node2D) -> void:
 	if body is CharacterBody2D and body.is_in_group("Player") and not is_dead:
@@ -153,12 +150,3 @@ func MonsterAnimPlay():
 	elif is_Back:
 		MonsterAnim.flip_h = false
 		
-func out_Boundary(realX : float, realY : float):
-	if realX < GameManager.instance.worldBoundaryXLeft:
-		global_position.x += 500.0
-	if realX > GameManager.instance.worldBoundaryXRight:
-		global_position.x -= 500.0
-	if realY < GameManager.instance.worldBoundaryXDown:
-		global_position.y += 500.0
-	if realY > GameManager.instance.worldBoundaryXUp:
-		global_position.y -= 500.0

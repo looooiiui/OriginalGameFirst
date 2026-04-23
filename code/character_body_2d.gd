@@ -14,6 +14,10 @@ static var input_Enable : bool = false
 @export var meleeDamage : float = 20
 @export var Melee : PackedScene
 @export var current_Grip : Vector2i
+@export var level : int = 1
+@export var experience: float = 0
+@export var maxExperience: float = 100
+
 #计时器
 @export var original_time : float = 0.3
 @export var real_time : float = 0.3
@@ -56,21 +60,22 @@ var input_dir : Vector2
 var is_time : bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	
 	if Player.instance == null:
 		Player.instance = self
 	else:
 		queue_free()
-
 	
+	global_position = Vector2(0, 100)
 	get_tree().root.remove_child(self)
 	get_tree().current_scene.add_child(self)
 	
 	PlayerAction.play("idle")
 	
 func _process(delta: float) -> void:
+	_player_Exprience()
 	now_Arm_select = PlayerUI.instance.currentSelect
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+
+
 func _physics_process(delta: float) -> void:
 	
 	_cal_Grip_Position()
@@ -96,13 +101,6 @@ func _physics_process(delta: float) -> void:
 	var target_dir_change = wrapf(target_dir - rotation, -PI, PI)
 	rotation = lerp(rotation, wrapf(rotation + target_dir_change, -2 * PI, 2 * PI), rotate_Smooth)
 	
-	#控制后座方向
-	
-	
-	#攻击控制(互动控制)
-
-
-		
 	#加速代码
 	if (Input.is_action_pressed("run")):
 		velocity += input_dir * 100
@@ -167,3 +165,10 @@ func _input(event):
 
 func _cal_Grip_Position():
 	current_Grip = Grid.instance.to_grid(global_position)
+	
+func _player_Exprience() -> void:
+	maxExperience = level * 100
+	
+	if (experience >= maxExperience):
+		level += 1
+		experience = 0

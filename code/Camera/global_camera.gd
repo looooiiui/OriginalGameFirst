@@ -5,8 +5,8 @@ extends Node2D
 
 static var instance : GCamera
 @export var Camera : Camera2D
-@export var is_Smooth : bool = false
-@export var smooth : float = 0.1
+@export var is_Smooth : bool = true
+@export var smooth : float = 0.03
 @export var target_Global_position : Vector2
 @export var cameraDeadPull : Vector2 = Vector2(2, 2)
 @export var cameraOriginalPull : Vector2 = Vector2(1, 1)
