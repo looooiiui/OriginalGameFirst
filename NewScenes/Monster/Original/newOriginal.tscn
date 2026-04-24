@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://cke6yl5m2oorn" path="res://NewScenes/Monster/Original/new_original.gd" id="1_qr3v4"]
 [ext_resource type="Texture2D" uid="uid://dc7v442kihybl" path="res://icon.svg" id="2_2eh08"]
+[ext_resource type="Script" uid="uid://udltg757d6dg" path="res://NewScenes/Monster/Original/new_original_hit.gd" id="2_nco1r"]
+[ext_resource type="PackedScene" uid="uid://ddqqbyxkhcmj7" path="res://NewScenes/Effect/Blood/blood_display.tscn" id="3_2eh08"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nco1r"]
 size = Vector2(128, 128)
@@ -13,7 +15,19 @@ _agent = NodePath("TestAgent")
 [node name="newOriginColl" type="CollisionShape2D" parent="." unique_id=240156304]
 shape = SubResource("RectangleShape2D_nco1r")
 
+[node name="newOriginalHit" type="Area2D" parent="." unique_id=22821201 node_paths=PackedStringArray("_Main_Node") groups=["Monster"]]
+script = ExtResource("2_nco1r")
+_Main_Node = NodePath("..")
+
+[node name="newOriginColl" type="CollisionShape2D" parent="newOriginalHit" unique_id=15414588]
+shape = SubResource("RectangleShape2D_nco1r")
+
 [node name="newOriginalSprite" type="Sprite2D" parent="." unique_id=1756647589]
 texture = ExtResource("2_2eh08")
 
 [node name="TestAgent" type="NavigationAgent2D" parent="." unique_id=1623616472]
+
+[node name="BloodDisplay" parent="." unique_id=760906426 instance=ExtResource("3_2eh08")]
+
+[connection signal="area_entered" from="newOriginalHit" to="." method="_on_new_original_hit_area_entered"]
+[connection signal="body_entered" from="newOriginalHit" to="." method="_on_new_original_hit_body_entered"]

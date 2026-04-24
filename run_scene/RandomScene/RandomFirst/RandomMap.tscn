@@ -14,8 +14,12 @@
 [ext_resource type="Texture2D" uid="uid://c4ff6l1l0bloq" path="res://Sprite/BACK/Floor_Purple/Purple_floor06.png" id="8_w5cdk"]
 [ext_resource type="PackedScene" uid="uid://dcp124hdiqni5" path="res://run_scene/Mouse/CrossHair/cross_hair.tscn" id="11_7ki6w"]
 [ext_resource type="PackedScene" uid="uid://dnrpow880ml8y" path="res://NewScenes/Monster/Original/newOriginal.tscn" id="14_uwqpt"]
+[ext_resource type="Script" uid="uid://tn8buxis1qgj" path="res://run_scene/RandomScene/RandomFirst/Ui/attribute.gd" id="15_kqtv7"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_5h0qo"]
+vertices = PackedVector2Array(3766, 2742, -3894, 2742, -3894, -2486, 3766, -2486)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-3950, -2531, -3950, 2770, 3787, 2776, 3816, -2531)])
 cell_size = 64.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ermd4"]
@@ -125,6 +129,36 @@ sources/9 = SubResource("TileSetAtlasSource_5h0qo")
 script = ExtResource("1_chq2o")
 InCanvas = NodePath("Effect/In")
 
+[node name="LevelUi" type="CanvasLayer" parent="." unique_id=1585781815]
+
+[node name="LevelUi" type="Node2D" parent="LevelUi" unique_id=2138288378]
+
+[node name="Attribute" type="Node2D" parent="LevelUi/LevelUi" unique_id=105217651 node_paths=PackedStringArray("_root", "_Original_Monster_Manager", "_Original_Monster", "_CurrentLevel", "_CurrentMonsterNum")]
+script = ExtResource("15_kqtv7")
+_root = NodePath("../../..")
+_Original_Monster_Manager = NodePath("../../../MonsterManager")
+_Original_Monster = NodePath("../../../MonsterManager/OriginalMonster")
+_CurrentLevel = NodePath("Attribute/CurrentLevel")
+_CurrentMonsterNum = NodePath("Attribute/CurrentMonsterNum")
+
+[node name="Attribute" type="VBoxContainer" parent="LevelUi/LevelUi/Attribute" unique_id=903766167]
+offset_left = 175.0
+offset_top = 193.0
+offset_right = 271.0
+offset_bottom = 233.0
+
+[node name="Main" type="Label" parent="LevelUi/LevelUi/Attribute/Attribute" unique_id=234558287]
+layout_mode = 2
+text = "当前关卡信息"
+
+[node name="CurrentLevel" type="Label" parent="LevelUi/LevelUi/Attribute/Attribute" unique_id=1705707144]
+layout_mode = 2
+text = "当前波次: "
+
+[node name="CurrentMonsterNum" type="Label" parent="LevelUi/LevelUi/Attribute/Attribute" unique_id=164614567]
+layout_mode = 2
+text = "当前怪物数量:"
+
 [node name="Ground" type="NavigationRegion2D" parent="." unique_id=1317675429]
 navigation_polygon = SubResource("NavigationPolygon_5h0qo")
 
@@ -144,18 +178,20 @@ RandomGround = NodePath("../Ground/Ground")
 
 [node name="CrossHair" parent="." unique_id=1643887314 instance=ExtResource("11_7ki6w")]
 
-[node name="MonsterManager" type="Node2D" parent="." unique_id=2135058115 node_paths=PackedStringArray("OriginalMonster")]
+[node name="MonsterManager" type="Node2D" parent="." unique_id=2135058115 node_paths=PackedStringArray("OriginalMonster", "_Map_Generatop")]
 script = ExtResource("5_uwqpt")
 OriginalMonster = NodePath("OriginalMonster")
+_Map_Generatop = NodePath("../MapGenerator")
 
-[node name="OriginalMonster" type="Node2D" parent="MonsterManager" unique_id=1244292614 node_paths=PackedStringArray("spawn_Node")]
+[node name="OriginalMonster" type="Node2D" parent="MonsterManager" unique_id=1244292614 node_paths=PackedStringArray("spawn_Node", "_Map_Generator")]
 script = ExtResource("6_kqtv7")
 Original_Monster = Array[PackedScene]([ExtResource("14_uwqpt")])
 spawn_Node = NodePath("Monsters")
+_Map_Generator = NodePath("../../MapGenerator")
 
 [node name="Monsters" type="Node2D" parent="MonsterManager/OriginalMonster" unique_id=186530831]
 
 [node name="Effect" type="Node2D" parent="." unique_id=1941753221]
 
 [node name="In" type="CanvasModulate" parent="Effect" unique_id=1140853192]
-color = Color(0, 0.007843138, 0, 1)
+color = Color(0, 0, 0, 1)

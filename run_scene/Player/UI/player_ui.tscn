@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://bg26nqu33tga" path="res://Sprite/BACK/Backpacked/EquipBack.png" id="14_b2p4r"]
 [ext_resource type="Script" uid="uid://tkkx25w1wkcf" path="res://run_scene/Player/UI/player_level.gd" id="15_q6jka"]
 [ext_resource type="Texture2D" uid="uid://cpjcqvawvskr6" path="res://Sprite/animationSprite/Player/Level/Level2.png" id="15_u5kfp"]
+[ext_resource type="Script" uid="uid://bbweponoa5wfr" path="res://run_scene/Player/UI/attribute.gd" id="17_0b42i"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_cmx82"]
 
@@ -1409,3 +1410,22 @@ offset_top = 22.0
 offset_right = 1196.0
 offset_bottom = 45.0
 text = "当前等级:               当前经验:               升级所需经验:"
+
+[node name="Attribute" type="Node2D" parent="PlayerUiManager/PlayerLevel" unique_id=1872896348 node_paths=PackedStringArray("AttackMag", "CoolMag")]
+script = ExtResource("17_0b42i")
+AttackMag = NodePath("VBoxContainer/AttackMag")
+CoolMag = NodePath("VBoxContainer/CoolMag")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PlayerUiManager/PlayerLevel/Attribute" unique_id=305953612]
+offset_left = 948.0
+offset_top = 89.0
+offset_right = 1044.0
+offset_bottom = 139.0
+
+[node name="AttackMag" type="Label" parent="PlayerUiManager/PlayerLevel/Attribute/VBoxContainer" unique_id=1389011826]
+layout_mode = 2
+text = "当前伤害倍率"
+
+[node name="CoolMag" type="Label" parent="PlayerUiManager/PlayerLevel/Attribute/VBoxContainer" unique_id=1739586903]
+layout_mode = 2
+text = "当前射速倍率"

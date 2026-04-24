@@ -72,6 +72,7 @@ func _ready() -> void:
 	PlayerAction.play("idle")
 	
 func _process(delta: float) -> void:
+	_Mag_Control()
 	_player_Exprience()
 	now_Arm_select = PlayerUI.instance.currentSelect
 
@@ -172,3 +173,7 @@ func _player_Exprience() -> void:
 	if (experience >= maxExperience):
 		level += 1
 		experience = 0
+		
+func _Mag_Control() -> void:
+	attackDamageMag = 1 + (level - 1) * 0.1
+	allCoolTime_Mag = 1 + (level - 1) * 0.1

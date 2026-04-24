@@ -23,7 +23,7 @@ func _ready() -> void:
 	
 	# 这里用来给四个主物品栏赋初值，通过表现层直接展示对应物品贴图
 	armInventory[0].selectId = ""
-	armInventory[1].selectId = "00001C"
+	armInventory[1].selectId = "10000G"
 	armInventory[2].selectId = ""
 	armInventory[3].selectId = ""
 	

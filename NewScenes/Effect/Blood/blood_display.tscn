@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://ddqqbyxkhcmj7"]
+
+[ext_resource type="Script" uid="uid://ddfngjn5ec8ma" path="res://NewScenes/Effect/Blood/blood_display.gd" id="1_q4p04"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_q4p04"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_nriwq"]
+
+[node name="BloodDisplay" type="Node2D" unique_id=760906426 node_paths=PackedStringArray("_blood_Sprite")]
+top_level = true
+script = ExtResource("1_q4p04")
+_blood_Sprite = NodePath("Blood/Blood")
+
+[node name="Blood" type="Node2D" parent="." unique_id=1589603589]
+
+[node name="Back" type="Sprite2D" parent="Blood" unique_id=1053936058]
+modulate = Color(0.8352941, 0.80784315, 1, 1)
+scale = Vector2(198, 24)
+texture = SubResource("CanvasTexture_q4p04")
+
+[node name="Blood" type="Sprite2D" parent="Blood" unique_id=51025854]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-97, 0)
+scale = Vector2(1, 20)
+texture = SubResource("CanvasTexture_nriwq")
+offset = Vector2(0.5, 0)

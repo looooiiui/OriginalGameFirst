@@ -59,7 +59,6 @@ scale_max = 4.0
 turbulence_enabled = true
 
 [node name="boundAttack" type="Area2D" unique_id=706066812 node_paths=PackedStringArray("spawn_Sp", "spawn_Sp2", "back_gpu", "Bullet_model") groups=["Attack"]]
-modulate = Color(0.39635608, 0.49123895, 0.98733133, 1)
 script = ExtResource("1_uoyub")
 type = 1
 spawn_Sp = NodePath("middle")

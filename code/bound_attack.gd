@@ -51,11 +51,12 @@ func _physics_process(delta: float) -> void:
 	
 	#武器伤害初始化
 	if abs(0.0 - damage) < 0.001:
-		damage = BulletDamage[BulletKind.keys()[type]]
+		damage = BulletDamage[BulletKind.keys()[type]] * Player.instance.attackDamageMag
 	if abs(0.0 - cooldown_Time) < 0.001:
-		cooldown_Time = BulletCooldown[BulletKind.keys()[type]]
+		cooldown_Time = BulletCooldown[BulletKind.keys()[type]] * (1 / Player.instance.allCoolTime_Mag)
 	if fly_direction.length() > 0 and not is_hited:
 		global_position += fly_direction.normalized() * speed * delta + speedOffset * delta
+		
 func _hited(area: Area2D) -> void:
 	if not is_hited and area.is_in_group("Monster") and not area.is_dead:
 		if is_hited:
