@@ -15,6 +15,8 @@
 [ext_resource type="PackedScene" uid="uid://dcp124hdiqni5" path="res://run_scene/Mouse/CrossHair/cross_hair.tscn" id="11_7ki6w"]
 [ext_resource type="PackedScene" uid="uid://dnrpow880ml8y" path="res://NewScenes/Monster/Original/newOriginal.tscn" id="14_uwqpt"]
 [ext_resource type="Script" uid="uid://tn8buxis1qgj" path="res://run_scene/RandomScene/RandomFirst/Ui/attribute.gd" id="15_kqtv7"]
+[ext_resource type="Script" uid="uid://dqtrdesiofceq" path="res://NewScenes/Level/Level9999/TreasureChest/treasure_chest_case.gd" id="16_5h0qo"]
+[ext_resource type="PackedScene" uid="uid://xq8goah4yoq6" path="res://NewScenes/Interaction/TreasureChest/TreasureChest.tscn" id="16_w5cdk"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_5h0qo"]
 vertices = PackedVector2Array(3766, 2742, -3894, 2742, -3894, -2486, 3766, -2486)
@@ -194,4 +196,10 @@ _Map_Generator = NodePath("../../MapGenerator")
 [node name="Effect" type="Node2D" parent="." unique_id=1941753221]
 
 [node name="In" type="CanvasModulate" parent="Effect" unique_id=1140853192]
-color = Color(0, 0, 0, 1)
+
+[node name="Interaction" type="Node2D" parent="." unique_id=1459030067]
+
+[node name="TreasureChestCase" type="Node2D" parent="Interaction" unique_id=1260931363 node_paths=PackedStringArray("_Map_Generator")]
+script = ExtResource("16_5h0qo")
+TreasureChest = ExtResource("16_w5cdk")
+_Map_Generator = NodePath("../../MapGenerator")

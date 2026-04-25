@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://xq8goah4yoq6"]
+
+[ext_resource type="Script" uid="uid://va8auhwxb2kg" path="res://NewScenes/Interaction/TreasureChest/treasure_chest.gd" id="1_aa7kx"]
+[ext_resource type="Texture2D" uid="uid://cq8inh3krghe0" path="res://Sprite/Case/TreasureChest/TreasureChest.png" id="2_qbb67"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_aa7kx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qbb67"]
+size = Vector2(32, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aa7kx"]
+size = Vector2(138, 128)
+
+[node name="TreasureChest" type="RigidBody2D" unique_id=1532903519]
+disable_mode = 1
+physics_material_override = SubResource("PhysicsMaterial_aa7kx")
+gravity_scale = 0.0
+script = ExtResource("1_aa7kx")
+
+[node name="Open" type="CollisionShape2D" parent="." unique_id=195092012]
+shape = SubResource("RectangleShape2D_qbb67")
+
+[node name="SPRITE" type="Node2D" parent="." unique_id=1369676114]
+
+[node name="TreasureChest" type="Sprite2D" parent="SPRITE" unique_id=1489137411]
+texture = ExtResource("2_qbb67")
+
+[node name="TreasureChest2" type="Area2D" parent="." unique_id=1562328437]
+
+[node name="Open" type="CollisionShape2D" parent="TreasureChest2" unique_id=104181796]
+shape = SubResource("RectangleShape2D_aa7kx")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=139716151]
+avoidance_enabled = true
+radius = 16.0
+
+[connection signal="body_entered" from="TreasureChest2" to="." method="_on_treasure_chest_2_body_entered"]
+[connection signal="body_exited" from="TreasureChest2" to="." method="_on_treasure_chest_2_body_exited"]

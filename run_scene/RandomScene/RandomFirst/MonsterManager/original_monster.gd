@@ -4,7 +4,7 @@ extends Node2D
 @export var spawn_Node: Node2D
 @export var current_Level_Monster_Limited : int = 10
 @export var _Map_Generator: Node2D
-@export var _random_Generator_Magnification: float = 10
+@export var _random_Generator_Magnification: float = 4
 @export var _generator_Over: bool = false
 var current_Monster_Num : int = 0
 

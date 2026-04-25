@@ -6,7 +6,7 @@ enum BulletKind {BULLET, BULLETLITTLE, BULLETMORELIILE}
 
 static var BulletDamage : Dictionary[String, float] = {
 	"BULLET" : 20.0,
-	"BULLETLITTLE" : 5.0,
+	"BULLETLITTLE" : 20.0,
 	"BULLETMORELIILE" : 3.0
 }
 static var BulletCooldown : Dictionary[String, float] = {

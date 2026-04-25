@@ -26,6 +26,9 @@ shape = SubResource("RectangleShape2D_nco1r")
 texture = ExtResource("2_2eh08")
 
 [node name="TestAgent" type="NavigationAgent2D" parent="." unique_id=1623616472]
+path_max_distance = 200.0
+avoidance_enabled = true
+radius = 64.0
 
 [node name="BloodDisplay" parent="." unique_id=760906426 instance=ExtResource("3_2eh08")]
 

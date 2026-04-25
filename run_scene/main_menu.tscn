@@ -605,7 +605,8 @@ title = "更新内容"
 position = Vector2i(481, 400)
 size = Vector2i(800, 200)
 visible = true
-dialog_text = "1. 这是第一个更新版本，即将进入玩法堆叠"
+dialog_text = "1. 这是第一个可游玩版本
+撑过多个波次，获得等级加成，然后无限续杯"
 
 [node name="Windows" type="CanvasLayer" parent="." unique_id=1608024837]
 
