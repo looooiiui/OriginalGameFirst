@@ -40,6 +40,7 @@ func _on_new_original_hit_area_entered(area: Area2D) -> void:
 func _Dead_state() -> void:
 	if is_dead:
 		Player.instance.experience += 20
+		Player.instance.real_hp += 5
 		queue_free()
 		
 

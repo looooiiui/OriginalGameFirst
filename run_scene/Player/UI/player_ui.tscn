@@ -1411,10 +1411,12 @@ offset_right = 1196.0
 offset_bottom = 45.0
 text = "当前等级:               当前经验:               升级所需经验:"
 
-[node name="Attribute" type="Node2D" parent="PlayerUiManager/PlayerLevel" unique_id=1872896348 node_paths=PackedStringArray("AttackMag", "CoolMag")]
+[node name="Attribute" type="Node2D" parent="PlayerUiManager/PlayerLevel" unique_id=1872896348 node_paths=PackedStringArray("CurrentHp", "AttackMag", "CoolMag", "DefenseMag")]
 script = ExtResource("17_0b42i")
+CurrentHp = NodePath("VBoxContainer2/CurrentHp")
 AttackMag = NodePath("VBoxContainer/AttackMag")
 CoolMag = NodePath("VBoxContainer/CoolMag")
+DefenseMag = NodePath("VBoxContainer/Defense")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PlayerUiManager/PlayerLevel/Attribute" unique_id=305953612]
 offset_left = 948.0
@@ -1429,3 +1431,16 @@ text = "当前伤害倍率"
 [node name="CoolMag" type="Label" parent="PlayerUiManager/PlayerLevel/Attribute/VBoxContainer" unique_id=1739586903]
 layout_mode = 2
 text = "当前射速倍率"
+
+[node name="Defense" type="Label" parent="PlayerUiManager/PlayerLevel/Attribute/VBoxContainer" unique_id=1940101855]
+layout_mode = 2
+text = "当前防御倍率"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PlayerUiManager/PlayerLevel/Attribute" unique_id=645089897]
+offset_left = 169.0
+offset_top = 104.0
+offset_right = 209.0
+offset_bottom = 144.0
+
+[node name="CurrentHp" type="Label" parent="PlayerUiManager/PlayerLevel/Attribute/VBoxContainer2" unique_id=216333757]
+layout_mode = 2

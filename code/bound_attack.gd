@@ -29,6 +29,7 @@ static var BulletRecoil : Dictionary[String, float] = {
 @export var damage : float = 0.0
 @export var speedOffset : Vector2
 @export var is_Speed_Offset_Get : bool = false
+@export var _Damage_Display_Scene: PackedScene
 
 var dead_wait_time : float = 1.0
 var fly_direction : Vector2 = Vector2.ZERO
@@ -65,6 +66,11 @@ func _hited(area: Area2D) -> void:
 		is_hited = true
 		Bullet_model.visible = false
 		back_gpu.emitting = false
+		
+		var temp_damage_display = _Damage_Display_Scene.instantiate()
+		get_tree().current_scene.add_child(temp_damage_display)
+		temp_damage_display.play_damage(damage, global_position)
+		
 		queue_free()
 		
 	

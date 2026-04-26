@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bki5y8q65mgsu" path="res://run_scene/Effect_player/DeadEffect/player_dead_effect.tscn" id="2_gx2s1"]
 [ext_resource type="PackedScene" uid="uid://ei5nsdfxtm33" path="res://run_scene/Player/Blood/ui.tscn" id="2_rmnqc"]
 [ext_resource type="Script" uid="uid://lnp5swstgqob" path="res://code/Player_code/ModelCode/Player_Model.gd" id="3_2042w"]
+[ext_resource type="Texture2D" uid="uid://b10flvs5mqhhl" path="res://NewScenes/Light/PlayerOrCommon.tres" id="8_a2v13"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a2v13"]
 size = Vector2(64, 226)
@@ -304,10 +305,9 @@ animations = [{
 "speed": 12.0
 }]
 
-[node name="PlayerModel" type="Node2D" unique_id=943498406 node_paths=PackedStringArray("PlayerAction", "Gun") groups=["Player"]]
+[node name="PlayerModel" type="Node2D" unique_id=943498406 node_paths=PackedStringArray("PlayerAction") groups=["Player"]]
 script = ExtResource("1_vbgv4")
 PlayerAction = NodePath("PlayerModel")
-Gun = NodePath("")
 DeadEffect = ExtResource("2_gx2s1")
 metadata/_edit_group_ = true
 
@@ -332,6 +332,15 @@ visible = false
 
 [node name="UI" parent="BloodManage" unique_id=1326789036 instance=ExtResource("2_rmnqc")]
 visible = false
+
+[node name="Light" type="Node2D" parent="." unique_id=1196575409]
+
+[node name="PointLight2D" type="PointLight2D" parent="Light" unique_id=1924943797]
+scale = Vector2(1.9375001, 1.96875)
+color = Color(1, 1, 0.34117648, 1)
+shadow_enabled = true
+texture = ExtResource("8_a2v13")
+texture_scale = 5.69
 
 [connection signal="area_entered" from="Player" to="." method="_Monster_Entered"]
 

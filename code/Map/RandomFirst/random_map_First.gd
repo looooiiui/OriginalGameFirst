@@ -15,12 +15,14 @@ func _process(delta: float) -> void:
 	pass
 
 func _Enter_Level() -> void:
+	var originColor = InCanvas.color
+	InCanvas.color = Color()
 	var tween = create_tween()
 	tween.set_trans(Tween.TRANS_SINE)
 	tween.set_ease(Tween.EASE_OUT)
 	tween.tween_property(
 		InCanvas,
 		"color",
-		Color(1.0, 1.0, 1.0, 1.0),
+		originColor,
 		1.0
 	)

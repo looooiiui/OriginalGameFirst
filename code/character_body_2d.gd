@@ -46,7 +46,7 @@ static var input_Enable : bool = false
 @export var max_Magic_Point : float = 200
 @export var magic_Point : float = max_Magic_Point
 @export var attackDamageMag : float = 1.0
-@export var defense_Mag : float = 1.0
+@export var defense_Mag : float = 1
 @export var magic_Attack_Mag : float = 1.0
 @export var magic_defense_Mag : float = 1.0
 @export var dexterity_Mag : float = 1.0
@@ -74,6 +74,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	_Mag_Control()
 	_player_Exprience()
+	_Clamp_Attribute()
 	now_Arm_select = PlayerUI.instance.currentSelect
 
 
@@ -148,9 +149,11 @@ func _attack(select : int):
 	pass
 	
 #受伤信号
-func took_damage(damage : float):  
-	real_hp -= damage
+func _Clamp_Attribute() -> void:
 	real_hp = clamp(real_hp, 0.0, max_hp)
+
+func took_damage(damage : float):  
+	real_hp -= damage * (1 / defense_Mag)
 	hp_change.emit(real_hp, max_hp)
 	
 func get_Toward():
@@ -177,3 +180,4 @@ func _player_Exprience() -> void:
 func _Mag_Control() -> void:
 	attackDamageMag = 1 + (level - 1) * 0.1
 	allCoolTime_Mag = 1 + (level - 1) * 0.1
+	defense_Mag = 1 + (level - 1) * 0.1

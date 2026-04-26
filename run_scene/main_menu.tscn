@@ -461,6 +461,16 @@ animations = [{
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_mbe66"]
 
+[sub_resource type="Gradient" id="Gradient_y8ndy"]
+offsets = PackedFloat32Array(0, 0.5038168, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.043137256, 0.003921569, 0.9843137, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ht2bp"]
+gradient = SubResource("Gradient_y8ndy")
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5, 0)
+
 [node name="MainMenu" type="Node2D" unique_id=922332076]
 script = ExtResource("1_f4xm7")
 
@@ -520,8 +530,8 @@ offset_bottom = 40.0
 [node name="MainUI" type="Node2D" parent="MainMenuUi/Ui" unique_id=557350259]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MainMenuUi/Ui/MainUI" unique_id=853881983]
-position = Vector2(332, 227.99998)
-scale = Vector2(7.65625, 7.65625)
+position = Vector2(108, 348)
+scale = Vector2(5.5625005, 5.2031255)
 sprite_frames = SubResource("SpriteFrames_weat6")
 animation = &"idle"
 frame_progress = 0.5607104
@@ -605,7 +615,7 @@ title = "更新内容"
 position = Vector2i(481, 400)
 size = Vector2i(800, 200)
 visible = true
-dialog_text = "1. 这是第一个可游玩版本
+dialog_text = "1. 这是第二个可游玩版本，优化了UI和视觉效果
 撑过多个波次，获得等级加成，然后无限续杯"
 
 [node name="Windows" type="CanvasLayer" parent="." unique_id=1608024837]
@@ -698,9 +708,22 @@ flat = true
 
 [node name="Start" type="CanvasModulate" parent="Windows/Windows/StartGame/Effect" unique_id=282482627]
 
+[node name="PointLight2D" type="PointLight2D" parent="Windows/Windows/StartGame/Effect" unique_id=1189363400]
+position = Vector2(236.99994, 136.99997)
+scale = Vector2(36.625, 21.6875)
+energy = 0.5
+texture = SubResource("GradientTexture2D_ht2bp")
+
 [node name="Effect" type="Node2D" parent="." unique_id=570640812]
 
 [node name="Start" type="CanvasModulate" parent="Effect" unique_id=294569808]
+color = Color(0.62352943, 0.6666667, 1, 1)
+
+[node name="PointLight2D" type="PointLight2D" parent="Effect" unique_id=96741815]
+position = Vector2(-690, -355)
+scale = Vector2(36.625, 21.6875)
+energy = 0.5
+texture = SubResource("GradientTexture2D_ht2bp")
 
 [connection signal="pressed" from="MainMenuUi/StartGame" to="." method="_first_test"]
 [connection signal="pressed" from="MainMenuUi/StartGame" to="Windows/Windows" method="_on_start_game_pressed"]

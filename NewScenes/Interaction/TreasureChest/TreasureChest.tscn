@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://va8auhwxb2kg" path="res://NewScenes/Interaction/TreasureChest/treasure_chest.gd" id="1_aa7kx"]
 [ext_resource type="Texture2D" uid="uid://cq8inh3krghe0" path="res://Sprite/Case/TreasureChest/TreasureChest.png" id="2_qbb67"]
+[ext_resource type="Texture2D" uid="uid://b10flvs5mqhhl" path="res://NewScenes/Light/PlayerOrCommon.tres" id="3_qbb67"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_aa7kx"]
 
@@ -10,6 +11,9 @@ size = Vector2(32, 32)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aa7kx"]
 size = Vector2(138, 128)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_qbb67"]
+polygon = PackedVector2Array(-11.555555, -15.058824, -14.222222, -7.529412, -14.222222, 15.058824, 14.222222, 15.058824, 14.222222, -7.529412, 11.555555, -15.058824)
 
 [node name="TreasureChest" type="RigidBody2D" unique_id=1532903519]
 disable_mode = 1
@@ -33,6 +37,16 @@ shape = SubResource("RectangleShape2D_aa7kx")
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=139716151]
 avoidance_enabled = true
 radius = 16.0
+
+[node name="Light" type="Node2D" parent="." unique_id=1858055353]
+
+[node name="PointLight2D" type="PointLight2D" parent="Light" unique_id=1874299237]
+scale = Vector2(1.125, 1.0625)
+shadow_enabled = true
+texture = ExtResource("3_qbb67")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Light/PointLight2D" unique_id=10357321]
+occluder = SubResource("OccluderPolygon2D_qbb67")
 
 [connection signal="body_entered" from="TreasureChest2" to="." method="_on_treasure_chest_2_body_entered"]
 [connection signal="body_exited" from="TreasureChest2" to="." method="_on_treasure_chest_2_body_exited"]

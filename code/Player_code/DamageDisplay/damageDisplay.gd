@@ -18,10 +18,7 @@ func _process(delta: float) -> void:
 func play_damage(number: int, start_pos: Vector2):
 	
 	numberOut = number
-	if numberOut < 10:
-		targetMag = 10
-	elif numberOut >= 10:
-		targetMag = 3
+	targetMag = log(numberOut) / 2
 		
 	offsetX = randf_range(-100.0, 100.0)
 	offsetY = randf_range(-100.0, 100.0)

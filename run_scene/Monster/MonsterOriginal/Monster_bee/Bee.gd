@@ -34,8 +34,6 @@ extends Area2D
 @export var Blood_Ui_Smooth : float = 0.1
 #怪物状态管理
 @export var is_Running : bool = true
-#击中管理
-@export var DamageDisplay : PackedScene
 #血条信号发射d
 signal blood(current_blood : float, original_blood : float)
 
@@ -119,6 +117,7 @@ func took_damage(damage):
 		add_child(temp_effort)
 		if current_blood <= 0.001 and not is_dead:
 			is_dead = true
+			Player.instance.experience += 20
 			hit_cache.clear()
 			Dead_Player.restart()
 			Dead_Time.start()
@@ -131,9 +130,6 @@ func _be_hited(area: Area2D) -> void:
 		hit_cache.append(area)
 		
 		took_damage(area.damage)
-		var damageDisplay = DamageDisplay.instantiate()
-		get_tree().current_scene.add_child(damageDisplay)
-		damageDisplay.play_damage(area.damage, global_position)
 
 func change_Global_Position(first : float, second : float):
 	global_position.x = first

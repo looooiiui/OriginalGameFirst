@@ -4,9 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://dc7v442kihybl" path="res://icon.svg" id="2_2eh08"]
 [ext_resource type="Script" uid="uid://udltg757d6dg" path="res://NewScenes/Monster/Original/new_original_hit.gd" id="2_nco1r"]
 [ext_resource type="PackedScene" uid="uid://ddqqbyxkhcmj7" path="res://NewScenes/Effect/Blood/blood_display.tscn" id="3_2eh08"]
+[ext_resource type="Texture2D" uid="uid://b10flvs5mqhhl" path="res://NewScenes/Light/PlayerOrCommon.tres" id="5_bfit2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nco1r"]
 size = Vector2(128, 128)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_nco1r"]
+polygon = PackedVector2Array(-64, -54, -64, 52, -53, 64, 52, 64, 63, 54, 64, -53, 53, -64, -52, -64)
 
 [node name="newOriginal" type="CharacterBody2D" unique_id=1913685970 node_paths=PackedStringArray("_agent")]
 script = ExtResource("1_qr3v4")
@@ -31,6 +35,17 @@ avoidance_enabled = true
 radius = 64.0
 
 [node name="BloodDisplay" parent="." unique_id=760906426 instance=ExtResource("3_2eh08")]
+
+[node name="Light" type="Node2D" parent="." unique_id=854270526]
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Light" unique_id=2134803431]
+occluder = SubResource("OccluderPolygon2D_nco1r")
+
+[node name="PointLight2D" type="PointLight2D" parent="Light" unique_id=316532025]
+scale = Vector2(3.3750002, 2.9687498)
+color = Color(1, 0, 0, 1)
+energy = 1.2
+texture = ExtResource("5_bfit2")
 
 [connection signal="area_entered" from="newOriginalHit" to="." method="_on_new_original_hit_area_entered"]
 [connection signal="body_entered" from="newOriginalHit" to="." method="_on_new_original_hit_body_entered"]

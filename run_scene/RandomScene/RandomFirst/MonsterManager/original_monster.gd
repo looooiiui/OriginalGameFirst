@@ -26,7 +26,8 @@ func General_Monster_Test() -> void:
 	var random_Generator_Y = randi_range(-tempY, tempY)
 	
 	if current_Monster_Num < current_Level_Monster_Limited and !_generator_Over:
-		var temp : Node2D = Original_Monster[0].instantiate()
+		var random_chose_monster: int = randi_range(0, Original_Monster.size() - 1)
+		var temp : Node2D = Original_Monster[random_chose_monster].instantiate()
 		temp.global_position = Vector2(random_Generator_X, random_Generator_Y)
 		spawn_Node.add_child(temp)
 		_Monster_Num_Cal()
