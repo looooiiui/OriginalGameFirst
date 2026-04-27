@@ -20,7 +20,6 @@ static var input_Enable : bool = false
 
 #计时器
 @export var original_time : float = 0.3
-@export var real_time : float = 0.3
 @export var MeleeCooldown : Timer
 #玩家血量系统---------
 @export var max_hp : float = 200
@@ -31,17 +30,13 @@ static var input_Enable : bool = false
 @export var move_smooth : float = 200
 @export var stop_smooth : float = 200
 @export var Back_effect : PackedScene
-@export var back_attack : float = 100
 @export var rotate_Smooth : float = 1
 @export var CameraControl : Camera2D
 #玩家动画控制
-@export var PlayerSprite : Sprite2D
-@export var PlayerAction : AnimatedSprite2D
 @export var is_running : bool = false
 @export var is_Melee : bool = false
 #物品控制
 @export var now_Arm_select : int = 0
-@export var offset : Vector2 = Vector2(50, 17)
 #肉鸽元素控制
 @export var max_Magic_Point : float = 200
 @export var magic_Point : float = max_Magic_Point
@@ -69,7 +64,6 @@ func _ready() -> void:
 	get_tree().root.remove_child(self)
 	get_tree().current_scene.add_child(self)
 	
-	PlayerAction.play("idle")
 	
 func _process(delta: float) -> void:
 	_Mag_Control()
@@ -81,8 +75,12 @@ func _process(delta: float) -> void:
 func _physics_process(delta: float) -> void:
 	
 	_cal_Grip_Position()
-	#玩家控制
-	PlayerAction.global_position = global_position
+	_player_move()
+	_melee_judge()
+	move_and_slide()
+	
+	
+func _player_move() -> void:
 	if input_Enable:
 		input_dir = Input.get_vector("left", "right", "up", "down")
 		input_dir = input_dir.normalized()
@@ -108,33 +106,9 @@ func _physics_process(delta: float) -> void:
 		velocity += input_dir * 100
 		var temp_effect = Back_effect.instantiate()
 		get_tree().current_scene.add_child(temp_effect)
-	#计时口
-	if is_time:
-		real_time -= delta
-		if real_time < 0:
-			is_time = false
-			real_time = original_time
-			
-	#-------------------动画控制原型--------------------#
-	#-------------------------------------------------#
-	if input_dir.length() > 0 and is_running == false:
-		PlayerAction.play("run")
-		is_running = true
-	elif input_dir.length() == 0 and is_running == true:
-		PlayerAction.play("idle")
-		is_running = false	
-		
-#	PlayerAction.flip_h = input_dir.x < 0	
-	if input_dir.x > 0 and PlayerAction.flip_h:
-		PlayerAction.flip_h = false
-	elif input_dir.x < 0 and !PlayerAction.flip_h:
-		PlayerAction.flip_h = true
-
-	#-------------------------------------------------#
-	#-------------------------------------------------#
 	
-		
-	#------------------近战判断------------------#
+#近战控制
+func _melee_judge() -> void:
 	if Input.is_action_just_pressed("melee") and !is_Melee:
 		is_Melee = true
 		MeleeCooldown.start()
@@ -142,12 +116,7 @@ func _physics_process(delta: float) -> void:
 		add_child(meleeStart)
 	if MeleeCooldown.is_stopped():
 		is_Melee = false
-	#控制移动
-	move_and_slide()	
-	
-func _attack(select : int):
-	pass
-	
+		
 #受伤信号
 func _Clamp_Attribute() -> void:
 	real_hp = clamp(real_hp, 0.0, max_hp)
@@ -181,3 +150,21 @@ func _Mag_Control() -> void:
 	attackDamageMag = 1 + (level - 1) * 0.1
 	allCoolTime_Mag = 1 + (level - 1) * 0.1
 	defense_Mag = 1 + (level - 1) * 0.1
+	
+func _player_state_reset() -> void:
+
+	global_position = Vector2(0, 100)
+	level = 1
+	experience = 0
+	real_hp = max_hp
+	now_Arm_select = 0
+	magic_Point = max_Magic_Point
+	attackDamageMag = 1.0
+	defense_Mag = 1
+	magic_Attack_Mag = 1.0
+	magic_defense_Mag  = 1.0
+	dexterity_Mag = 1.0
+	strength_Mag = 1.0
+	intelligence_Mag = 1.0
+	vitality_Mag = 1.0
+	allCoolTime_Mag = 1.0

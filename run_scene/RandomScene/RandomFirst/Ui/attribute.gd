@@ -15,5 +15,5 @@ func _process(delta: float) -> void:
 	_LevelUi_Display()
 	
 func _LevelUi_Display() -> void:
-	_CurrentLevel.text = "当前波次: %d" % _Original_Monster_Manager._current_level
-	_CurrentMonsterNum.text = "当前剩余怪物数量: %d" % _Original_Monster.current_Monster_Num
+	_CurrentLevel.text = "CurrentWave: %d" % _Original_Monster_Manager._current_level
+	_CurrentMonsterNum.text = "MonsterNum: %d" % _Original_Monster.current_Monster_Num

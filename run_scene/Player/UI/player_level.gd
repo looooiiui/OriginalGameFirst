@@ -25,13 +25,13 @@ func _Initialization_tween() -> void:
 	tween.tween_property(
 			InLevel,
 			"modulate",
-			Color(0.141, 0.357, 0.0, 1.0),
+			Color(0.438, 0.239, 0.153, 1.0),
 			1.0
 		)
 	tween.tween_property(
 			InLevel,
 			"modulate",
-			Color(0.29, 0.855, 0.078, 1.0),
+			Color(0.624, 0.196, 0.078, 1.0),
 			1.0
 		)
 	
@@ -39,8 +39,8 @@ func _Level_Display(delta: float) -> void:
 	var player_Experience_radio: float = Player.instance.experience / Player.instance.maxExperience
 	player_Experience_radio = clamp(player_Experience_radio, 0.0, 1.0)
 	
-	var target_width = 500 * player_Experience_radio
-	var target_scale = Vector2(target_width, 51)
+	var target_width = 1014.0 * player_Experience_radio
+	var target_scale = Vector2(target_width, 22.313)
 	
 	InLevel.scale = lerp(InLevel.scale, target_scale, level_Lerp_Speed * delta)
 	
@@ -52,9 +52,9 @@ func _update_Level_Ui(delta: float) -> void:
 	)
 	
 	LevelUi.text = (
-		"当前等级: %d    " % Player.instance.level +
-		"升级所需经验: %.1f    " % Player.instance.maxExperience +
-		"当前经验: %.1f    " % level_Ui_Current_Experience
+		"PlayerLevel: %d    " % Player.instance.level +
+		"NeedExp: %.1f    " % Player.instance.maxExperience +
+		"Experience: %.1f    " % level_Ui_Current_Experience
 	)
 	
 	

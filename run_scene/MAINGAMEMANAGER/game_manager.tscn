@@ -9,9 +9,9 @@
 [ext_resource type="Script" uid="uid://c7eibiyl1xt15" path="res://run_scene/MAINGAMEMANAGER/windows_manager.gd" id="6_jupgj"]
 [ext_resource type="Script" uid="uid://cnvn4bm7xg10f" path="res://run_scene/MAINGAMEMANAGER/exit_menu.gd" id="7_11aqv"]
 [ext_resource type="Texture2D" uid="uid://c3cq77nocfsxc" path="res://Sprite/BACK/ESCBACK/EscBack.png" id="9_bhboq"]
-[ext_resource type="Texture2D" uid="uid://k80ueix4mnnc" path="res://Sprite/Button/commonButton2.png" id="10_1r2fg"]
 
 [node name="GameManager" type="Node2D" unique_id=223941287 node_paths=PackedStringArray("MonsterManager", "Monster_spwan_time", "DebugInformation", "WindowsManager", "UiManager")]
+visible = false
 script = ExtResource("1_jupgj")
 MonsterManager = NodePath("MonsterManager")
 Monster_spwan_time = NodePath("TimeManager/Monster_time_manage2/Monster_occ")
@@ -45,22 +45,23 @@ GameOverLabel = NodePath("GamerOver/GameOver")
 
 [node name="GameOver" type="Label" parent="UiManager/GameoverUi/GamerOver" unique_id=2085438643]
 visible = false
-offset_top = 444.0
-offset_right = 1920.0
-offset_bottom = 541.0
+offset_left = 146.0
+offset_top = 456.0
+offset_right = 1786.0
+offset_bottom = 553.0
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
-theme_override_font_sizes/font_size = 72
-text = "The Game has Over : Blood Clear"
+theme_override_font_sizes/font_size = 48
+text = "GAME OVER: You have been defeated!"
 horizontal_alignment = 1
 
 [node name="Back" type="Label" parent="UiManager/GameoverUi/GamerOver/GameOver" unique_id=1791187717]
 layout_mode = 0
-offset_left = 857.0
-offset_top = 132.0
-offset_right = 1025.0
-offset_bottom = 165.0
+offset_left = 712.0
+offset_top = 135.0
+offset_right = 888.0
+offset_bottom = 176.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
@@ -123,6 +124,7 @@ layout_mode = 0
 offset_left = 40.0
 offset_right = 188.0
 offset_bottom = 158.0
+theme_override_constants/separation = 10
 
 [node name="MonsterLimited" type="Label" parent="DEBUGUI/MonsterManagerUi/VBoxContainer" unique_id=319543522]
 layout_mode = 2
@@ -315,24 +317,21 @@ scale = Vector2(0.78095233, 0.7055375)
 texture = ExtResource("9_bhboq")
 
 [node name="Button" type="Node2D" parent="Windows/WindowsManager/ExitMenu" unique_id=677269485]
+position = Vector2(-6, 8)
 
 [node name="ReturnMainMenu" type="Button" parent="Windows/WindowsManager/ExitMenu/Button" unique_id=431876013]
 offset_left = 18.0
 offset_top = 752.0
-offset_right = 154.0
-offset_bottom = 783.0
+offset_right = 390.0
+offset_bottom = 791.0
 text = "Return MainMeun"
-icon = ExtResource("10_1r2fg")
-flat = true
 
 [node name="ReturnToDesktop" type="Button" parent="Windows/WindowsManager/ExitMenu/Button" unique_id=953029712]
-offset_left = 191.0
+offset_left = 396.0
 offset_top = 752.0
-offset_right = 366.0
-offset_bottom = 792.0
+offset_right = 848.0
+offset_bottom = 791.0
 text = "Return To Desktop"
-icon = ExtResource("10_1r2fg")
-flat = true
 
 [connection signal="text_submitted" from="DEBUGUI/MonsterManagerUi/VBoxContainer/MonsterLimited/MonsterLimited" to="DEBUGUI/Input" method="_Scence_Monster_Limited"]
 [connection signal="text_submitted" from="DEBUGUI/MonsterManagerUi/VBoxContainer/PlayerHpMax/PlayerHpMax" to="DEBUGUI/Input" method="_Player_Hp_Max_Change"]

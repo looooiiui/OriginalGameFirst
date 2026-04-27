@@ -32,7 +32,7 @@ enum TheMainType {MAINARM, BACKMENT, EQUIMENT}
 @export var originalColor : Color
 
 # 这个存放的是鼠标悬停时物品栏要变的颜色
-@export var selectColor : Color = Color(0.148, 0.773, 0.953, 0.5)
+@export var selectColor : Color = Color(0.145, 0.898, 1.0, 0.482)
 
 # 这个表示当前物品栏的物品是否被鼠标拿起，是用来表示本物品栏贴图是否跟随鼠标的
 @export var is_Case_Taken : bool = false
@@ -134,9 +134,9 @@ func _mouse_Inside_Light():
 	
 	#如果鼠标入内，则物品栏变色(modulate属性)
 	if _mouse_Inside():
-		modulate = selectColor
+		Inventory.modulate = selectColor
 	else:
-		modulate = originalColor
+		Inventory.modulate = originalColor
 	
 # 这里是判断鼠标入内的代码
 func _mouse_Inside() -> bool:

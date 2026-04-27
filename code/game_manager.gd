@@ -47,23 +47,20 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 
-	#--------调试信息显示-------#
-	if Input.is_action_just_pressed("debug"):
-		if is_Debug == false:
-			DebugInformation.visible = true
-			is_Debug = true
-		else:
-			DebugInformation.visible = false
-			is_Debug = false
+	_debug_imformation_display()
 	
-
 	windowsCount = clamp(windowsCount, 0, windowsMaxlimited)		
 	Mouse_Visible()
 	
-	#------------------------#
-	
-	#----------玩家UI显示---------#
-	
+
+	_player_state_control()
+	_game_over_control()
+	gameover_Hp_Clear()
+	UI_Player_visible()
+
+#玩家综合状态控制
+func _player_state_control() -> void:
+		#当前关卡玩家操纵控制
 	if currentLevel == 0:
 		is_PlayerUI = false
 	else:
@@ -74,16 +71,25 @@ func _process(delta: float) -> void:
 		Player.instance.input_Enable = false
 	else:
 		Player.instance.input_Enable = true
-	#---------游戏结束控制--------#
-	
+
+
+#游戏结束控制
+func _game_over_control() -> void:
 	if is_Game_Over and Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		is_Game_Over = false
+		Player.instance._player_state_reset()
 		get_tree().change_scene_to_file("res://run_scene/main_menu.tscn")
-		Player.instance.real_hp = Player.instance.max_hp
 		UiManager.game_Over()
-		
-	gameover_Hp_Clear()
-	UI_Player_visible()
+
+#--------调试信息显示-------#
+func _debug_imformation_display() -> void:
+	if Input.is_action_just_pressed("debug"):
+		if is_Debug == false:
+			DebugInformation.visible = true
+			is_Debug = true
+		else:
+			DebugInformation.visible = false
+			is_Debug = false
 
 func Mouse_Visible():
 	#防windows出错

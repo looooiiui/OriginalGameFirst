@@ -6,7 +6,7 @@ extends Node2D
 @export var _blood_Follow_Speed: float = 5.0
 @export var _blood_Change_Speed: float = 3.0
 @export var _blood_Display_real: float
-@export var _blood_Display_Length: float = 194
+@export var _blood_Display_Length: float = 2.97
 
 var _real_Blood_Display: float
 func _ready() -> void:

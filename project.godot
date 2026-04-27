@@ -25,6 +25,7 @@ ForGridPic="*uid://d3k8ssnb8e6ne"
 GridLogic="*uid://b7584tki325dc"
 MainPlayer="*uid://cchltm0wyh7qp"
 MainGameManager="*uid://cyuny7ao7nvdo"
+SaveData="*uid://dsx1cdfhxe4b3"
 
 [display]
 
@@ -44,8 +45,8 @@ Monster=""
 
 [gui]
 
-theme/custom="uid://ig01olb8a1ug"
-theme/custom_font="uid://ig01olb8a1ug"
+theme/custom="uid://cr2puyn8agcws"
+theme/custom_font="uid://dd15jj3psq138"
 
 [input]
 

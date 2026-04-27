@@ -15,9 +15,9 @@ func _process(delta: float) -> void:
 	_playerAttributeDisplay()
 
 func _Attribute_Display() -> void:
-	AttackMag.text  = "当前伤害倍率: %.1f" % Player.instance.attackDamageMag
-	CoolMag.text    = "当前冷却倍率: %.1f" % Player.instance.allCoolTime_Mag
-	DefenseMag.text = "当前防御倍率: %.1f" % Player.instance.defense_Mag
+	AttackMag.text  = "AttackMag: %.1f" % Player.instance.attackDamageMag
+	CoolMag.text    = "ShootMag: %.1f" % Player.instance.allCoolTime_Mag
+	DefenseMag.text = "DefenseMag: %.1f" % Player.instance.defense_Mag
 	
 func _playerAttributeDisplay() -> void:
-	CurrentHp.text  = "当前血量: %.1f" % Player.instance.real_hp
+	CurrentHp.text  = "CurrentHp: %.1f" % Player.instance.real_hp

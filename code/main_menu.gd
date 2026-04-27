@@ -19,7 +19,3 @@ func _first_test() -> void:
 
 func _on_exit_pressed() -> void:
 	get_tree().quit()
-
-
-func _on_setting_pressed() -> void:
-	GameManager.instance.WindowsManager.change_Windows_Visible()

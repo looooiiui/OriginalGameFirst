@@ -158,18 +158,19 @@ offset_left = 175.0
 offset_top = 193.0
 offset_right = 271.0
 offset_bottom = 233.0
+theme_override_constants/separation = 16
 
 [node name="Main" type="Label" parent="LevelUi/LevelUi/Attribute/Attribute" unique_id=234558287]
 layout_mode = 2
-text = "当前关卡信息"
+text = "Imformation"
 
 [node name="CurrentLevel" type="Label" parent="LevelUi/LevelUi/Attribute/Attribute" unique_id=1705707144]
 layout_mode = 2
-text = "当前波次: "
+text = "CurrentWave: "
 
 [node name="CurrentMonsterNum" type="Label" parent="LevelUi/LevelUi/Attribute/Attribute" unique_id=164614567]
 layout_mode = 2
-text = "当前怪物数量:"
+text = "MonsterNum:"
 
 [node name="Ground" type="NavigationRegion2D" parent="." unique_id=1317675429]
 navigation_polygon = SubResource("NavigationPolygon_5h0qo")
@@ -206,7 +207,7 @@ _Map_Generator = NodePath("../../MapGenerator")
 [node name="Effect" type="Node2D" parent="." unique_id=1941753221]
 
 [node name="In" type="CanvasModulate" parent="Effect" unique_id=1140853192]
-color = Color(0.09019608, 0.46666667, 0.6117647, 1)
+color = Color(0.007843138, 0.007843138, 0.007843138, 1)
 
 [node name="Interaction" type="Node2D" parent="." unique_id=1459030067]
 
