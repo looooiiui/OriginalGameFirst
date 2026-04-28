@@ -2,8 +2,9 @@ extends Node2D
 
 @export var CrossHair : Node2D
 @export var toMouse : Line2D
+@export var Light: PointLight2D
 @export var is_Line : bool = false
-# Called when the node enters the scene tree for the first time.
+
 func _ready() -> void:
 	z_index = 99
 
@@ -14,6 +15,8 @@ func _process(delta: float) -> void:
 		is_Line = !is_Line
 
 	CrossHair.global_position = get_global_mouse_position()
+	Light.global_position = CrossHair.global_position
+	
 	if is_Line:
 		toMouse.points[0] = Player.instance.global_position
 		toMouse.points[1] = get_global_mouse_position() 

@@ -7,13 +7,14 @@ extends Label
 @export var realMag : float = 1
 @export var targetMag : float = 10
 @export var numberOut : float
+@export var fontSize: float = 24
 
 func _ready() -> void:
 	z_index = 100
 
 func _process(delta: float) -> void:
 		
-	add_theme_font_size_override("font_size", numberOut * realMag)
+	add_theme_font_size_override("font_size", fontSize)
 
 func play_damage(number: int, start_pos: Vector2):
 	
@@ -31,7 +32,7 @@ func play_damage(number: int, start_pos: Vector2):
 	tween.set_trans(Tween.TRANS_QUAD)
 	tween.set_parallel(true)
 	
-	tween.tween_property(self, "realMag", targetMag, 0.6)
+	tween.tween_property(self, "scale", Vector2(targetMag, targetMag), 0.6)
 	tween.tween_property(self, "global_position", start_pos + offset, 0.6)
 	tween.tween_property(self, "modulate:a", 0.0, 2)
 	

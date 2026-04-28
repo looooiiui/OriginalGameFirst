@@ -335,7 +335,7 @@ visible = false
 
 [node name="Light" type="Node2D" parent="." unique_id=1196575409]
 
-[node name="PointLight2D" type="PointLight2D" parent="Light" unique_id=1924943797]
+[node name="Light" type="PointLight2D" parent="Light" unique_id=1924943797]
 scale = Vector2(1.9375001, 1.96875)
 color = Color(1, 1, 0.34117648, 1)
 shadow_enabled = true

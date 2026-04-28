@@ -24,7 +24,7 @@ func change_Windows_Visible():
 
 func _return_Main_menu() -> void:
 	get_tree().change_scene_to_file("res://run_scene/main_menu.tscn")
-	Player.instance.real_hp = Player.instance.max_hp
+	Player.instance._player_state_reset()
 	GameManager.instance.is_Game_Over = false
 	ExitMenu.visible = false
 

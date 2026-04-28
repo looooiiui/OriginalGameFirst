@@ -1,7 +1,7 @@
 extends Node2D
 
 @export var currentLevel : int = 9999
-@export var InCanvas: CanvasModulate
+@export var InCanvas: ColorRect
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -24,5 +24,7 @@ func _Enter_Level() -> void:
 		InCanvas,
 		"color",
 		originColor,
-		1.0
+		3.0
 	)
+	await tween.finished
+	InCanvas.visible = false

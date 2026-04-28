@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cdj6oeq8wsa0v" path="res://run_scene/Player/Inventory/InventorySlot/InventorySlot.tscn" id="12_jrs3v"]
 [ext_resource type="Texture2D" uid="uid://bhv8slb4stbiu" path="res://Sprite/output_transparent.png" id="13_b2p4r"]
 [ext_resource type="Script" uid="uid://tkkx25w1wkcf" path="res://run_scene/Player/UI/player_level.gd" id="15_q6jka"]
+[ext_resource type="Script" uid="uid://d01enmuiao16i" path="res://run_scene/Player/UI/little_map.gd" id="15_u5kfp"]
 [ext_resource type="Script" uid="uid://bbweponoa5wfr" path="res://run_scene/Player/UI/attribute.gd" id="17_0b42i"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_cmx82"]
@@ -101,6 +102,9 @@ diffuse_texture = ExtResource("13_b2p4r")
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_q6jka"]
 
+[sub_resource type="CanvasTexture" id="CanvasTexture_0b42i"]
+diffuse_texture = ExtResource("13_b2p4r")
+
 [node name="PlayerUi" type="CanvasLayer" unique_id=2018247639]
 
 [node name="PlayerUiManager" type="Node2D" parent="." unique_id=488260596 node_paths=PackedStringArray("Blood_player", "ArmInventory", "BackPackNode")]
@@ -167,7 +171,7 @@ Follow_Case = NodePath("../../Windows/BackPack/BackPack/MainArm/2")
 BackPack = NodePath("../../Windows")
 
 [node name="3" parent="PlayerUiManager/ArmInventory" unique_id=145128052 node_paths=PackedStringArray("Follow_Case", "BackPack") instance=ExtResource("12_jrs3v")]
-position = Vector2(116, 0)
+position = Vector2(115, 0)
 Follow_Case = NodePath("../../Windows/BackPack/BackPack/MainArm/3")
 BackPack = NodePath("../../Windows")
 
@@ -426,6 +430,38 @@ offset_bottom = 144.0
 [node name="CurrentHp" type="Label" parent="PlayerUiManager/PlayerLevel/Attribute/VBoxContainer2" unique_id=216333757]
 layout_mode = 2
 text = "CurrentHp:"
+
+[node name="OtherUi" type="Node2D" parent="PlayerUiManager" unique_id=865795297]
+
+[node name="LittleMap" type="Node2D" parent="PlayerUiManager/OtherUi" unique_id=178819410]
+
+[node name="LittleMapBack" type="Node2D" parent="PlayerUiManager/OtherUi/LittleMap" unique_id=914637105]
+position = Vector2(205, 124)
+
+[node name="Back" type="Sprite2D" parent="PlayerUiManager/OtherUi/LittleMap/LittleMapBack" unique_id=362519131]
+position = Vector2(1538, 104.5)
+scale = Vector2(0.45544553, 0.97476345)
+texture = SubResource("CanvasTexture_0b42i")
+region_enabled = true
+region_rect = Rect2(513.04956, 299.5453, 707.3845, 317.25128)
+
+[node name="LittleMap" type="SubViewportContainer" parent="PlayerUiManager/OtherUi/LittleMap" unique_id=67626732]
+offset_left = 1600.0
+offset_top = 109.0
+offset_right = 1887.0
+offset_bottom = 342.0
+stretch = true
+
+[node name="LittleMap" type="SubViewport" parent="PlayerUiManager/OtherUi/LittleMap/LittleMap" unique_id=306263887 node_paths=PackedStringArray("LittleCamera")]
+handle_input_locally = false
+canvas_item_default_texture_filter = 0
+size = Vector2i(287, 233)
+render_target_update_mode = 4
+script = ExtResource("15_u5kfp")
+LittleCamera = NodePath("LittleCamera")
+
+[node name="LittleCamera" type="Camera2D" parent="PlayerUiManager/OtherUi/LittleMap/LittleMap/LittleMap" unique_id=1012663831]
+zoom = Vector2(0.1, 0.1)
 
 [editable path="PlayerUiManager/Windows/BackPack/Equipment/Equipment/Main/1"]
 [editable path="PlayerUiManager/Windows/BackPack/Equipment/Equipment/Main/2"]

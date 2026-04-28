@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+SaveData="*uid://dsx1cdfhxe4b3"
 DropManage="*uid://qu5m5w5uve86"
 CaseIconGlobal="*uid://c5ot4hv4pxnbq"
 PlayerUi="*uid://doi3mcft3mfjj"
@@ -25,7 +26,6 @@ ForGridPic="*uid://d3k8ssnb8e6ne"
 GridLogic="*uid://b7584tki325dc"
 MainPlayer="*uid://cchltm0wyh7qp"
 MainGameManager="*uid://cyuny7ao7nvdo"
-SaveData="*uid://dsx1cdfhxe4b3"
 
 [display]
 

@@ -50,6 +50,5 @@ theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_68gky")
 theme_override_styles/focus = SubResource("StyleBoxFlat_mgdos")
-text = "ere"
 autowrap_trim_flags = 0
 script = ExtResource("1_68gky")

@@ -3,7 +3,7 @@ extends Window
 @export var BackButton : Button
 @export var StartCanvas: CanvasModulate
 @export var WindowStartCanvas: CanvasModulate
-
+@export var ArchiveWindows: Window
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -19,21 +19,7 @@ func _Back_MainMenu() -> void:
 
 
 func _Random_Level() -> void:
-	var tween = create_tween()
-	tween.set_trans(Tween.TRANS_SINE)
-	tween.set_ease(Tween.EASE_OUT)
-	tween.tween_property(
-		StartCanvas,
-		"color",
-		Color(),
-		1.0
-	)
-	tween.tween_property(
-		WindowStartCanvas,
-		"color",
-		Color(),
-		1.0
-	)
+	ArchiveWindows.size.x = 2
+	ArchiveWindows.size.y = 1 
+	ArchiveWindows.visible = true
 	
-	await tween.finished
-	get_tree().change_scene_to_file("res://run_scene/RandomScene/RandomFirst/RandomMap.tscn")
