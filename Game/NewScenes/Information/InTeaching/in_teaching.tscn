@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://c4xrh53mq0hhi"]
+
+[ext_resource type="Script" uid="uid://dd7qy1op0j0rx" path="res://Game/NewScenes/Information/InTeaching/in_teaching.gd" id="1_u6k0w"]
+[ext_resource type="Script" uid="uid://d3pdckn3vy88p" path="res://Game/NewScenes/Information/InTeaching/Childs/player_tip.gd" id="2_orm6n"]
+[ext_resource type="Script" uid="uid://biylclurocve8" path="res://Game/NewScenes/Information/InTeaching/Childs/WASD/wasd.gd" id="3_7filh"]
+[ext_resource type="Theme" uid="uid://cmnv01x53q7b7" path="res://Game/theme/Tips/Tips.tres" id="4_i0tbg"]
+[ext_resource type="Gradient" uid="uid://dr4sytbou16sp" path="res://Game/NewScenes/Light/Tips.tres" id="5_7filh"]
+[ext_resource type="Script" uid="uid://c40s1mtwg6kik" path="res://Game/NewScenes/Information/InTeaching/Childs/RUN/run.gd" id="6_omx1s"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_utqn1"]
+gradient = ExtResource("5_7filh")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5, 0)
+
+[node name="InTeaching" type="Node2D" unique_id=880730844]
+script = ExtResource("1_u6k0w")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=515588067]
+visible = false
+offset_left = -2101.0
+offset_top = -1221.0
+offset_right = 2141.0
+offset_bottom = 1261.0
+color = Color(0, 0.039215688, 0, 1)
+
+[node name="PlayerTip" type="Node2D" parent="." unique_id=103764674 node_paths=PackedStringArray("tipGroup")]
+script = ExtResource("2_orm6n")
+tipGroup = {
+"RUN": NodePath("RUN"),
+"WASD": NodePath("WASD")
+}
+
+[node name="WASD" type="Node2D" parent="PlayerTip" unique_id=577589392 node_paths=PackedStringArray("Up", "Down", "Left", "Right")]
+visible = false
+position = Vector2(479, 73)
+script = ExtResource("3_7filh")
+Up = NodePath("SPRITE/W")
+Down = NodePath("SPRITE/S")
+Left = NodePath("SPRITE/A")
+Right = NodePath("SPRITE/D")
+metadata/_edit_group_ = true
+
+[node name="SPRITE" type="Node2D" parent="PlayerTip/WASD" unique_id=311199333]
+modulate = Color(1, 1, 1, 0.4117647)
+
+[node name="W" type="Label" parent="PlayerTip/WASD/SPRITE" unique_id=1987042865]
+offset_right = 24.0
+offset_bottom = 24.0
+theme = ExtResource("4_i0tbg")
+text = "W"
+
+[node name="D" type="Label" parent="PlayerTip/WASD/SPRITE" unique_id=472341059]
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 62.0
+offset_bottom = 62.0
+theme = ExtResource("4_i0tbg")
+text = "D"
+
+[node name="A" type="Label" parent="PlayerTip/WASD/SPRITE" unique_id=1924784016]
+offset_left = -32.0
+offset_top = 32.0
+offset_right = -2.0
+offset_bottom = 62.0
+theme = ExtResource("4_i0tbg")
+text = "A"
+
+[node name="S" type="Label" parent="PlayerTip/WASD/SPRITE" unique_id=2090314506]
+offset_top = 32.0
+offset_right = 30.0
+offset_bottom = 62.0
+theme = ExtResource("4_i0tbg")
+text = "S"
+
+[node name="Light" type="Node2D" parent="PlayerTip/WASD" unique_id=1525452316]
+
+[node name="Light" type="PointLight2D" parent="PlayerTip/WASD/Light" unique_id=525873608]
+position = Vector2(15, 32)
+scale = Vector2(0.78125083, 0.8125001)
+color = Color(1, 1, 0.34117648, 1)
+energy = 0.2
+texture = SubResource("GradientTexture2D_utqn1")
+texture_scale = 5.69
+
+[node name="RUN" type="Node2D" parent="PlayerTip" unique_id=795311961]
+position = Vector2(1013, 396)
+script = ExtResource("6_omx1s")
+metadata/_edit_group_ = true
+
+[node name="SPRITE" type="Node2D" parent="PlayerTip/RUN" unique_id=1685737600]
+modulate = Color(1, 1, 1, 0.4117647)
+
+[node name="Run" type="Label" parent="PlayerTip/RUN/SPRITE" unique_id=997790535]
+offset_right = 24.0
+offset_bottom = 24.0
+theme = ExtResource("4_i0tbg")
+text = "\"Shift\" to RUN"
+
+[node name="Light" type="Node2D" parent="PlayerTip/RUN" unique_id=1222812047]
+
+[node name="Light" type="PointLight2D" parent="PlayerTip/RUN/Light" unique_id=800815448]
+position = Vector2(182, 17)
+scale = Vector2(0.78125083, 0.8125001)
+color = Color(1, 1, 0.34117648, 1)
+energy = 0.2
+texture = SubResource("GradientTexture2D_utqn1")
+texture_scale = 9.93

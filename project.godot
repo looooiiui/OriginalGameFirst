@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+Teaching="*uid://desras05tenof"
 SaveData="*uid://dsx1cdfhxe4b3"
 DropManage="*uid://qu5m5w5uve86"
 CaseIconGlobal="*uid://c5ot4hv4pxnbq"

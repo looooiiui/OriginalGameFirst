@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cchltm0wyh7qp"]
+
+[ext_resource type="Script" uid="uid://bemdty5esmwrq" path="res://Game/code/character_body_2d.gd" id="1_rlq3c"]
+[ext_resource type="PackedScene" uid="uid://bfjuuuxln1246" path="res://Game/run_scene/Player/Attack/MeleeAttack/melee.tscn" id="2_6dqgl"]
+[ext_resource type="PackedScene" uid="uid://bmbldtnagnkps" path="res://Game/run_scene/Effect_player/PlayerEffect/back_effect.tscn" id="3_yf2wp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7cjf1"]
+size = Vector2(64, 63)
+
+[node name="Player" type="CharacterBody2D" unique_id=573955802 node_paths=PackedStringArray("MeleeCooldown") groups=["Player"]]
+position = Vector2(10, 6)
+script = ExtResource("1_rlq3c")
+Melee = ExtResource("2_6dqgl")
+MeleeCooldown = NodePath("TimeManager/MeleeCooldown/melee")
+Back_effect = ExtResource("3_yf2wp")
+metadata/_edit_group_ = true
+
+[node name="the_true_coll" type="CollisionShape2D" parent="." unique_id=1619025999 groups=["Player"]]
+top_level = true
+position = Vector2(-2, 9.5)
+shape = SubResource("RectangleShape2D_7cjf1")
+
+[node name="TimeManager" type="Node2D" parent="." unique_id=570788679]
+
+[node name="ArmCooldown" type="Node2D" parent="TimeManager" unique_id=15391675]
+
+[node name="first" type="Timer" parent="TimeManager/ArmCooldown" unique_id=1827647601]
+one_shot = true
+
+[node name="MeleeCooldown" type="Node2D" parent="TimeManager" unique_id=1828671720]
+
+[node name="melee" type="Timer" parent="TimeManager/MeleeCooldown" unique_id=1435633567]
+one_shot = true

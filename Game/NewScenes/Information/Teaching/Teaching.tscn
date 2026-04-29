@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://desras05tenof"]
+
+[ext_resource type="Script" uid="uid://bmh1674m4ld5w" path="res://Game/NewScenes/Information/Teaching/teaching.gd" id="1_7nc1u"]
+
+[node name="Teaching" type="Node2D" unique_id=2014493152]
+script = ExtResource("1_7nc1u")
