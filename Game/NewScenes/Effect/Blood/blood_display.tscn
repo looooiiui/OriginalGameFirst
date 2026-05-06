@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ddqqbyxkhcmj7"]
 
 [ext_resource type="Script" uid="uid://ddfngjn5ec8ma" path="res://Game/NewScenes/Effect/Blood/blood_display.gd" id="1_q4p04"]
-[ext_resource type="Texture2D" uid="uid://bhv8slb4stbiu" path="res://Game/Sprite/output_transparent.png" id="2_nriwq"]
+[ext_resource type="Texture2D" uid="uid://bhv8slb4stbiu" path="res://02_Assets/Sprite/OriginalSprite/output_transparent.png" id="2_nriwq"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_q4p04"]
 diffuse_texture = ExtResource("2_nriwq")

@@ -25,7 +25,7 @@ func startGame() -> void:
 		3.0
 	)
 	await tween.finished
-	get_tree().change_scene_to_file("res://Game/run_scene/RandomScene/RandomFirst/RandomMap.tscn")
+	get_tree().change_scene_to_file("res://03_Game/Levels/RandomLevel/RandomScene/RandomFirst/RandomMap.tscn")
 	
 func _initializeGame() -> void:
 	StartGameColor.visible = true

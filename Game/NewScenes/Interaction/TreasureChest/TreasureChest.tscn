@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://xq8goah4yoq6"]
 
 [ext_resource type="Script" uid="uid://va8auhwxb2kg" path="res://Game/NewScenes/Interaction/TreasureChest/treasure_chest.gd" id="1_aa7kx"]
-[ext_resource type="Texture2D" uid="uid://cq8inh3krghe0" path="res://Game/Sprite/Case/TreasureChest/TreasureChest.png" id="2_qbb67"]
+[ext_resource type="Texture2D" uid="uid://cq8inh3krghe0" path="res://02_Assets/Sprite/Items/Case/TreasureChest/TreasureChest.png" id="2_qbb67"]
 [ext_resource type="Texture2D" uid="uid://b10flvs5mqhhl" path="res://Game/NewScenes/Light/PlayerOrCommon.tres" id="3_qbb67"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_aa7kx"]

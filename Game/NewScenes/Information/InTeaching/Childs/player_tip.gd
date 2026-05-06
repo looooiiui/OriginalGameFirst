@@ -11,6 +11,7 @@ func _process(delta: float) -> void:
 	_gameTipRunning()
 
 func _tipInitialize() -> void:
+	tipStack.push(tipGroup.get("BACKPACK", "NULL"))
 	tipStack.push(tipGroup.get("RUN", "NULL"))
 	tipStack.push(tipGroup.get("WASD", "NULL"))
 	tipStack.getTop().startTip()

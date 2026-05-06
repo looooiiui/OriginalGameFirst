@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cf705erxqcy6g"]
+
+[ext_resource type="Script" uid="uid://cohfy2pyiwyak" path="res://00_Engine/GlobalCamera/Code/global_camera.gd" id="1_rq33v"]
+
+[node name="GlobalCamera" type="Node2D" unique_id=1945500435 node_paths=PackedStringArray("Camera")]
+script = ExtResource("1_rq33v")
+Camera = NodePath("Camera2D")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1241601680]

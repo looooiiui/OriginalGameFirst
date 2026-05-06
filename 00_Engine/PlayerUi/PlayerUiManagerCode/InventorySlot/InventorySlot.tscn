@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cdj6oeq8wsa0v"]
+
+[ext_resource type="Script" uid="uid://dfj4qmp7dhbp2" path="res://00_Engine/PlayerUi/PlayerUiManagerCode/InventorySlot/InventorySlot.gd" id="1_q1fdp"]
+[ext_resource type="Texture2D" uid="uid://bhv8slb4stbiu" path="res://02_Assets/Sprite/OriginalSprite/output_transparent.png" id="2_d5ar7"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_d5ar7"]
+
+[node name="InventorySlot" type="Node2D" unique_id=2077297739 node_paths=PackedStringArray("Back", "Inventory", "case")]
+script = ExtResource("1_q1fdp")
+Back = NodePath("back1")
+Inventory = NodePath("1")
+case = NodePath("Case")
+
+[node name="back1" type="Sprite2D" parent="." unique_id=505255185]
+modulate = Color(0.47137535, 0.4713753, 0.4713753, 1)
+position = Vector2(28.5, 0)
+scale = Vector2(58.999996, 58)
+texture = SubResource("CanvasTexture_d5ar7")
+region_rect = Rect2(813.1361, 642.0985, 43.384583, 42.489563)
+
+[node name="1" type="Sprite2D" parent="." unique_id=1649979573]
+position = Vector2(28.500002, 0)
+scale = Vector2(1.0806453, 1.0491804)
+texture = ExtResource("2_d5ar7")
+region_enabled = true
+region_rect = Rect2(802.95624, 632.9187, 62.621582, 61.920593)
+
+[node name="Case" type="Sprite2D" parent="." unique_id=1219343419]
+position = Vector2(29, 2)
