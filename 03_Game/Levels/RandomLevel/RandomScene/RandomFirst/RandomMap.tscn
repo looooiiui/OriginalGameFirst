@@ -1,9 +1,8 @@
 [gd_scene format=4 uid="uid://dd33fb1jr0nkt"]
 
-[ext_resource type="Script" uid="uid://dcgolqbnpanrj" path="res://Game/code/Map/RandomFirst/random_map_First.gd" id="1_chq2o"]
-[ext_resource type="Script" uid="uid://v2tief4mygl3" path="res://03_Game/Levels/RandomLevel/RandomScene/RandomFirst/map_generator.gd" id="2_2h4fq"]
+[ext_resource type="Script" uid="uid://dcgolqbnpanrj" path="res://03_Game/Levels/RandomLevel/RandomScene/RandomFirst/random_map_First.gd" id="1_u1hg8"]
 [ext_resource type="Texture2D" uid="uid://c253xapfrmmwo" path="res://02_Assets/Sprite/BACK/Floor_Purple/Purple_Floor07.png" id="2_c5718"]
-[ext_resource type="PackedScene" uid="uid://c4xrh53mq0hhi" path="res://Game/NewScenes/Information/InTeaching/in_teaching.tscn" id="2_dlmll"]
+[ext_resource type="PackedScene" uid="uid://c4xrh53mq0hhi" path="res://01_Core/TeachingManager/InTeaching/in_teaching.tscn" id="2_dlmll"]
 [ext_resource type="Texture2D" uid="uid://sf6trm6sfg7r" path="res://02_Assets/Sprite/BACK/Floor_Purple/Purple_floor01.png" id="3_7ki6w"]
 [ext_resource type="Texture2D" uid="uid://botf5rfd4ejbq" path="res://02_Assets/Sprite/BACK/Floor_Purple/Purple_Floor02.png" id="4_3yf8g"]
 [ext_resource type="Texture2D" uid="uid://c3i1dho4tw46x" path="res://02_Assets/Sprite/BACK/Floor_Purple/Purple_Floor03.png" id="5_ltjht"]
@@ -14,10 +13,11 @@
 [ext_resource type="Texture2D" uid="uid://sy25io4vk72h" path="res://02_Assets/Sprite/BACK/Floor_Purple/Purple_Floor05.png" id="7_kqtv7"]
 [ext_resource type="Texture2D" uid="uid://c4ff6l1l0bloq" path="res://02_Assets/Sprite/BACK/Floor_Purple/Purple_floor06.png" id="8_w5cdk"]
 [ext_resource type="PackedScene" uid="uid://dcp124hdiqni5" path="res://03_Game/Effect/CollerationEffect/NormalEffect/Mouse/CrossHair/cross_hair.tscn" id="11_7ki6w"]
-[ext_resource type="PackedScene" uid="uid://dnrpow880ml8y" path="res://Game/NewScenes/Monster/Original/newOriginal.tscn" id="14_uwqpt"]
+[ext_resource type="Script" uid="uid://v2tief4mygl3" path="res://03_Game/Levels/RandomLevel/RandomScene/RandomFirst/MapGenerator/map_generator.gd" id="11_bemcx"]
+[ext_resource type="PackedScene" uid="uid://dnrpow880ml8y" path="res://03_Game/Monsters/Original/newOriginal.tscn" id="14_uwqpt"]
 [ext_resource type="Script" uid="uid://tn8buxis1qgj" path="res://03_Game/Levels/RandomLevel/RandomScene/RandomFirst/Ui/attribute.gd" id="15_kqtv7"]
-[ext_resource type="Script" uid="uid://dqtrdesiofceq" path="res://Game/NewScenes/Level/Level9999/TreasureChest/treasure_chest_case.gd" id="16_5h0qo"]
-[ext_resource type="PackedScene" uid="uid://xq8goah4yoq6" path="res://Game/NewScenes/Interaction/TreasureChest/TreasureChest.tscn" id="16_w5cdk"]
+[ext_resource type="PackedScene" uid="uid://xq8goah4yoq6" path="res://03_Game/InstantiateItems/InteractionCase/TreasureChest/TreasureChest.tscn" id="16_w5cdk"]
+[ext_resource type="Script" path="res://03_Game/Levels/RandomLevel/RandomScene/RandomFirst/Case/InteractionCase/TreasureChestCase/treasure_chest_case.gd" id="17_bemcx"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_5h0qo"]
 vertices = PackedVector2Array(3146, -2122, 2870, -2122, -2230, -2166, -2230, -2314, 906, 1974, 758, 1974, -2870, 1930, -714, 1930, 438, 394, 586, 394, 3254, 502, 2826, 630, 2550, 630, -822, 586, -822, 438, 650, 2506, 3766, 2742, -3894, 2742, -2742, 2634, 438, 2506, 2378, -202, 2166, -202, 458, -246, 458, -394, 2934, -374, 1974, -1846, 1994, -1738, 1782, -1738, 138, -1782, 1162, -1846, -1014, -1014, 1398, -1078, 1546, -1078, 970, -842, 822, -842, -182, -906, -502, -182, 310, -246, 2166, 10, 1674, 54, 1462, 54, -310, -74, 1674, 266, 3594, 502, 1462, 266, -970, 586, 182, 694, -118, 822, -266, 822, -1142, 778, -1142, 694, 2550, 1034, 2826, 1034, 2954, 1526, 2742, 1526, 2058, 1482, 2058, 1270, 2186, -1846, 2870, -1910, 3146, -1910, 3146, -522, 1994, -1462, 3766, -2486, 3594, 714, -3018, 2634, 2934, -522, 2058, -630, 2058, -842, -502, -1462, -202, -1462, 1546, -1226, 1206, -1226, -1014, -1290, -182, -438, 458, -502, 1782, -630, 1034, -630, 2954, 1738, 3274, 2102, 3062, 2102, 2250, 1930, 2742, 1738, 886, -630, 3062, 2250, 1674, 2122, 2038, 1930, 2378, 10, 3254, 714, 3146, -374, 3530, -2230, 3382, -2230, 3274, 2250, 650, 2294, 3530, -2442, -3894, -2486, 3382, -2442, 1674, 1910, 2250, 1654, 1782, -1462, 586, -1462, 586, -1674, 886, -694, 458, -650, 822, -694, -3510, -438, -3510, -586, -3210, -522, -3210, -330, -3274, -330, 950, -1846, -1226, -1290, -1226, -1014, -1974, -1142, -1974, -1418, -2742, -1334, -2742, -1418, -2250, -1418, -2250, -1142, 2038, 1654, 1910, 1482, -3018, 1782, -3018, 1930, -3446, 1866, -3446, 1590, -2486, 2186, -2058, 1974, -2058, 2250, -2742, 2422, -2486, 1974, 586, 246, -2058, -2058, -2058, -1846, -2550, -1910, -2550, -2122, -2378, -2166, 1098, 1738, 1098, 1590, 1162, 1290, 906, 2058, 1462, 1910, 1462, 2122, 842, 2122, 950, 1738, -374, 1930, -374, 1782, -1590, 2186, 438, 2294, -1846, 2250, 2186, -1994, 310, -394, -502, -394, -330, -438, 138, -2122, 822, -2038, -1034, -1994, -1034, -1782, -1846, -1846, -1846, -2058, 650, 778, 650, 630, 1910, 1270, 1162, 1078, 374, 630, -1590, 74, -1590, -74, -714, -10, -714, 138, -886, 310, -970, 310, -182, -758, 310, -650, 74, 266, 74, 118, 438, 246, -74, 266, -3382, 2442, -3382, 2166, -3018, 2422, -3594, 2442, -1738, -266, -1738, 74, -3126, 10, -3126, -522, -310, 74, -74, 118, -566, 138, -458, 74, -886, 438, -3254, -2102, -3254, -2314, -2762, -2122, -2762, -1910, 1014, 1078, 522, 906, 566, 778, -2934, 906, -2934, 758, -2186, 886, -2186, 1226, -2486, 1398, -2698, 1398, 1014, 1290, 950, 1590, -2038, 1226, -2486, 1610, 1206, -1142, -2038, 950, 310, -502, -182, -586, -458, -758, -330, -586, -458, -74, -714, -182, -630, 1718, 1398, -1142, -906, -1462, -2934, -1418, -2934, -1546, -2806, -1270, -2806, -1334, 1782, -842, 1034, -778, 970, -778, -330, -906, -330, -842, -458, -842, -714, -394, -1014, -438, -1014, -650, -1162, -650, -1162, -586, -1354, -586, -3510, -1142, -1354, -502, -1226, -502, -1226, -438, -1654, -266, -1654, -74, -3274, -266, -3338, -266, -3658, -438, 374, 694, 182, 970, -118, 970, -1334, 694, -1334, 630, -266, 970, -1206, 842, -1206, 778, 458, 970, 458, 906, 522, 758, 458, 758, 458, 714, 566, 714, -2102, 950, -2102, 886, -2998, 758, -2998, 630, -2998, 970, -2998, 906, -630, 1782, 842, 2058, -1590, 2102, -1846, 2102, -1846, 2038, -1974, 2038, -1974, 1974, -1846, 2186, 1974, -1994, 1162, -2122, 950, -2038, 822, -2122, -138, -2122, -138, -1782, -202, -1674, -886, -1782, -886, -1930, -950, -1930, -950, -1994, 438, -1674, -2378, -2314, 438, -1462, -54, -1674, -1418, 630, -566, -10, -906, -1674, -3338, 10, -1418, 842, -3082, 970, -2698, 1610, -2870, 1782, 758, 2122, -3594, 2166, -3722, 1866, -2698, 2186, -3382, -1846, -3466, -2102, -3382, -2058, -3722, -1142, -3658, -586, -2698, 1974, -3722, 1590, -714, 1718, -54, -1462, -3018, -1270, -3466, -2314, -3658, -2058, -3510, -1354, -3018, -1546, -3722, -1354, -3658, -1846, -502, -1674, -3082, 630)
@@ -139,7 +139,7 @@ sources/8 = SubResource("TileSetAtlasSource_w5cdk")
 sources/9 = SubResource("TileSetAtlasSource_5h0qo")
 
 [node name="RandomMap" type="Node2D" unique_id=1004407882 node_paths=PackedStringArray("InCanvas")]
-script = ExtResource("1_chq2o")
+script = ExtResource("1_u1hg8")
 gameTip = ExtResource("2_dlmll")
 InCanvas = NodePath("Effect/Modulate/StartGame")
 
@@ -186,7 +186,7 @@ physics_quadrant_size = 64
 
 [node name="MapGenerator" type="Node2D" parent="Map" unique_id=1921015273 node_paths=PackedStringArray("RandomGround")]
 visible = false
-script = ExtResource("2_2h4fq")
+script = ExtResource("11_bemcx")
 RandomGround = NodePath("../Ground/Ground")
 
 [node name="RandomGound" type="Node2D" parent="Map/MapGenerator" unique_id=55654966]
@@ -231,6 +231,6 @@ color = Color(1, 1, 1, 0)
 [node name="Interaction" type="Node2D" parent="Case" unique_id=1459030067]
 
 [node name="TreasureChestCase" type="Node2D" parent="Case/Interaction" unique_id=1260931363 node_paths=PackedStringArray("_Map_Generator")]
-script = ExtResource("16_5h0qo")
+script = ExtResource("17_bemcx")
 TreasureChest = ExtResource("16_w5cdk")
 _Map_Generator = NodePath("../../../Map/MapGenerator")

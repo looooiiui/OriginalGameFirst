@@ -1,8 +1,6 @@
 extends Window
 
 @export var BackButton : Button
-@export var StartCanvas: CanvasModulate
-@export var WindowStartCanvas: CanvasModulate
 @export var ArchiveWindows: Window
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

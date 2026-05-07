@@ -1,19 +1,19 @@
 [gd_scene format=3 uid="uid://d00jd8c4eaglh"]
 
-[ext_resource type="Script" uid="uid://bop08ppme1u5x" path="res://Game/code/main_menu.gd" id="1_f4xm7"]
+[ext_resource type="Script" uid="uid://bop08ppme1u5x" path="res://04_Scenes/StartMenu/main_menu.gd" id="1_fq55x"]
 [ext_resource type="Texture2D" uid="uid://bqc0kee6lxbrt" path="res://02_Assets/Sprite/BACK/MainMenuBack/MainMenuBack.png" id="2_ts5te"]
 [ext_resource type="Script" uid="uid://civm623aqpbns" path="res://04_Scenes/StartMenu/code/UI/ButtonManager.gd" id="3_weat6"]
 [ext_resource type="Script" uid="uid://b4iopr2rjep88" path="res://04_Scenes/StartMenu/code/UI/ui_manager.gd" id="4_tumwk"]
 [ext_resource type="Texture2D" uid="uid://c6a6thrnkxjd4" path="res://02_Assets/Sprite/InstantiationBack/Player/Another/formal.png" id="5_tumwk"]
-[ext_resource type="Script" uid="uid://bi1btvxog55ac" path="res://04_Scenes/StartMenu/code/MainMenu/Startwindows.gd" id="11_0rmad"]
-[ext_resource type="Script" uid="uid://bfifpx4n7tif8" path="res://04_Scenes/StartMenu/code/MainMenu/start_game_Windows.gd" id="12_ts5te"]
+[ext_resource type="Script" uid="uid://bi1btvxog55ac" path="res://04_Scenes/StartMenu/code/MainMenu/StartWindowsCode/Startwindows.gd" id="6_fq55x"]
+[ext_resource type="Script" uid="uid://bfifpx4n7tif8" path="res://04_Scenes/StartMenu/code/MainMenu/StartWindowsCode/StartGameWindowsCode/start_game_Windows.gd" id="7_fq55x"]
+[ext_resource type="Script" uid="uid://brpaoygpqi23j" path="res://04_Scenes/StartMenu/code/MainMenu/StartWindowsCode/StartGameWindowsCode/ButtonCode/button.gd" id="10_fq55x"]
+[ext_resource type="Script" uid="uid://dufao86frvqv2" path="res://04_Scenes/StartMenu/code/MainMenu/StartWindowsCode/ArchiveWindowsCode/archive.gd" id="12_fq55x"]
+[ext_resource type="Script" uid="uid://7m1bo4ghwgjv" path="res://04_Scenes/StartMenu/code/MainMenu/StartWindowsCode/ArchiveWindowsCode/SaveManagerCode/saveManager.gd" id="13_fq55x"]
 [ext_resource type="Texture2D" uid="uid://c3cq77nocfsxc" path="res://02_Assets/Sprite/BACK/ESCBACK/EscBack.png" id="13_mbe66"]
-[ext_resource type="Script" uid="uid://brpaoygpqi23j" path="res://Game/NewScenes/Level/MainMenu/Windows/StartWindows/Button/button.gd" id="14_1y57r"]
+[ext_resource type="Script" uid="uid://dwruy5e3oi1lq" path="res://04_Scenes/StartMenu/code/EffectCode/effect.gd" id="14_fq55x"]
 [ext_resource type="Texture2D" uid="uid://bhv8slb4stbiu" path="res://02_Assets/Sprite/OriginalSprite/output_transparent.png" id="14_g8i8e"]
 [ext_resource type="FontFile" uid="uid://dd15jj3psq138" path="res://02_Assets/theme/PressStart2P-1.ttf" id="15_g8i8e"]
-[ext_resource type="Script" uid="uid://dufao86frvqv2" path="res://Game/NewScenes/Windows/ArchiveWindows/archive.gd" id="15_ht2bp"]
-[ext_resource type="Script" uid="uid://7m1bo4ghwgjv" path="res://04_Scenes/StartMenu/code/MainMenu/saveManager.gd" id="16_g8i8e"]
-[ext_resource type="Script" uid="uid://dwruy5e3oi1lq" path="res://Game/NewScenes/Level/MainMenu/Effect/effect.gd" id="17_3wmv7"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_tumwk"]
 
@@ -458,7 +458,7 @@ fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(0.5, 0)
 
 [node name="MainMenu" type="Node2D" unique_id=922332076 node_paths=PackedStringArray("Save", "Effect")]
-script = ExtResource("1_f4xm7")
+script = ExtResource("1_fq55x")
 Save = NodePath("Windows/Archive/Button/Save")
 Effect = NodePath("Effect")
 
@@ -593,18 +593,17 @@ autoplay = "idle"
 frame_progress = 0.0104504395
 
 [node name="Windows" type="Node2D" parent="." unique_id=1590230722 node_paths=PackedStringArray("StartWindows", "ArchiveWindows")]
-script = ExtResource("11_0rmad")
+script = ExtResource("6_fq55x")
 StartWindows = NodePath("StartGame")
 ArchiveWindows = NodePath("Archive")
 
-[node name="StartGame" type="Window" parent="Windows" unique_id=455016705 node_paths=PackedStringArray("BackButton", "StartCanvas", "ArchiveWindows")]
+[node name="StartGame" type="Window" parent="Windows" unique_id=455016705 node_paths=PackedStringArray("BackButton", "ArchiveWindows")]
 oversampling_override = 1.0
 position = Vector2i(0, 36)
 size = Vector2i(1200, 600)
 exclusive = true
-script = ExtResource("12_ts5te")
+script = ExtResource("7_fq55x")
 BackButton = NodePath("Ui/Button/Back")
-StartCanvas = NodePath("../../Effect/Start")
 ArchiveWindows = NodePath("../Archive")
 
 [node name="Ui" type="Node2D" parent="Windows/StartGame" unique_id=2056707777]
@@ -656,7 +655,7 @@ offset_bottom = 112.0
 text = "教程的选择请在这里确定"
 
 [node name="Button" type="Node2D" parent="Windows/StartGame/Ui" unique_id=1773785238 node_paths=PackedStringArray("TipButton")]
-script = ExtResource("14_1y57r")
+script = ExtResource("10_fq55x")
 TipButton = NodePath("TipButton")
 
 [node name="Back" type="Button" parent="Windows/StartGame/Ui/Button" unique_id=2084407060]
@@ -706,7 +705,7 @@ position = Vector2i(0, 36)
 size = Vector2i(400, 800)
 visible = false
 exclusive = true
-script = ExtResource("15_ht2bp")
+script = ExtResource("12_fq55x")
 
 [node name="SPRITE" type="Node2D" parent="Windows/Archive" unique_id=822555514]
 
@@ -727,7 +726,7 @@ offset_bottom = 35.0
 text = "    BackMenu    "
 
 [node name="Save" type="Node2D" parent="Windows/Archive/Button" unique_id=418089407 node_paths=PackedStringArray("save1", "save2", "save3")]
-script = ExtResource("16_g8i8e")
+script = ExtResource("13_fq55x")
 save1 = NodePath("Save/SaveFirst")
 save2 = NodePath("Save/SaveSecond")
 save3 = NodePath("Save/SaveThird")
@@ -752,7 +751,7 @@ layout_mode = 2
 text = "NullOfSave"
 
 [node name="Effect" type="Node2D" parent="." unique_id=570640812 node_paths=PackedStringArray("StartGameColor", "Logo")]
-script = ExtResource("17_3wmv7")
+script = ExtResource("14_fq55x")
 StartGameColor = NodePath("StartGame")
 Logo = NodePath("StartGame/Logo")
 
