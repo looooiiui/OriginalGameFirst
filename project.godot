@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+Server="*uid://ddp60rvpeyo5i"
 Teaching="*uid://dofqvb5r13cyp"
 SaveData="*uid://dsx1cdfhxe4b3"
 DropManage="*uid://qu5m5w5uve86"

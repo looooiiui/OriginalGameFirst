@@ -13,7 +13,19 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
 func _process(delta: float) -> void:
-	
+	gameOverControl()
+	actionControl()
+		
+#------------游戏结束控制点------------#
+func gameOverControl() -> void:
+	if GameManager.instance.is_Game_Over and !is_Dead_Effect_Play:
+		is_Dead_Effect_Play = true
+		visible = false
+		var deadEffect = DeadEffect.instantiate()
+		deadEffect.global_position = global_position
+		get_tree().current_scene.add_child(deadEffect)	
+
+func actionControl() -> void:
 	global_position = Player.instance.global_position
 	input_dir = Player.instance.input_dir
 	is_running = Player.instance.is_running
@@ -31,13 +43,4 @@ func _process(delta: float) -> void:
 		PlayerAction.flip_h = true
 		
 	if is_Melee:
-		PlayerAction.play("melee")
-	
-		
-	#------------游戏结束控制点------------#
-	if GameManager.instance.is_Game_Over and !is_Dead_Effect_Play:
-		is_Dead_Effect_Play = true
-		visible = false
-		var deadEffect = DeadEffect.instantiate()
-		deadEffect.global_position = global_position
-		get_tree().current_scene.add_child(deadEffect)
+		PlayerAction.play("melee")	

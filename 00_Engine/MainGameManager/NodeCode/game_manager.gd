@@ -6,29 +6,29 @@ static var instance : GameManager
 
 #游戏综合管理
 #------------------------------------------#
-@export var monster_all_num : int = 10
-@export var monster_real_num : int = 0
+@export var monster_all_num : int 					= 10
+@export var monster_real_num : int 					= 0
 #------------------------------------------#
 #时间管理
-@export var spawn_time : float = 1.0
-@export var is_Monster_spawn : bool = true
+@export var spawn_time : float 						= 1.0
+@export var is_Monster_spawn : bool 				= true
 #---------------UI--------------#
 @export var DebugInformation : CanvasLayer
-@export var is_Debug : bool = false
-@export var is_PlayerUI : bool = false
+@export var is_Debug : bool 						= false
+@export var is_PlayerUI : bool 						= false
 @export var WindowsManager : Node2D
 @export var UiManager : Node2D
-@export var windowsMaxlimited : int = 10
+@export var windowsMaxlimited : int 				= 10
 #--------------游戏关卡管理-------------#
-@export var currentLevel : float = 0
-@export var is_Track_Player : bool = false
-@export var worldBoundaryXLeft : float = 0
-@export var worldBoundaryXRight : float = 0
-@export var worldBoundaryXUp : float = 0
-@export var worldBoundaryXDown : float = 0
+@export var currentLevel : float 					= 0
+@export var is_Track_Player : bool 					= false
+@export var worldBoundaryXLeft : float 				= 0
+@export var worldBoundaryXRight : float 			= 0
+@export var worldBoundaryXUp : float 				= 0
+@export var worldBoundaryXDown : float 				= 0
 @export var is_Game_Over : bool = false
 #--------------操控设置--------------#
-@export var windowsCount : int = 0
+@export var windowsCount : int 						= 0
 
 
 

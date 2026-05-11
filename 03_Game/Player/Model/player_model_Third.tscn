@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://cfvsstix4qysv"]
 
 [ext_resource type="PackedScene" uid="uid://56vqkke5m30m" path="res://03_Game/Player/Model/player_model.tscn" id="1_cr5ia"]
-[ext_resource type="Texture2D" uid="uid://wfpv6biulun8" path="res://02_Assets/Sprite/InstantiationBack/Player/PlayerFirst/run.png" id="2_bxcdk"]
-[ext_resource type="Texture2D" uid="uid://b53ofljbi0ggc" path="res://02_Assets/Sprite/InstantiationBack/Player/PlayerFirst/idle.png" id="3_bxcdk"]
-[ext_resource type="Texture2D" uid="uid://dbmpfcc68j745" path="res://02_Assets/Sprite/InstantiationBack/Player/PlayerFirst/attack.png" id="3_qstlw"]
+[ext_resource type="Texture2D" uid="uid://wfpv6biulun8" path="res://02_Assets/Sprite/InstantiationSprite/Player/PlayerFirst/run.png" id="2_bxcdk"]
+[ext_resource type="Texture2D" uid="uid://b53ofljbi0ggc" path="res://02_Assets/Sprite/InstantiationSprite/Player/PlayerFirst/idle.png" id="3_bxcdk"]
+[ext_resource type="Texture2D" uid="uid://dbmpfcc68j745" path="res://02_Assets/Sprite/InstantiationSprite/Player/PlayerFirst/attack.png" id="3_qstlw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v1bb3"]
 size = Vector2(28, 65)
@@ -692,9 +692,4 @@ shape = SubResource("RectangleShape2D_v1bb3")
 
 [node name="PlayerModel" parent="." index="1" unique_id=1854276778]
 sprite_frames = SubResource("SpriteFrames_5rign")
-animation = &"melee"
-frame = 12
-frame_progress = 0.11337796
-
-[editable path="BloodManage"]
-[editable path="BloodManage/UI"]
+frame_progress = 0.78831536

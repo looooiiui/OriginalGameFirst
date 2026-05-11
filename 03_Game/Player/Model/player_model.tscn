@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://56vqkke5m30m"]
 
-[ext_resource type="Texture2D" uid="uid://c6a6thrnkxjd4" path="res://02_Assets/Sprite/InstantiationBack/Player/Another/formal.png" id="1_2j166"]
-[ext_resource type="Script" uid="uid://bt2mjy653p3nd" path="res://Game/code/Player_code/ModelCode/PlayerModerNodeCode/PlayerModelCode.gd" id="1_vbgv4"]
-[ext_resource type="Texture2D" uid="uid://v12v04y8fu47" path="res://02_Assets/Sprite/InstantiationBack/Player/Another/formalRun.png" id="2_2042w"]
+[ext_resource type="Texture2D" uid="uid://c6a6thrnkxjd4" path="res://02_Assets/Sprite/InstantiationSprite/Player/Another/formal.png" id="1_2j166"]
+[ext_resource type="Script" uid="uid://bt2mjy653p3nd" path="res://03_Game/Player/Model/Code/PlayerModerNodeCode/PlayerModelCode.gd" id="1_vbgv4"]
+[ext_resource type="Texture2D" uid="uid://v12v04y8fu47" path="res://02_Assets/Sprite/InstantiationSprite/Player/Another/formalRun.png" id="2_2042w"]
 [ext_resource type="PackedScene" uid="uid://bki5y8q65mgsu" path="res://03_Game/Effect/CollerationEffect/NormalEffect/DeadEffect/player_dead_effect.tscn" id="2_gx2s1"]
-[ext_resource type="Script" uid="uid://lnp5swstgqob" path="res://Game/code/Player_code/ModelCode/Player_Model.gd" id="3_2042w"]
-[ext_resource type="Texture2D" uid="uid://b10flvs5mqhhl" path="res://Game/NewScenes/Light/PlayerOrCommon.tres" id="8_a2v13"]
+[ext_resource type="Script" uid="uid://lnp5swstgqob" path="res://03_Game/Player/Model/Code/Player_Model.gd" id="3_2042w"]
+[ext_resource type="Texture2D" uid="uid://b10flvs5mqhhl" path="res://03_Game/Effect/Effect/Light/PlayerOrCommon.tres" id="8_a2v13"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a2v13"]
 size = Vector2(64, 226)

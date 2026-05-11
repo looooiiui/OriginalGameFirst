@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bxyht780brbbv"]
 
 [ext_resource type="PackedScene" uid="uid://56vqkke5m30m" path="res://03_Game/Player/Model/player_model.tscn" id="1_bmt8s"]
-[ext_resource type="Texture2D" uid="uid://deo746psu6oqa" path="res://02_Assets/Sprite/InstantiationBack/Player/Another/Manidle.png" id="2_etuxg"]
-[ext_resource type="Texture2D" uid="uid://cg3qgf2paqem7" path="res://02_Assets/Sprite/InstantiationBack/Player/Another/ManRun.png" id="3_k5ptp"]
+[ext_resource type="Texture2D" uid="uid://deo746psu6oqa" path="res://02_Assets/Sprite/InstantiationSprite/Player/Another/Manidle.png" id="2_etuxg"]
+[ext_resource type="Texture2D" uid="uid://cg3qgf2paqem7" path="res://02_Assets/Sprite/InstantiationSprite/Player/Another/ManRun.png" id="3_k5ptp"]
 [ext_resource type="Texture2D" uid="uid://clpvce64nbj5m" path="res://02_Assets/Sprite/Items/Gun/Gun.png" id="4_k5ptp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e3cqu"]

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bqc0kee6lxbrt" path="res://02_Assets/Sprite/BACK/MainMenuBack/MainMenuBack.png" id="2_ts5te"]
 [ext_resource type="Script" uid="uid://civm623aqpbns" path="res://04_Scenes/StartMenu/code/UI/ButtonManager.gd" id="3_weat6"]
 [ext_resource type="Script" uid="uid://b4iopr2rjep88" path="res://04_Scenes/StartMenu/code/UI/ui_manager.gd" id="4_tumwk"]
-[ext_resource type="Texture2D" uid="uid://c6a6thrnkxjd4" path="res://02_Assets/Sprite/InstantiationBack/Player/Another/formal.png" id="5_tumwk"]
+[ext_resource type="Texture2D" uid="uid://c6a6thrnkxjd4" path="res://02_Assets/Sprite/InstantiationSprite/Player/Another/formal.png" id="5_tumwk"]
 [ext_resource type="Script" uid="uid://bi1btvxog55ac" path="res://04_Scenes/StartMenu/code/MainMenu/StartWindowsCode/Startwindows.gd" id="6_fq55x"]
 [ext_resource type="Script" uid="uid://bfifpx4n7tif8" path="res://04_Scenes/StartMenu/code/MainMenu/StartWindowsCode/StartGameWindowsCode/start_game_Windows.gd" id="7_fq55x"]
 [ext_resource type="Script" uid="uid://brpaoygpqi23j" path="res://04_Scenes/StartMenu/code/MainMenu/StartWindowsCode/StartGameWindowsCode/ButtonCode/button.gd" id="10_fq55x"]

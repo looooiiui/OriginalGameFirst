@@ -73,6 +73,7 @@ func _physics_process(delta: float) -> void:
 	
 	_cal_Grip_Position()
 	_player_move()
+	_playerStateControl()
 	_melee_judge()
 	move_and_slide()
 	
@@ -100,9 +101,15 @@ func _player_move() -> void:
 	
 	#加速代码
 	if (Input.is_action_pressed("run")):
-		velocity += input_dir * 100
 		var temp_effect = Back_effect.instantiate()
+		velocity += input_dir * 100
 		get_tree().current_scene.add_child(temp_effect)
+
+func _playerStateControl() -> void:
+	if velocity.length() > 0.01:
+		is_running = true
+	else:
+		is_running = false
 	
 #近战控制
 func _melee_judge() -> void:

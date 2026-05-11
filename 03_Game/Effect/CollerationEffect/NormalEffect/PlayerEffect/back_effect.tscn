@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bmbldtnagnkps"]
 
 [ext_resource type="Script" uid="uid://boatd21dbiinh" path="res://03_Game/Effect/CollerationEffect/NormalEffect/PlayerEffect/back_effect.gd" id="1_x5ov6"]
-[ext_resource type="Texture2D" uid="uid://dq1cxpn05tde0" path="res://02_Assets/Sprite/InstantiationBack/Player/Back/Back.png" id="2_w35t7"]
+[ext_resource type="Texture2D" uid="uid://dq1cxpn05tde0" path="res://02_Assets/Sprite/InstantiationSprite/Player/Back/Back.png" id="2_w35t7"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_rlq3c"]
 lifetime_randomness = 1.0

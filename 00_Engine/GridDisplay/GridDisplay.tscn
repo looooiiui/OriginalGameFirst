@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d3k8ssnb8e6ne"]
 
 [ext_resource type="Script" uid="uid://bxaq3u1f1615s" path="res://00_Engine/GridDisplay/Code/select_logic.gd" id="1_g80as"]
-[ext_resource type="PackedScene" uid="uid://cqxudkb2iksqy" path="res://02_Assets/Sprite/InstantiationBack/Grid/selected_grid.tscn" id="2_5xlka"]
+[ext_resource type="PackedScene" uid="uid://cqxudkb2iksqy" path="res://02_Assets/Sprite/InstantiationSprite/Grid/selected_grid.tscn" id="2_5xlka"]
 
 [node name="ForGridPic" type="Node2D" unique_id=735259590]
 script = ExtResource("1_g80as")

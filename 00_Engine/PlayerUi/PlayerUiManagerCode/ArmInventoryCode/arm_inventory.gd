@@ -42,25 +42,35 @@ func _change_Inventory(now_Select : int):
 
 #可以直接实例化的物品
 func _input(event):
+	#老版本架构的单例使用的比较乱，这里可以全部重写
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		if event.pressed and Player.instance.input_Enable:
 			if armInventory[nowSelect].selectId != "":
 				if armInventory[nowSelect].selectId.length() >= 6 and armInventory[nowSelect].selectId[5] == "A":
-					if armInventory[nowSelect].selectId in CaseIcon.instance.InstanceManager.InstanceDic:
-						if CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId] != null:
-							var realCase = CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId].instantiate()
-							realCase.global_position = Player.instance.global_position
-							realCase.global_rotation = Player.instance.global_rotation
-							get_tree().current_scene.add_child(realCase)
+					
+					if !armInventory[nowSelect].selectId in CaseIcon.instance.InstanceManager.InstanceDic:
+						return 
+						
+					if !CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId] != null:
+						return
+						
+					var realCase = CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId].instantiate()
+					realCase.global_position = Player.instance.global_position
+					realCase.global_rotation = Player.instance.global_rotation
+					get_tree().current_scene.add_child(realCase)
 				
 				elif armInventory[nowSelect].selectId.length() >= 6 and armInventory[nowSelect].selectId[5] == "C":	
 					if BackPackWindows.visible == false:
-						if CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId] != null:	
-							var mouse_Grip_Position = Grid.instance.to_grid(_get_mouse_world_pos())
-							if Player.instance.current_Grip != mouse_Grip_Position:
-								var realCase = CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId].instantiate()
-								realCase.global_position = Grid.instance.snap(_get_mouse_world_pos())
-								get_tree().current_scene.add_child(realCase)
+						if !CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId] != null:	
+							return 
+						var mouse_Grip_Position = Grid.instance.to_grid(_get_mouse_world_pos())
+						
+						if !Player.instance.current_Grip != mouse_Grip_Position:
+							return
+							
+						var realCase = CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId].instantiate()
+						realCase.global_position = Grid.instance.snap(_get_mouse_world_pos())
+						get_tree().current_scene.add_child(realCase)
 
 #判断手持	
 func _hand_Taken():
@@ -70,7 +80,7 @@ func _hand_Taken():
 	if Input.is_action_just_pressed("drop"):
 		if nowUsing != null:
 			if armInventory[nowSelect].selectId.length() >= 6 and armInventory[nowSelect].selectId[5] == "G":
-				nowUsing.current_state = nowUsing.GunState.DROP
+				nowUsing.current_state = GlobalState.CaseState.DROP
 				armInventory[nowSelect].selectId = ""
 				nowUsing = null	
 
@@ -88,12 +98,11 @@ func _hand_Taken():
 				if armInventory[nowSelect].selectId in CaseIcon.instance.InstanceManager.InstanceDic:
 					nowUsing = CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId].instantiate()
 					nowUsing.global_position = Player.instance.global_position
-					nowUsing.current_state = nowUsing.GunState.HAND
+					nowUsing.current_state = GlobalState.CaseState.HAND
 					get_tree().current_scene.add_child(nowUsing)
-
+					
 		perUsing = nowSelect
 	
-
 func _change_Inventory_Select():
 	if Input.is_action_just_pressed("first_arm"):
 		perUsing = nowSelect
@@ -115,7 +124,7 @@ func _first_attend():
 			if armInventory[nowSelect].selectId.length() >= 6:
 				if Player.input_Enable:
 					nowUsing = CaseIcon.instance.InstanceManager.InstanceDic[armInventory[nowSelect].selectId].instantiate()
-					nowUsing.current_state = nowUsing.GunState.HAND
+					nowUsing.current_state = nowUsing.GlobalState.CaseState.HAND
 					get_tree().current_scene.add_child(nowUsing)
 				if armInventory[nowSelect].selectId[5] == "C":
 					if nowUsing != null:
@@ -123,7 +132,6 @@ func _first_attend():
 		is_first_add = false
 	if GameManager.instance.currentLevel == 0:
 		is_first_add = true
-	
 	
 func _get_mouse_world_pos():
 	var vp = get_viewport()

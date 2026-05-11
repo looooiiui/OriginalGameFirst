@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://by3nxiknviet6"]
+
+[ext_resource type="Script" uid="uid://bw7pop65joy5m" path="res://03_Game/Monsters/OriginalTurret/original_turret.gd" id="1_a6k2m"]
+[ext_resource type="Texture2D" uid="uid://b10flvs5mqhhl" path="res://03_Game/Effect/Effect/Light/PlayerOrCommon.tres" id="2_2sa7w"]
+[ext_resource type="Script" uid="uid://dg6c0v6uiwv4y" path="res://03_Game/Monsters/OriginalTurret/SpriteCode/SteeringShaftCode/SteeringShaft.gd" id="2_wgg62"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vi0ag"]
+size = Vector2(38, 36)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_vi0ag"]
+polygon = PackedVector2Array(-19, -18, -19, 18, 19, 18, 19, -18)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_wgg62"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_2sa7w"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_a06pm"]
+
+[node name="OriginTurret" type="RigidBody2D" unique_id=60391446]
+gravity_scale = 0.0
+script = ExtResource("1_a6k2m")
+
+[node name="TurretColl" type="CollisionShape2D" parent="." unique_id=1017825969]
+shape = SubResource("RectangleShape2D_vi0ag")
+
+[node name="Effect" type="Node2D" parent="." unique_id=1433939030]
+
+[node name="Light" type="Node2D" parent="Effect" unique_id=2121004304]
+
+[node name="Light" type="PointLight2D" parent="Effect/Light" unique_id=516491483]
+scale = Vector2(3.59375, 3.0625002)
+color = Color(0.54509807, 0.16862746, 0.105882354, 1)
+energy = 5.07
+texture = ExtResource("2_2sa7w")
+
+[node name="Occ" type="LightOccluder2D" parent="Effect/Light" unique_id=1241450611]
+occluder = SubResource("OccluderPolygon2D_vi0ag")
+
+[node name="Sprite" type="Node2D" parent="." unique_id=365088677]
+
+[node name="Body" type="Sprite2D" parent="Sprite" unique_id=264241082]
+modulate = Color(0.21960784, 0.40392157, 0.48235294, 1)
+scale = Vector2(38, 36)
+texture = SubResource("CanvasTexture_wgg62")
+
+[node name="SteeringShaft" type="Sprite2D" parent="Sprite" unique_id=1636054653]
+modulate = Color(0.1882353, 0.25882354, 0.1882353, 1)
+scale = Vector2(8, 8)
+texture = SubResource("CanvasTexture_2sa7w")
+script = ExtResource("2_wgg62")
+metadata/_edit_group_ = true
+
+[node name="CannonBarrel" type="Sprite2D" parent="Sprite/SteeringShaft" unique_id=1574665308]
+modulate = Color(0.22352941, 0.6, 0.4509804, 1)
+position = Vector2(1.6875, 0)
+scale = Vector2(3.3749995, 0.5)
+texture = SubResource("CanvasTexture_a06pm")

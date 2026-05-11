@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://doi3mcft3mfjj"]
 
-[ext_resource type="Texture2D" uid="uid://17h1ghjwoj8r" path="res://02_Assets/Sprite/InstantiationBack/Player/Blood/Blood.png" id="1_buj3y"]
+[ext_resource type="Texture2D" uid="uid://17h1ghjwoj8r" path="res://02_Assets/Sprite/InstantiationSprite/Player/Blood/Blood.png" id="1_buj3y"]
 [ext_resource type="Script" uid="uid://covb4lphpdak6" path="res://00_Engine/PlayerUi/PlayerUiManagerCode/player_ui_manager.gd" id="1_nregw"]
 [ext_resource type="Script" uid="uid://hjqfpwarq7jo" path="res://00_Engine/PlayerUi/PlayerUiManagerCode/MagicPointCode/MagicPoint.gd" id="2_nregw"]
 [ext_resource type="Script" uid="uid://c1dsujtd3v4jj" path="res://00_Engine/PlayerUi/PlayerUiManagerCode/ArmInventoryCode/arm_inventory.gd" id="6_nregw"]
 [ext_resource type="Script" uid="uid://b5he6fvsdjhse" path="res://00_Engine/PlayerUi/PlayerUiManagerCode/WindowsCode/Windows.gd" id="8_nregw"]
-[ext_resource type="Script" uid="uid://dh5qlvlthu800" path="res://Game/code/UiCode/PlayerUi/Inventory/Windows/main_arm.gd" id="8_pu4bc"]
+[ext_resource type="Script" uid="uid://dh5qlvlthu800" path="res://00_Engine/PlayerUi/PlayerUiManagerCode/WindowsCode/BackPackCode/MainArmCode/main_arm.gd" id="8_pu4bc"]
 [ext_resource type="Texture2D" uid="uid://cuw6fbf2w5tjw" path="res://02_Assets/Sprite/OriginalSprite/All.png" id="9_0b42i"]
 [ext_resource type="Script" uid="uid://doxtj7mtt06ru" path="res://00_Engine/PlayerUi/PlayerUiManagerCode/WindowsCode/BackPackCode/back_Pack_Windows.gd" id="9_nregw"]
 [ext_resource type="Script" uid="uid://dbpnvnlcoexjs" path="res://00_Engine/PlayerUi/PlayerUiManagerCode/WindowsCode/BackPackCode/RowCode/Backrow.gd" id="10_nregw"]
